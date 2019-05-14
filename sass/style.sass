@@ -60,7 +60,7 @@
         font-weight: bold
         border: $borders9
         text-align: center
-        z-index: 1
+        z-index: 3
       .headerP:hover
         +hover(orchid)
         border: solid 1px #B51FAD
@@ -113,6 +113,152 @@
         border-top: $borders2
       li:hover
         +hover(orchid)
+    #section1, #section2
+      height: 100vh
+      border-bottom: $borders2
+      border-top: $borders2
+      .left
+        width: 12%
+        height: 100%
+        float: left
+        background-color: black
+        border-right: $borders2
+        .symbol
+          position: fixed
+          top: 0
+          left: 0
+          height: 20%
+          width: 12%
+          z-index: 2
+          img
+            width: 8%
+            height: auto
+            position: fixed
+            top: 1.9vh
+            left: 4vh
+            opacity: 0.6
+        .map
+          position: fixed
+          top: 20vh
+          height: 66%
+          width: 12%
+          text-align: center
+          padding-top: 1%
+          .mapNav
+            float: left
+            width: 10%
+            height: 97%
+            div
+              width: 1.1vw
+              height: 5vh
+              background-color: #F018E6
+              opacity: .6
+              margin-bottom: 6.5vh
+              margin-left: 0.5vw
+          .mapNavBorders
+            position: fixed
+            left: 0.5vw
+            height: 62.5%
+            width: 1.1vw
+            z-index: 1
+            div
+              height: 5vh
+              margin-bottom: 6.5vh
+              border: $borders5
+          .mapP
+            p
+              +pStyle(70%, 5vh, 2.6vh, beige)
+              margin-bottom: 6.5vh
+              margin-left: 2.6vw
+              padding-top: 0.3vh
+              line-height: 5vh
+              font-weight: bold
+              border: $borders5
+              transition: 2s
+            p:hover
+              +hover(orchid)
+          .filler
+            position: absolute
+            top: 10vh
+            left: 0.55vw
+            width: 0.99vw
+            z-index: 0
+            background-color: black
+            height: 86%
+            transition: top 2s
+          .filler2
+            @extend .filler
+            top: -55vh
+        .logo
+          position: fixed
+          top: 86vh
+          height: 14%
+          width: 12%
+          border-top: $borders2
+          img
+            width: 80%
+            height: 80%
+            margin: 6% 10%
+      .center
+        width: 50%
+        height: 100%
+        float: left
+        overflow: hidden
+        .sectionHead
+          position: absolute
+          left: 0
+          width: 62%
+          height: 20%
+          padding-left: 12%
+          border-bottom: $borders2
+          p
+            padding-top: 5vh
+            font-size: 12vh
+            letter-spacing: 0.6vw
+            text-align: center
+        .sectionWrap1
+          margin-top: 20vh
+          width: 50%
+          height: 80vh
+          float: left
+          h1
+            padding: 5vh 0 5vh 4vw
+          p
+            padding: 0 3vw 3vh
+            font-size: 3vh
+        .sectionWrap2
+          @extend .sectionWrap1
+          border-left: $borders2
+      .right
+        width: 38%
+        height: 100%
+        float: left
+        border-left: $borders3
+        .sideImg
+          width: 100%
+          height: 100%
+          opacity: .3  
+        .credits1
+          position: absolute
+          width: 65vw
+          height: 2vh   
+          top: 198vh
+          left: 63vw   
+          background-color: black
+        .credits2
+          @extend .credits1
+          top: 196vh
+      #arrow
+        position: fixed
+        top: 5%
+        left: 65%
+        color: beige
+        font-size: 4vh
+        border: solid 2px beige
+        padding: 1.2vh 2vh
+        border-radius: 50%
+      #arrow:hover
+        +hover(undefined)
 @keyframes borderColor
     0%
       background-color: black
