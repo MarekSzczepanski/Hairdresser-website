@@ -1,3 +1,5 @@
+let selected = sessionStorage.getItem('selectedSection');
+let selectedImage = sessionStorage.getItem('image');
 const moveToSection = (e) => {
     let fillerScroll = 12;
     this.newAnimations = new Animations;
@@ -8,16 +10,18 @@ const moveToSection = (e) => {
         document.querySelector(".filler2").style.top = "-55vh";
     }
     for (let i=1; i<7; i++) {
-        if (e.target.id == i) { 
-            const doAnimationsImg = this.newAnimations.animation(document.getElementById("image"+i), "left", "50vw", 0, 1000)
+        if (e.target.id == i) {
+            const doAnimationsImg = this.newAnimations.animation(document.getElementById("image"+i), "left", "120vw", "62vw", 1000)
             document.getElementById("section"+i).scrollIntoView({ 
                 behavior: 'smooth'
             });
+            sessionStorage.setItem('selectedSection', e.target.id);
+            sessionStorage.setItem('image', "yes");
             if (i === 1) {
-                const doAnimationsSymbol2 = this.newAnimations.animation(document.querySelector(".symbol"+1), "top", "-18vh", "1.9vh", 1500)
+                const doAnimationsSymbol2 = this.newAnimations.animation(document.querySelector(".symbol"+1), "top", "-20vh", "101.9vh", 1000)
             }
-            else {
-                const doAnimationsSymbol = this.newAnimations.animation(document.querySelector(".symbol"+i), "top", "-18vh", 0, 1500)
+            else if (i === 2){
+                const doAnimationsSymbol = this.newAnimations.animation(document.querySelector(".symbol"+2), "top", "80vh", "202.1vh", 1000)
             }
             document.querySelector(".filler").style.top = fillerScroll-4+"vh";
             document.querySelector(".mapP"+i).style.border = "solid #B51FAD 1px";
@@ -28,6 +32,7 @@ const moveToSection = (e) => {
         }
         fillerScroll += 12;
     }
+    selected = null;
 }
 document.querySelector("nav").addEventListener("click", moveToSection);
 for (let i=1; i<7; i++) {
@@ -38,6 +43,22 @@ const moveToTop = () => {
     document.body.scrollIntoView({ 
         behavior: 'smooth'
     });
+    selected = null;
 }
 
-document.getElementById("arrow").addEventListener("click", moveToTop)
+document.getElementById("arrow").addEventListener("click", moveToTop);
+
+if (selected !== null) { 
+    document.querySelector(".mapP"+selected).style.color = "orchid";
+    document.querySelector(".mapP"+selected).style.border = "solid 1px #F018E6";
+    document.getElementById("image"+selected).style.left = "62vw";
+    let fillerPosition = 8;
+    let filler2Position = -55
+    for (let i=1; i<7; i++) {
+        if (selected == i) {
+            document.querySelector(".filler").style.top = fillerPosition+"vh";
+            document.querySelector(".filler2").style.top = fillerPosition-68+"vh";
+        }
+        fillerPosition += 12;
+    }
+} 

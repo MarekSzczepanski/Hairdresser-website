@@ -1,15 +1,14 @@
 @import 'variables'
 @import 'mixins'
-@media (min-width: 1000px)
-  *
-    margin: 0
-    padding: 0
-    box-sizing: border-box
-    list-style-type: none
-  ::-webkit-scrollbar  
-    display: none
-  html
-    overflow: hidden
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  list-style-type: none
+::-webkit-scrollbar  
+  display: none
+html
+  overflow: hidden
   body
     background-color: black
     font-family: 'Josefin Sans'
@@ -30,6 +29,7 @@
           font-size: 14vh
           letter-spacing: 0.7vh
           margin-left: 0.7vh
+          z-index: 3
         p:nth-of-type(2)
           font-size: 4.4vh
           letter-spacing: 0.8vh
@@ -37,17 +37,17 @@
           font-size: 1.9vh
           letter-spacing: 0.5vh
           padding-top: 6vh
-        .underline
-          width: 28vw
+        .underline, .underlineCover
+          width: 26vw
           height: 1px
           position: absolute
           top: 37vh
-          left: 36vw
+          left: 37vw
           background-color: beige
           animation: borderColor 4s ease-in 1
-          z-index: 1
+          z-index: -1
         .underlineCover
-          @extend .underline
+          width: 28vw
           background-color: black
           animation: coverColor 3s ease-in 1s forwards
       .headerP
@@ -113,10 +113,17 @@
         border-top: $borders2
       li:hover
         +hover(orchid)
-    #section1, #section2
+    #section1
       height: 100vh
       border-bottom: $borders2
       border-top: $borders2
+      .symbol1
+        width: 8vw
+        height: auto
+        position: absolute
+        top: 101.9vh
+        left: 4vh
+        opacity: 0.6
       .left
         width: 12%
         height: 100%
@@ -130,13 +137,6 @@
           height: 20%
           width: 12%
           z-index: 2
-          img
-            width: 8%
-            height: auto
-            position: fixed
-            top: 1.9vh
-            left: 4vh
-            opacity: 0.6
         .map
           position: fixed
           top: 20vh
@@ -182,7 +182,6 @@
             top: 10vh
             left: 0.55vw
             width: 0.99vw
-            z-index: 0
             background-color: black
             height: 86%
             transition: top 2s
@@ -203,7 +202,6 @@
         width: 50%
         height: 100%
         float: left
-        overflow: hidden
         .sectionHead
           position: absolute
           left: 0
@@ -212,7 +210,7 @@
           padding-left: 12%
           border-bottom: $borders2
           p
-            padding-top: 5vh
+            margin-top: 4%
             font-size: 12vh
             letter-spacing: 0.6vw
             text-align: center
@@ -235,19 +233,24 @@
         float: left
         border-left: $borders3
         .sideImg
-          width: 100%
-          height: 100%
+          position: absolute
+          left: 120vw
+          width: auto
+          height: 100vh
           opacity: .3  
         .credits1
           position: absolute
           width: 65vw
           height: 2vh   
-          top: 198vh
+          top: 193vh
           left: 63vw   
           background-color: black
         .credits2
           @extend .credits1
-          top: 196vh
+          top: 195vh
+        .credits3
+          @extend .credits1
+          top: 197vh
       #arrow
         position: fixed
         top: 5%
@@ -257,8 +260,48 @@
         border: solid 2px beige
         padding: 1.2vh 2vh
         border-radius: 50%
+        z-index: 1
       #arrow:hover
         +hover(undefined)
+    #section2
+      @extend #section1 
+      .symbol2
+        @extend .symbol1
+        top: 202.1vh
+      .center
+        width: 50%
+        .sectionWrap1
+          width: 100%
+          .container
+            padding-top: 0.5vh
+            height: calc(80vh/5)
+            border-bottom: $borders2
+            line-height: 5vh
+            display: flex
+            justify-content: space-around
+            align-items: center
+            div
+              font-size: 3vh
+              height: 5vh
+            .imgContainerRight
+              width: 90%
+              height: 90%
+              margin: .33vw
+            .imgBox
+              width: 13vh
+              height: 13vh
+              border: $borders2
+              margin: 1vh 0
+            .pointing
+              opacity: .6
+              width: 6vw
+              height: 6vw
+      .right
+        float: left
+        width: 20%
+        .sideImg
+          position: absolute
+          left: 120vw
 @keyframes borderColor
     0%
       background-color: black
@@ -266,7 +309,7 @@
       background-color: beige
 @keyframes coverColor
     0%
-      left: 36vw
+      left: 36.5vw
     100%
       left: 65vw
 @keyframes fontColor

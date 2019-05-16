@@ -1,2 +1,3 @@
 1) Keyframes syntax in sass.  
 2) How to prevent responsive issues due to browser window resizing ("resizeIssueFix.js").
+3) Session storage property.

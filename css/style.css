@@ -1,326 +1,442 @@
-@media (min-width: 1000px) {
-  * {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    list-style-type: none;
-  }
-  ::-webkit-scrollbar {
-    display: none;
-  }
-  html {
-    overflow: hidden;
-  }
-  body {
-    background-color: black;
-    font-family: 'Josefin Sans';
-    color: beige;
-    scroll-behavior: smooth;
-  }
-  body header {
-    height: 100vh;
-    text-align: center;
-    -webkit-animation: fontColor 2s ease-in 1;
-            animation: fontColor 2s ease-in 1;
-    background-color: black;
-    border-bottom: solid 1px #222222;
-  }
-  body header .headerWrap {
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-  }
-  body header .headerWrap p:first-of-type {
-    padding-top: 25vh;
-    font-size: 14vh;
-    letter-spacing: 0.7vh;
-    margin-left: 0.7vh;
-  }
-  body header .headerWrap p:nth-of-type(2) {
-    font-size: 4.4vh;
-    letter-spacing: 0.8vh;
-  }
-  body header .headerWrap p:nth-of-type(3) {
-    font-size: 1.9vh;
-    letter-spacing: 0.5vh;
-    padding-top: 6vh;
-  }
-  body header .headerWrap .underline, body header .headerWrap .underlineCover {
-    width: 28vw;
-    height: 1px;
-    position: absolute;
-    top: 37vh;
-    left: 36vw;
-    background-color: beige;
-    -webkit-animation: borderColor 4s ease-in 1;
-            animation: borderColor 4s ease-in 1;
-    z-index: 1;
-  }
-  body header .headerWrap .underlineCover {
-    background-color: black;
-    -webkit-animation: coverColor 3s ease-in 1s forwards;
-            animation: coverColor 3s ease-in 1s forwards;
-  }
-  body header .headerP {
-    -webkit-transition: 1s;
-    transition: 1s;
-    width: 8vw;
-    height: 5vh;
-    font-size: 2.6vh;
-    color: beige;
-    position: fixed;
-    left: 91vw;
-    padding-top: 0.3vh;
-    line-height: 5vh;
-    font-weight: bold;
-    border: solid 1px #999999;
-    text-align: center;
-    z-index: 3;
-  }
-  body header .headerP:hover {
-    cursor: pointer;
-    color: orchid;
-    border: solid 1px #B51FAD;
-  }
-  body header .headerP1 {
-    top: 3vh;
-  }
-  body header .headerP2 {
-    top: 9vh;
-  }
-  body header .headerP3 {
-    top: 15vh;
-  }
-  body header .headerCover {
-    position: absolute;
-    width: 20vw;
-    height: 100vh;
-    background-color: black;
-    z-index: 3;
-  }
-  body header .headerCover2 {
-    position: absolute;
-    left: 60vw;
-    width: 10vw;
-    height: 100vh;
-    background-color: black;
-    z-index: 2;
-  }
-  body header .navBorder {
-    position: absolute;
-    top: 80vh;
-    right: 0;
-    width: 1px;
-    height: 20vh;
-    background-color: black;
-    z-index: 4;
-  }
-  body nav {
-    position: absolute;
-    top: 79.4vh;
-    left: -100%;
-    background-color: black;
-    z-index: 3;
-    -webkit-animation: navToRight 2s linear forwards;
-            animation: navToRight 2s linear forwards;
-  }
-  body nav ul {
-    width: 100vw;
-    height: 20vh;
-    line-height: 20vh;
-    text-align: center;
-    font-size: 3.5vh;
-    letter-spacing: 3px;
-  }
-  body nav li {
-    padding-top: 0.5vh;
-    width: calc(100vw/6);
-    float: left;
-    border-right: solid 1px #222222;
-    border-top: solid 1px #222222;
-  }
-  body nav li:hover {
-    cursor: pointer;
-    color: orchid;
-  }
-  body #section1, body #section2 {
-    height: 100vh;
-    border-bottom: solid 1px #222222;
-    border-top: solid 1px #222222;
-  }
-  body #section1 .left, body #section2 .left {
-    width: 12%;
-    height: 100%;
-    float: left;
-    background-color: black;
-    border-right: solid 1px #222222;
-  }
-  body #section1 .left .symbol, body #section2 .left .symbol {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 20%;
-    width: 12%;
-    z-index: 2;
-  }
-  body #section1 .left .symbol img, body #section2 .left .symbol img {
-    width: 8%;
-    height: auto;
-    position: fixed;
-    top: 1.9vh;
-    left: 4vh;
-    opacity: 0.6;
-  }
-  body #section1 .left .map, body #section2 .left .map {
-    position: fixed;
-    top: 20vh;
-    height: 66%;
-    width: 12%;
-    text-align: center;
-    padding-top: 1%;
-  }
-  body #section1 .left .map .mapNav, body #section2 .left .map .mapNav {
-    float: left;
-    width: 10%;
-    height: 97%;
-  }
-  body #section1 .left .map .mapNav div, body #section2 .left .map .mapNav div {
-    width: 1.1vw;
-    height: 5vh;
-    background-color: #F018E6;
-    opacity: .6;
-    margin-bottom: 6.5vh;
-    margin-left: 0.5vw;
-  }
-  body #section1 .left .map .mapNavBorders, body #section2 .left .map .mapNavBorders {
-    position: fixed;
-    left: 0.5vw;
-    height: 62.5%;
-    width: 1.1vw;
-    z-index: 1;
-  }
-  body #section1 .left .map .mapNavBorders div, body #section2 .left .map .mapNavBorders div {
-    height: 5vh;
-    margin-bottom: 6.5vh;
-    border: solid 1px #555555;
-  }
-  body #section1 .left .map .mapP p, body #section2 .left .map .mapP p {
-    width: 70%;
-    height: 5vh;
-    font-size: 2.6vh;
-    color: beige;
-    margin-bottom: 6.5vh;
-    margin-left: 2.6vw;
-    padding-top: 0.3vh;
-    line-height: 5vh;
-    font-weight: bold;
-    border: solid 1px #555555;
-    -webkit-transition: 2s;
-    transition: 2s;
-  }
-  body #section1 .left .map .mapP p:hover, body #section2 .left .map .mapP p:hover {
-    cursor: pointer;
-    color: orchid;
-  }
-  body #section1 .left .map .filler, body #section1 .left .map .filler2, body #section2 .left .map .filler, body #section2 .left .map .filler2 {
-    position: absolute;
-    top: 10vh;
-    left: 0.55vw;
-    width: 0.99vw;
-    z-index: 0;
-    background-color: black;
-    height: 86%;
-    -webkit-transition: top 2s;
-    transition: top 2s;
-  }
-  body #section1 .left .map .filler2, body #section2 .left .map .filler2 {
-    top: -55vh;
-  }
-  body #section1 .left .logo, body #section2 .left .logo {
-    position: fixed;
-    top: 86vh;
-    height: 14%;
-    width: 12%;
-    border-top: solid 1px #222222;
-  }
-  body #section1 .left .logo img, body #section2 .left .logo img {
-    width: 80%;
-    height: 80%;
-    margin: 6% 10%;
-  }
-  body #section1 .center, body #section2 .center {
-    width: 50%;
-    height: 100%;
-    float: left;
-    overflow: hidden;
-  }
-  body #section1 .center .sectionHead, body #section2 .center .sectionHead {
-    position: absolute;
-    left: 0;
-    width: 62%;
-    height: 20%;
-    padding-left: 12%;
-    border-bottom: solid 1px #222222;
-  }
-  body #section1 .center .sectionHead p, body #section2 .center .sectionHead p {
-    padding-top: 5vh;
-    font-size: 12vh;
-    letter-spacing: 0.6vw;
-    text-align: center;
-  }
-  body #section1 .center .sectionWrap1, body #section1 .center .sectionWrap2, body #section2 .center .sectionWrap1, body #section2 .center .sectionWrap2 {
-    margin-top: 20vh;
-    width: 50%;
-    height: 80vh;
-    float: left;
-  }
-  body #section1 .center .sectionWrap1 h1, body #section1 .center .sectionWrap2 h1, body #section2 .center .sectionWrap1 h1, body #section2 .center .sectionWrap2 h1 {
-    padding: 5vh 0 5vh 4vw;
-  }
-  body #section1 .center .sectionWrap1 p, body #section1 .center .sectionWrap2 p, body #section2 .center .sectionWrap1 p, body #section2 .center .sectionWrap2 p {
-    padding: 0 3vw 3vh;
-    font-size: 3vh;
-  }
-  body #section1 .center .sectionWrap2, body #section2 .center .sectionWrap2 {
-    border-left: solid 1px #222222;
-  }
-  body #section1 .right, body #section2 .right {
-    width: 38%;
-    height: 100%;
-    float: left;
-    border-left: solid 1px #333333;
-  }
-  body #section1 .right .sideImg, body #section2 .right .sideImg {
-    width: 100%;
-    height: 100%;
-    opacity: .3;
-  }
-  body #section1 .right .credits1, body #section1 .right .credits2, body #section2 .right .credits1, body #section2 .right .credits2 {
-    position: absolute;
-    width: 65vw;
-    height: 2vh;
-    top: 198vh;
-    left: 63vw;
-    background-color: black;
-  }
-  body #section1 .right .credits2, body #section2 .right .credits2 {
-    top: 196vh;
-  }
-  body #section1 #arrow, body #section2 #arrow {
-    position: fixed;
-    top: 5%;
-    left: 65%;
-    color: beige;
-    font-size: 4vh;
-    border: solid 2px beige;
-    padding: 1.2vh 2vh;
-    border-radius: 50%;
-  }
-  body #section1 #arrow:hover, body #section2 #arrow:hover {
-    cursor: pointer;
-    color: undefined;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow: hidden;
+}
+
+html body {
+  background-color: black;
+  font-family: 'Josefin Sans';
+  color: beige;
+  scroll-behavior: smooth;
+}
+
+html body header {
+  height: 100vh;
+  text-align: center;
+  -webkit-animation: fontColor 2s ease-in 1;
+          animation: fontColor 2s ease-in 1;
+  background-color: black;
+  border-bottom: solid 1px #222222;
+}
+
+html body header .headerWrap {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+html body header .headerWrap p:first-of-type {
+  padding-top: 25vh;
+  font-size: 14vh;
+  letter-spacing: 0.7vh;
+  margin-left: 0.7vh;
+  z-index: 3;
+}
+
+html body header .headerWrap p:nth-of-type(2) {
+  font-size: 4.4vh;
+  letter-spacing: 0.8vh;
+}
+
+html body header .headerWrap p:nth-of-type(3) {
+  font-size: 1.9vh;
+  letter-spacing: 0.5vh;
+  padding-top: 6vh;
+}
+
+html body header .headerWrap .underline, html body header .headerWrap .underlineCover {
+  width: 26vw;
+  height: 1px;
+  position: absolute;
+  top: 37vh;
+  left: 37vw;
+  background-color: beige;
+  -webkit-animation: borderColor 4s ease-in 1;
+          animation: borderColor 4s ease-in 1;
+  z-index: -1;
+}
+
+html body header .headerWrap .underlineCover {
+  width: 28vw;
+  background-color: black;
+  -webkit-animation: coverColor 3s ease-in 1s forwards;
+          animation: coverColor 3s ease-in 1s forwards;
+}
+
+html body header .headerP {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 8vw;
+  height: 5vh;
+  font-size: 2.6vh;
+  color: beige;
+  position: fixed;
+  left: 91vw;
+  padding-top: 0.3vh;
+  line-height: 5vh;
+  font-weight: bold;
+  border: solid 1px #999999;
+  text-align: center;
+  z-index: 3;
+}
+
+html body header .headerP:hover {
+  cursor: pointer;
+  color: orchid;
+  border: solid 1px #B51FAD;
+}
+
+html body header .headerP1 {
+  top: 3vh;
+}
+
+html body header .headerP2 {
+  top: 9vh;
+}
+
+html body header .headerP3 {
+  top: 15vh;
+}
+
+html body header .headerCover {
+  position: absolute;
+  width: 20vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 3;
+}
+
+html body header .headerCover2 {
+  position: absolute;
+  left: 60vw;
+  width: 10vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 2;
+}
+
+html body header .navBorder {
+  position: absolute;
+  top: 80vh;
+  right: 0;
+  width: 1px;
+  height: 20vh;
+  background-color: black;
+  z-index: 4;
+}
+
+html body nav {
+  position: absolute;
+  top: 79.4vh;
+  left: -100%;
+  background-color: black;
+  z-index: 3;
+  -webkit-animation: navToRight 2s linear forwards;
+          animation: navToRight 2s linear forwards;
+}
+
+html body nav ul {
+  width: 100vw;
+  height: 20vh;
+  line-height: 20vh;
+  text-align: center;
+  font-size: 3.5vh;
+  letter-spacing: 3px;
+}
+
+html body nav li {
+  padding-top: 0.5vh;
+  width: calc(100vw/6);
+  float: left;
+  border-right: solid 1px #222222;
+  border-top: solid 1px #222222;
+}
+
+html body nav li:hover {
+  cursor: pointer;
+  color: orchid;
+}
+
+html body #section1, html body #section2 {
+  height: 100vh;
+  border-bottom: solid 1px #222222;
+  border-top: solid 1px #222222;
+}
+
+html body #section1 .symbol1, html body #section2 .symbol1, html body #section2 .symbol2 {
+  width: 8vw;
+  height: auto;
+  position: absolute;
+  top: 101.9vh;
+  left: 4vh;
+  opacity: 0.6;
+}
+
+html body #section1 .left, html body #section2 .left {
+  width: 12%;
+  height: 100%;
+  float: left;
+  background-color: black;
+  border-right: solid 1px #222222;
+}
+
+html body #section1 .left .symbol, html body #section2 .left .symbol {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 20%;
+  width: 12%;
+  z-index: 2;
+}
+
+html body #section1 .left .map, html body #section2 .left .map {
+  position: fixed;
+  top: 20vh;
+  height: 66%;
+  width: 12%;
+  text-align: center;
+  padding-top: 1%;
+}
+
+html body #section1 .left .map .mapNav, html body #section2 .left .map .mapNav {
+  float: left;
+  width: 10%;
+  height: 97%;
+}
+
+html body #section1 .left .map .mapNav div, html body #section2 .left .map .mapNav div {
+  width: 1.1vw;
+  height: 5vh;
+  background-color: #F018E6;
+  opacity: .6;
+  margin-bottom: 6.5vh;
+  margin-left: 0.5vw;
+}
+
+html body #section1 .left .map .mapNavBorders, html body #section2 .left .map .mapNavBorders {
+  position: fixed;
+  left: 0.5vw;
+  height: 62.5%;
+  width: 1.1vw;
+  z-index: 1;
+}
+
+html body #section1 .left .map .mapNavBorders div, html body #section2 .left .map .mapNavBorders div {
+  height: 5vh;
+  margin-bottom: 6.5vh;
+  border: solid 1px #555555;
+}
+
+html body #section1 .left .map .mapP p, html body #section2 .left .map .mapP p {
+  width: 70%;
+  height: 5vh;
+  font-size: 2.6vh;
+  color: beige;
+  margin-bottom: 6.5vh;
+  margin-left: 2.6vw;
+  padding-top: 0.3vh;
+  line-height: 5vh;
+  font-weight: bold;
+  border: solid 1px #555555;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+html body #section1 .left .map .mapP p:hover, html body #section2 .left .map .mapP p:hover {
+  cursor: pointer;
+  color: orchid;
+}
+
+html body #section1 .left .map .filler, html body #section2 .left .map .filler, html body #section1 .left .map .filler2, html body #section2 .left .map .filler2 {
+  position: absolute;
+  top: 10vh;
+  left: 0.55vw;
+  width: 0.99vw;
+  background-color: black;
+  height: 86%;
+  -webkit-transition: top 2s;
+  transition: top 2s;
+}
+
+html body #section1 .left .map .filler2, html body #section2 .left .map .filler2 {
+  top: -55vh;
+}
+
+html body #section1 .left .logo, html body #section2 .left .logo {
+  position: fixed;
+  top: 86vh;
+  height: 14%;
+  width: 12%;
+  border-top: solid 1px #222222;
+}
+
+html body #section1 .left .logo img, html body #section2 .left .logo img {
+  width: 80%;
+  height: 80%;
+  margin: 6% 10%;
+}
+
+html body #section1 .center, html body #section2 .center {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+html body #section1 .center .sectionHead, html body #section2 .center .sectionHead {
+  position: absolute;
+  left: 0;
+  width: 62%;
+  height: 20%;
+  padding-left: 12%;
+  border-bottom: solid 1px #222222;
+}
+
+html body #section1 .center .sectionHead p, html body #section2 .center .sectionHead p {
+  margin-top: 4%;
+  font-size: 12vh;
+  letter-spacing: 0.6vw;
+  text-align: center;
+}
+
+html body #section1 .center .sectionWrap1, html body #section2 .center .sectionWrap1, html body #section1 .center .sectionWrap2, html body #section2 .center .sectionWrap2 {
+  margin-top: 20vh;
+  width: 50%;
+  height: 80vh;
+  float: left;
+}
+
+html body #section1 .center .sectionWrap1 h1, html body #section2 .center .sectionWrap1 h1, html body #section1 .center .sectionWrap2 h1, html body #section2 .center .sectionWrap2 h1 {
+  padding: 5vh 0 5vh 4vw;
+}
+
+html body #section1 .center .sectionWrap1 p, html body #section2 .center .sectionWrap1 p, html body #section1 .center .sectionWrap2 p, html body #section2 .center .sectionWrap2 p {
+  padding: 0 3vw 3vh;
+  font-size: 3vh;
+}
+
+html body #section1 .center .sectionWrap2, html body #section2 .center .sectionWrap2 {
+  border-left: solid 1px #222222;
+}
+
+html body #section1 .right, html body #section2 .right {
+  width: 38%;
+  height: 100%;
+  float: left;
+  border-left: solid 1px #333333;
+}
+
+html body #section1 .right .sideImg, html body #section2 .right .sideImg {
+  position: absolute;
+  left: 120vw;
+  width: auto;
+  height: 100vh;
+  opacity: .3;
+}
+
+html body #section1 .right .credits1, html body #section2 .right .credits1, html body #section1 .right .credits2, html body #section2 .right .credits2, html body #section1 .right .credits3, html body #section2 .right .credits3 {
+  position: absolute;
+  width: 65vw;
+  height: 2vh;
+  top: 193vh;
+  left: 63vw;
+  background-color: black;
+}
+
+html body #section1 .right .credits2, html body #section2 .right .credits2 {
+  top: 195vh;
+}
+
+html body #section1 .right .credits3, html body #section2 .right .credits3 {
+  top: 197vh;
+}
+
+html body #section1 #arrow, html body #section2 #arrow {
+  position: fixed;
+  top: 5%;
+  left: 65%;
+  color: beige;
+  font-size: 4vh;
+  border: solid 2px beige;
+  padding: 1.2vh 2vh;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+html body #section1 #arrow:hover, html body #section2 #arrow:hover {
+  cursor: pointer;
+  color: undefined;
+}
+
+html body #section2 .symbol2 {
+  top: 202.1vh;
+}
+
+html body #section2 .center {
+  width: 50%;
+}
+
+html body #section2 .center .sectionWrap1, html body #section2 .center .sectionWrap2 {
+  width: 100%;
+}
+
+html body #section2 .center .sectionWrap1 .container, html body #section2 .center .sectionWrap2 .container {
+  padding-top: 0.5vh;
+  height: calc(80vh/5);
+  border-bottom: solid 1px #222222;
+  line-height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html body #section2 .center .sectionWrap1 .container div, html body #section2 .center .sectionWrap2 .container div {
+  font-size: 3vh;
+  height: 5vh;
+}
+
+html body #section2 .center .sectionWrap1 .container .imgContainerRight, html body #section2 .center .sectionWrap2 .container .imgContainerRight {
+  width: 90%;
+  height: 90%;
+  margin: .33vw;
+}
+
+html body #section2 .center .sectionWrap1 .container .imgBox, html body #section2 .center .sectionWrap2 .container .imgBox {
+  width: 13vh;
+  height: 13vh;
+  border: solid 1px #222222;
+  margin: 1vh 0;
+}
+
+html body #section2 .center .sectionWrap1 .container .pointing, html body #section2 .center .sectionWrap2 .container .pointing {
+  opacity: .6;
+  width: 6vw;
+  height: 6vw;
+}
+
+html body #section2 .right {
+  float: left;
+  width: 20%;
+}
+
+html body #section2 .right .sideImg {
+  position: absolute;
+  left: 120vw;
 }
 
 @-webkit-keyframes borderColor {
@@ -343,7 +459,7 @@
 
 @-webkit-keyframes coverColor {
   0% {
-    left: 36vw;
+    left: 36.5vw;
   }
   100% {
     left: 65vw;
@@ -352,7 +468,7 @@
 
 @keyframes coverColor {
   0% {
-    left: 36vw;
+    left: 36.5vw;
   }
   100% {
     left: 65vw;

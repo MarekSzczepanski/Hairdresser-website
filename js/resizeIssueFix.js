@@ -4,7 +4,7 @@ const resizeIssueFix = () => {
         if (document.querySelector(".mapP"+i).style.color === "orchid") {
             document.getElementById("section"+i).scrollIntoView({ 
                 behavior: 'smooth'
-            });
+            })
         }
     }
 }
