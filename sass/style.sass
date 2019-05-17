@@ -21,35 +21,47 @@ html
       background-color: black
       border-bottom: $borders2
       .headerWrap
+        padding-top: 26vh
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
         position: absolute
         width: 100%
         z-index: 3
         p:first-of-type
-          padding-top: 25vh 
-          font-size: 14vh
-          letter-spacing: 0.7vh
+          
+          letter-spacing: 0.3vw
           margin-left: 0.7vh
           z-index: 3
+          
         p:nth-of-type(2)
-          font-size: 4.4vh
-          letter-spacing: 0.8vh
+          letter-spacing: 0.32vw
+
         p:nth-of-type(3)
-          font-size: 1.9vh
-          letter-spacing: 0.5vh
-          padding-top: 6vh
+          letter-spacing: 0.25vw
+
+          margin-top: 2vh
+
+
+          
         .underline, .underlineCover
-          width: 26vw
-          height: 1px
           position: absolute
-          top: 37vh
-          left: 37vw
-          background-color: beige
+          margin-right: 0.25vw
+          height: 0
+          background-color: black
+          border-bottom: solid 1px beige
           animation: borderColor 4s ease-in 1
           z-index: -1
         .underlineCover
-          width: 28vw
-          background-color: black
+          width: 100vw
+          border-bottom: solid 1px black
           animation: coverColor 3s ease-in 1s forwards
+      .adress
+        position: absolute
+        margin: 53vh 0 0 42vw
+        font-size: 2vh
+        letter-spacing: 4px
       .headerP
         transition: 1s
         +pStyle(8vw, 5vh, 2.6vh, beige)
@@ -79,7 +91,7 @@ html
       .headerCover2
         position: absolute
         left: 60vw
-        width: 10vw
+        width: 100vw
         height: 100vh
         background-color: black
         z-index: 2
@@ -103,7 +115,7 @@ html
         height: 20vh
         line-height: 20vh
         text-align: center
-        font-size: 3.5vh
+        
         letter-spacing: 3px
       li
         padding-top: 0.5vh
@@ -113,11 +125,11 @@ html
         border-top: $borders2
       li:hover
         +hover(orchid)
-    #section1
+    #section1, #section2
       height: 100vh
       border-bottom: $borders2
       border-top: $borders2
-      .symbol1
+      .symbol1, .symbol2
         width: 8vw
         height: auto
         position: absolute
@@ -177,7 +189,7 @@ html
               transition: 2s
             p:hover
               +hover(orchid)
-          .filler
+          .filler, .filler2
             position: absolute
             top: 10vh
             left: 0.55vw
@@ -186,7 +198,6 @@ html
             height: 86%
             transition: top 2s
           .filler2
-            @extend .filler
             top: -55vh
         .logo
           position: fixed
@@ -214,7 +225,7 @@ html
             font-size: 12vh
             letter-spacing: 0.6vw
             text-align: center
-        .sectionWrap1
+        .sectionWrap1, .sectionWrap2
           margin-top: 20vh
           width: 50%
           height: 80vh
@@ -225,7 +236,6 @@ html
             padding: 0 3vw 3vh
             font-size: 3vh
         .sectionWrap2
-          @extend .sectionWrap1
           border-left: $borders2
       .right
         width: 38%
@@ -238,7 +248,7 @@ html
           width: auto
           height: 100vh
           opacity: .3  
-        .credits1
+        .credits1, .credits2, .credits3
           position: absolute
           width: 65vw
           height: 2vh   
@@ -246,10 +256,8 @@ html
           left: 63vw   
           background-color: black
         .credits2
-          @extend .credits1
           top: 195vh
         .credits3
-          @extend .credits1
           top: 197vh
       #arrow
         position: fixed
@@ -264,9 +272,7 @@ html
       #arrow:hover
         +hover(undefined)
     #section2
-      @extend #section1 
       .symbol2
-        @extend .symbol1
         top: 202.1vh
       .center
         width: 50%
@@ -288,10 +294,10 @@ html
               height: 90%
               margin: .33vw
             .imgBox
+              margin-bottom: 0.5vh
               width: 13vh
               height: 13vh
               border: $borders2
-              margin: 1vh 0
             .pointing
               opacity: .6
               width: 6vw
@@ -302,16 +308,11 @@ html
         .sideImg
           position: absolute
           left: 120vw
-@keyframes borderColor
-    0%
-      background-color: black
-    100%
-      background-color: beige
 @keyframes coverColor
     0%
-      left: 36.5vw
+      left: 15vw
     100%
-      left: 65vw
+      left: 100vw
 @keyframes fontColor
     0%
       color: black
@@ -322,3 +323,100 @@ html
       left: -100%
     100%
       left: 0
+
+@media (max-height: 500px)
+  .headerWrap
+    p:first-of-type
+      font-size: 6.5vw
+    p:nth-of-type(2)
+      font-size: 2.1vw
+    p:nth-of-type(3)
+      font-size: 1vw
+  .underline, .underlineCover
+    width: 25.5vw
+  ul
+    font-size: 5vh
+@media (min-width: 1025px) and (max-height: 460px) and (max-width: 1150px) and (min-height: 300px)
+  .headerWrap
+    p:first-of-type
+      font-size: 8vw
+    p:nth-of-type(2)
+      font-size: 2.7vw
+    p:nth-of-type(3)
+      font-size: 1.1vw
+  .underline, .underlineCover
+    width: 31.3vw
+  ul
+    font-size: 5vh
+@media (min-width: 1025px) and (min-height: 460px)
+  .headerWrap
+    p:first-of-type
+      font-size: 8vw
+    p:nth-of-type(2)
+      font-size: 2.7vw
+    p:nth-of-type(3)
+      font-size: 1.1vw
+  .underline, .underlineCover
+    width: 31.3vw
+  ul
+    font-size: 4vh
+@media (max-width: 1280px) and (min-height: 580px) and (min-width: 1025px)
+  .headerWrap
+    p:first-of-type
+      font-size: 8vw
+    p:nth-of-type(2)
+      font-size: 2.7vw
+    p:nth-of-type(3)
+      font-size: 1.3vw
+  .underline, .underlineCover
+    width: 31.3vw
+  ul
+    font-size: 3.3vh
+@media (min-width: 1270px) and (min-height: 310px)
+  .headerWrap
+    p:first-of-type
+      font-size: 6vw
+    p:nth-of-type(2)
+      font-size: 1.8vw
+    p:nth-of-type(3)
+      font-size: 0.9vw
+  .underline, .underlineCover
+    width: 23.5vw
+  ul
+    font-size: 6vh
+@media (min-width: 1270px) and (min-height: 400px)
+  .headerWrap
+    p:first-of-type
+      font-size: 8vw
+    p:nth-of-type(2)
+      font-size: 2.7vw
+    p:nth-of-type(3)
+      font-size: 1.2vw
+  .underline, .underlineCover
+    width: 31.3vw
+  ul
+    font-size: 5vh
+@media (min-width: 1270px) and (min-height: 510px)
+  .headerWrap
+    p:first-of-type
+      font-size: 8vw
+    p:nth-of-type(2)
+      font-size: 2.7vw
+    p:nth-of-type(3)
+      font-size: 1vw
+  .underline, .underlineCover
+    width: 31.3vw
+  ul
+    font-size: 3.5vh
+@media (min-width: 1500px) and (min-height: 640px)
+  .headerWrap
+    p:first-of-type
+      font-size: 6.5vw
+    p:nth-of-type(2)
+      font-size: 2.1vw
+    p:nth-of-type(3)
+      font-size: 0.9vw
+  .underline, .underlineCover
+    width: 26vw
+  ul
+    font-size: 3.5vh

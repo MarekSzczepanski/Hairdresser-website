@@ -31,47 +31,62 @@ html body header {
 }
 
 html body header .headerWrap {
+  padding-top: 26vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   width: 100%;
   z-index: 3;
 }
 
 html body header .headerWrap p:first-of-type {
-  padding-top: 25vh;
-  font-size: 14vh;
-  letter-spacing: 0.7vh;
+  letter-spacing: 0.3vw;
   margin-left: 0.7vh;
   z-index: 3;
 }
 
 html body header .headerWrap p:nth-of-type(2) {
-  font-size: 4.4vh;
-  letter-spacing: 0.8vh;
+  letter-spacing: 0.32vw;
 }
 
 html body header .headerWrap p:nth-of-type(3) {
-  font-size: 1.9vh;
-  letter-spacing: 0.5vh;
-  padding-top: 6vh;
+  letter-spacing: 0.25vw;
+  margin-top: 2vh;
 }
 
 html body header .headerWrap .underline, html body header .headerWrap .underlineCover {
-  width: 26vw;
-  height: 1px;
   position: absolute;
-  top: 37vh;
-  left: 37vw;
-  background-color: beige;
+  margin-right: 0.25vw;
+  height: 0;
+  background-color: black;
+  border-bottom: solid 1px beige;
   -webkit-animation: borderColor 4s ease-in 1;
           animation: borderColor 4s ease-in 1;
   z-index: -1;
 }
 
 html body header .headerWrap .underlineCover {
-  width: 28vw;
-  background-color: black;
+  width: 100vw;
+  border-bottom: solid 1px black;
   -webkit-animation: coverColor 3s ease-in 1s forwards;
           animation: coverColor 3s ease-in 1s forwards;
+}
+
+html body header .adress {
+  position: absolute;
+  margin: 53vh 0 0 42vw;
+  font-size: 2vh;
+  letter-spacing: 4px;
 }
 
 html body header .headerP {
@@ -120,7 +135,7 @@ html body header .headerCover {
 html body header .headerCover2 {
   position: absolute;
   left: 60vw;
-  width: 10vw;
+  width: 100vw;
   height: 100vh;
   background-color: black;
   z-index: 2;
@@ -151,7 +166,6 @@ html body nav ul {
   height: 20vh;
   line-height: 20vh;
   text-align: center;
-  font-size: 3.5vh;
   letter-spacing: 3px;
 }
 
@@ -174,7 +188,7 @@ html body #section1, html body #section2 {
   border-top: solid 1px #222222;
 }
 
-html body #section1 .symbol1, html body #section2 .symbol1, html body #section2 .symbol2 {
+html body #section1 .symbol1, html body #section1 .symbol2, html body #section2 .symbol1, html body #section2 .symbol2 {
   width: 8vw;
   height: auto;
   position: absolute;
@@ -258,7 +272,7 @@ html body #section1 .left .map .mapP p:hover, html body #section2 .left .map .ma
   color: orchid;
 }
 
-html body #section1 .left .map .filler, html body #section2 .left .map .filler, html body #section1 .left .map .filler2, html body #section2 .left .map .filler2 {
+html body #section1 .left .map .filler, html body #section1 .left .map .filler2, html body #section2 .left .map .filler, html body #section2 .left .map .filler2 {
   position: absolute;
   top: 10vh;
   left: 0.55vw;
@@ -309,18 +323,18 @@ html body #section1 .center .sectionHead p, html body #section2 .center .section
   text-align: center;
 }
 
-html body #section1 .center .sectionWrap1, html body #section2 .center .sectionWrap1, html body #section1 .center .sectionWrap2, html body #section2 .center .sectionWrap2 {
+html body #section1 .center .sectionWrap1, html body #section1 .center .sectionWrap2, html body #section2 .center .sectionWrap1, html body #section2 .center .sectionWrap2 {
   margin-top: 20vh;
   width: 50%;
   height: 80vh;
   float: left;
 }
 
-html body #section1 .center .sectionWrap1 h1, html body #section2 .center .sectionWrap1 h1, html body #section1 .center .sectionWrap2 h1, html body #section2 .center .sectionWrap2 h1 {
+html body #section1 .center .sectionWrap1 h1, html body #section1 .center .sectionWrap2 h1, html body #section2 .center .sectionWrap1 h1, html body #section2 .center .sectionWrap2 h1 {
   padding: 5vh 0 5vh 4vw;
 }
 
-html body #section1 .center .sectionWrap1 p, html body #section2 .center .sectionWrap1 p, html body #section1 .center .sectionWrap2 p, html body #section2 .center .sectionWrap2 p {
+html body #section1 .center .sectionWrap1 p, html body #section1 .center .sectionWrap2 p, html body #section2 .center .sectionWrap1 p, html body #section2 .center .sectionWrap2 p {
   padding: 0 3vw 3vh;
   font-size: 3vh;
 }
@@ -344,7 +358,7 @@ html body #section1 .right .sideImg, html body #section2 .right .sideImg {
   opacity: .3;
 }
 
-html body #section1 .right .credits1, html body #section2 .right .credits1, html body #section1 .right .credits2, html body #section2 .right .credits2, html body #section1 .right .credits3, html body #section2 .right .credits3 {
+html body #section1 .right .credits1, html body #section1 .right .credits2, html body #section1 .right .credits3, html body #section2 .right .credits1, html body #section2 .right .credits2, html body #section2 .right .credits3 {
   position: absolute;
   width: 65vw;
   height: 2vh;
@@ -386,11 +400,11 @@ html body #section2 .center {
   width: 50%;
 }
 
-html body #section2 .center .sectionWrap1, html body #section2 .center .sectionWrap2 {
+html body #section2 .center .sectionWrap1 {
   width: 100%;
 }
 
-html body #section2 .center .sectionWrap1 .container, html body #section2 .center .sectionWrap2 .container {
+html body #section2 .center .sectionWrap1 .container {
   padding-top: 0.5vh;
   height: calc(80vh/5);
   border-bottom: solid 1px #222222;
@@ -405,25 +419,25 @@ html body #section2 .center .sectionWrap1 .container, html body #section2 .cente
           align-items: center;
 }
 
-html body #section2 .center .sectionWrap1 .container div, html body #section2 .center .sectionWrap2 .container div {
+html body #section2 .center .sectionWrap1 .container div {
   font-size: 3vh;
   height: 5vh;
 }
 
-html body #section2 .center .sectionWrap1 .container .imgContainerRight, html body #section2 .center .sectionWrap2 .container .imgContainerRight {
+html body #section2 .center .sectionWrap1 .container .imgContainerRight {
   width: 90%;
   height: 90%;
   margin: .33vw;
 }
 
-html body #section2 .center .sectionWrap1 .container .imgBox, html body #section2 .center .sectionWrap2 .container .imgBox {
+html body #section2 .center .sectionWrap1 .container .imgBox {
+  margin-bottom: 0.5vh;
   width: 13vh;
   height: 13vh;
   border: solid 1px #222222;
-  margin: 1vh 0;
 }
 
-html body #section2 .center .sectionWrap1 .container .pointing, html body #section2 .center .sectionWrap2 .container .pointing {
+html body #section2 .center .sectionWrap1 .container .pointing {
   opacity: .6;
   width: 6vw;
   height: 6vw;
@@ -439,39 +453,21 @@ html body #section2 .right .sideImg {
   left: 120vw;
 }
 
-@-webkit-keyframes borderColor {
-  0% {
-    background-color: black;
-  }
-  100% {
-    background-color: beige;
-  }
-}
-
-@keyframes borderColor {
-  0% {
-    background-color: black;
-  }
-  100% {
-    background-color: beige;
-  }
-}
-
 @-webkit-keyframes coverColor {
   0% {
-    left: 36.5vw;
+    left: 15vw;
   }
   100% {
-    left: 65vw;
+    left: 100vw;
   }
 }
 
 @keyframes coverColor {
   0% {
-    left: 36.5vw;
+    left: 15vw;
   }
   100% {
-    left: 65vw;
+    left: 100vw;
   }
 }
 
@@ -508,6 +504,150 @@ html body #section2 .right .sideImg {
   }
   100% {
     left: 0;
+  }
+}
+
+@media (max-height: 500px) {
+  .headerWrap p:first-of-type {
+    font-size: 6.5vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2.1vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1vw;
+  }
+  .underline, .underlineCover {
+    width: 25.5vw;
+  }
+  ul {
+    font-size: 5vh;
+  }
+}
+
+@media (min-width: 1025px) and (max-height: 460px) and (max-width: 1150px) and (min-height: 300px) {
+  .headerWrap p:first-of-type {
+    font-size: 8vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2.7vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.1vw;
+  }
+  .underline, .underlineCover {
+    width: 31.3vw;
+  }
+  ul {
+    font-size: 5vh;
+  }
+}
+
+@media (min-width: 1025px) and (min-height: 460px) {
+  .headerWrap p:first-of-type {
+    font-size: 8vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2.7vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.1vw;
+  }
+  .underline, .underlineCover {
+    width: 31.3vw;
+  }
+  ul {
+    font-size: 4vh;
+  }
+}
+
+@media (max-width: 1280px) and (min-height: 580px) and (min-width: 1025px) {
+  .headerWrap p:first-of-type {
+    font-size: 8vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2.7vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.3vw;
+  }
+  .underline, .underlineCover {
+    width: 31.3vw;
+  }
+  ul {
+    font-size: 3.3vh;
+  }
+}
+
+@media (min-width: 1270px) and (min-height: 310px) {
+  .headerWrap p:first-of-type {
+    font-size: 6vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 1.8vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 0.9vw;
+  }
+  .underline, .underlineCover {
+    width: 23.5vw;
+  }
+  ul {
+    font-size: 6vh;
+  }
+}
+
+@media (min-width: 1270px) and (min-height: 400px) {
+  .headerWrap p:first-of-type {
+    font-size: 8vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2.7vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.2vw;
+  }
+  .underline, .underlineCover {
+    width: 31.3vw;
+  }
+  ul {
+    font-size: 5vh;
+  }
+}
+
+@media (min-width: 1270px) and (min-height: 510px) {
+  .headerWrap p:first-of-type {
+    font-size: 8vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2.7vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1vw;
+  }
+  .underline, .underlineCover {
+    width: 31.3vw;
+  }
+  ul {
+    font-size: 3.5vh;
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 640px) {
+  .headerWrap p:first-of-type {
+    font-size: 6.5vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2.1vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 0.9vw;
+  }
+  .underline, .underlineCover {
+    width: 26vw;
+  }
+  ul {
+    font-size: 3.5vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
