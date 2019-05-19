@@ -1,8 +1,17 @@
-=pStyle($width, $height, $fontSize, $color)
+=pStyle($left, $width, $height, $fontSize, $color, $lineHeight, $letterSpacing)
+    left: $left
     width: $width
     height: $height
     font-size: $fontSize
     color: $color
+    line-height: $lineHeight
+    letter-spacing: $letterSpacing
 =hover($color)
     cursor: pointer
     color: $color
+=mediaUl($height, $fontSize, $lineHeight, $letterSpacing)
+    height: $height
+    font-size: $fontSize
+    line-height: $lineHeight
+    letter-spacing: $letterSpacing
+
