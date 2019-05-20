@@ -1,4 +1,5 @@
 1) Keyframes syntax in sass.  
 2) How to prevent responsive issues due to browser window resizing ("resizeIssueFix.js").
 3) Session storage property.  
-4) Lower contrast between element's border and background makes the borders look thinner.
+4) Lower contrast between element's border and background makes the borders look thinner.  
+5) How to use conditional statements with media querries in JS.

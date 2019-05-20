@@ -1,5 +1,4 @@
 let selected = sessionStorage.getItem('selectedSection');
-let selectedImage = sessionStorage.getItem('image');
 const moveToSection = (e) => {
     let fillerScroll = 12;
     this.newAnimations = new Animations;
@@ -11,12 +10,11 @@ const moveToSection = (e) => {
     }
     for (let i=1; i<7; i++) {
         if (e.target.id == i) {
-            const doAnimationsImg = this.newAnimations.animation(document.getElementById("image"+i), "left", "120vw", "62vw", 1000)
+            const doAnimationsImg = this.newAnimations.animation(document.getElementById("image"+i), "marginLeft", "80vw", "0", 1000);
             document.getElementById("section"+i).scrollIntoView({ 
                 behavior: 'smooth'
             });
             sessionStorage.setItem('selectedSection', e.target.id);
-            sessionStorage.setItem('image', "yes");
             if (i === 1) {
                 const doAnimationsSymbol2 = this.newAnimations.animation(document.querySelector(".symbol"+1), "top", "-20vh", "101.9vh", 1000)
             }
@@ -26,12 +24,10 @@ const moveToSection = (e) => {
             document.querySelector(".filler").style.top = fillerScroll-4+"vh";
             document.querySelector(".mapP"+i).style.border = "solid #B51FAD 1px";
             document.querySelector(".mapP"+i).style.color = "orchid";
-            for (let j=1; j<i; j++) {
-                document.querySelector(".filler2").style.top = (fillerScroll-72)+"vh";
-            }
+            document.querySelector(".filler2").style.top = (fillerScroll-72)+"vh";
         }
         fillerScroll += 12;
-    }
+    }    
     selected = null;
 }
 document.querySelector("nav").addEventListener("click", moveToSection);
@@ -51,7 +47,6 @@ document.getElementById("arrow").addEventListener("click", moveToTop);
 if (selected !== null) { 
     document.querySelector(".mapP"+selected).style.color = "orchid";
     document.querySelector(".mapP"+selected).style.border = "solid 1px #F018E6";
-    document.getElementById("image"+selected).style.left = "62vw";
     let fillerPosition = 8;
     let filler2Position = -55
     for (let i=1; i<7; i++) {
