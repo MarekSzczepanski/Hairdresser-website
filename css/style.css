@@ -673,7 +673,7 @@ html body #section2 .right .sideImg {
   #section1 .left .map, #section2 .left .map {
     width: 15vw;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 90%;
@@ -682,13 +682,13 @@ html body #section2 .right .sideImg {
     color: beige;
     line-height: 8vh;
     letter-spacing: 1.6px;
-    margin: 2.7vh 0 1.9vh 0.9vw;
+    margin: 0 0 0 0.7vw;
   }
   #section1 .left .logo, #section2 .left .logo {
     width: 15vw;
   }
   #section1 .center, #section2 .center {
-    width: 75%;
+    width: 85%;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
     width: 50%;
@@ -755,7 +755,7 @@ html body #section2 .right .sideImg {
     width: 15vw;
   }
   #section1 .center, #section2 .center {
-    width: 75%;
+    width: 85%;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
     padding: 0 0 0 15.4vw;
@@ -852,7 +852,10 @@ html body #section2 .right .sideImg {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-firection: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     position: absolute;
@@ -880,6 +883,9 @@ html body #section2 .right .sideImg {
   }
   #section1 .left .logo, #section2 .left .logo {
     width: 17vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 83%;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
     padding: 2.5vh 0 0 15.5vw;
@@ -955,7 +961,7 @@ html body #section2 .right .sideImg {
     font-size: 75px;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 3.5vh;
+    font-size: 3.4vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
     font-size: 2.7vh;
@@ -2276,7 +2282,7 @@ html body #section2 .right .sideImg {
     font-size: 17vh;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 5vh;
+    font-size: 4.6vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
     font-size: 3vh;
