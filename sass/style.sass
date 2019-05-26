@@ -153,29 +153,34 @@ html
           text-align: center
           
           .mapNav
-            float: left
-            width: 10%
-            height: 97%
+            flex-direction: column
+            justify-content: space-around
+            width: 15%
+            height: 100%
             div
-              width: 1.1vw
               height: 5vh
               background-color: #F018E6
               opacity: .6
-              margin: .7vh 0 6.5vh .5vw
+              margin-left: .5vw
+              
           .mapNavBorders
+            display: flex
+            flex-direction: column
+            justify-content: space-around
             position: fixed
             left: 0.5vw
-            height: 62.5%
+            height: 66%
             width: 1.1vw
             z-index: 1
             div
               height: 5vh
-              margin-bottom: 6.5vh
               border: $borders5  
           
           .mapP
-
-
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            height: 66vh
             width: 100%
             p
               
@@ -190,8 +195,8 @@ html
             top: 10vh
             left: 0.55vw
             width: 1vw
-            background-color: black
             height: 87.6%
+            background-color: black
             transition: top 2s
           .filler2
             top: -55vh
@@ -240,9 +245,8 @@ html
         .sectionWrap2
           
       .right
-        
         height: 100%
-        float: left
+        
         border-left: $borders3
         .sideImg
           position: absolute
@@ -366,10 +370,15 @@ html
         width: 20vw
         .mapNav
           display: none
+          height: 100%
+          div
+            width: 1.1vw
         .mapNavBorders
-          display: none
-        .mapPp
-          +pStyle(50px, undefined, 90%, 8vh, 2.7vh, beige, 8vh, 1.6px, 2.7vh 0 1.9vh .9vw)
+          div
+            display: none
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 90%, 8vh, 2.7vh, beige, 8vh, 1.6px, 0vh 0 0 .9vw)
         .filler, .filler2
           display: none
       .logo
@@ -399,6 +408,7 @@ html
       .sectionWrap2
         border-left: $borders2
     .right
+      float: left
       display: none
       .sideImg
         display: none
@@ -561,12 +571,19 @@ html
       .map
         width: 17vw
         .mapNav
+          display: flex
+          flex-firection: column
+          justify-content: space-around
           position: absolute
-          display: block
+          div
+            display: block
+            margin-left: .5vw
         .mapNavBorders
-          display: block
-        .mapPp
-          +pStyle(50px, undefined, 76%, 5vh, 15px, beige, 5vh, 1.6px, 6.5vh 0 6.4vh 2.9vw)
+          div
+            display: block
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 75%, 5vh, 15px, beige, 5vh, 1.6px, 0 0 0 2.9vw)
         .filler, .filler2
           display: block
       .logo
@@ -583,7 +600,7 @@ html
           font-size: 3.2vh
   *
     color: cadetblue
-@media (min-width: 1000px) and (min-height: 400px) and (max-width: 1400px)
+@media (min-width: 1000px) and (min-height: 400px) and (max-width: 1420px)
   .headerWrap
     p:first-of-type
       font-size: 7vw
@@ -667,8 +684,9 @@ html
         width: 12vw
       .map
         width: 12vw
-        .mapPp
-          +pStyle(50px, undefined, 69%, 5vh, 18px, beige, 5vh, 1.6px, 6.5vh 0 6.4vh 2.9vw) 
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 70%, 5vh, 18px, beige, 5vh, 1.6px, 0 0 0 2.9vw)
       .logo
         width: 12vw
     .center
@@ -707,12 +725,6 @@ html
     font-size: 3.8vh
   .headerP
    display: none
-  .headerP1
-    top: 1vh
-  .headerP2
-    top: 7vh
-  .headerP3
-    top: 13vh
   nav
     top: 69.8vh
     ul
@@ -728,21 +740,27 @@ html
       left: 4vh
       display: none
     .left
-      width: 27vw
+      width: 25vw
+      .symbol 
+        width: 25vw
       .map
-        padding-top: 1.5%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        width: 25vw
         .mapNav
           display: none
         .mapNavBorders
           display: none
-        .mapPp
-          +pStyle(undefined, undefined, 210%, 8vh, 2vh, beige, 8vh, 1.6px, .8vw)
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 90%, 8vh, 10px, beige, 8vh, 1.1px, 0 0 0 .9vw)
         .filler, .filler2
           display: none
       .logo
-        width: 27%
+        width: 25%
     .center
-      width: 73%
+      width: 75%
       .sectionHead
         left: -16%
         width: 116%
@@ -767,7 +785,7 @@ html
           display: flex
           flex-direction: column
           top: 130vh
-          left: 28.6vw
+          left: 26.6vw
           width: 5vw
           height: 35%
           img
@@ -775,13 +793,13 @@ html
             height: 3vh
             margin-bottom: .8vh
           img:first-of-type
-            margin-bottom: .7vh
+            margin-bottom: .8vh
           img:nth-of-type(2)
             margin-bottom: 4.3vh
           img:nth-of-type(8)
             margin-bottom: 12.3vh
           img:nth-of-type(10)
-            margin-bottom: 3.7vh
+            margin-bottom: .7vh
         p 
           padding: 0 3vw 1vh 8vw
           font-size: 2.8vh
@@ -793,9 +811,6 @@ html
           margin-top: 2vh
           padding: 3vh 3vw 2.8vh 0
           border-top: $borders2
-
-    #arrow
-
   *
     color: gray
 @media (min-width: 319px) and (min-height: 567px) and (orientation: portrait) // iPhone 5/SE
@@ -820,9 +835,7 @@ html
           img:nth-of-type(9)
             margin-bottom: .9vh
           img:nth-of-type(10)
-            margin-bottom: 3.2vh
-          img:nth-of-type(11)
-            margin-bottom: 3.4vh
+            margin-bottom: 3.1vh
         p 
           padding: 0 3vw 1vh 8vw
           font-size: 2.7vh
@@ -834,15 +847,17 @@ html
           margin-top: 2vh
           padding: 3vh 3vw 2.8vh 0
           border-top: $borders2
-
-    #arrow
-
   *
     color: green
 @media (min-width: 359px) and (min-height: 639px) and (orientation: portrait) // Galaxy S5
   .burger
     top: 1%
   #section1, #section2
+    .left
+      .map
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 90%, 8vh, 12px, beige, 8vh, 1.1px, 0 0 0 .9vw)
     .center
       .sectionHead
         p
@@ -857,17 +872,17 @@ html
           img:first-of-type
             margin-bottom: .8vh
           img:nth-of-type(2)
-            margin-bottom: 3.7vh
+            margin-bottom: 3.5vh
           img:nth-of-type(6)
             margin-bottom: .7vh
           img:nth-of-type(7)
             margin-bottom: .7vh
           img:nth-of-type(8)
-            margin-bottom: 13.6vh
+            margin-bottom: 13.9vh
           img:nth-of-type(10)
-            margin-bottom: 3.2vh
+            margin-bottom: 3vh
           img:nth-of-type(11)
-            margin-bottom: 3.2vh
+            margin-bottom: .6vh
         p 
           font-size: 2.7vh
         p:last-of-type
@@ -894,7 +909,7 @@ html
           img:nth-of-type(10)
             margin-bottom: 3.5vh
           img:nth-of-type(11)
-            margin-bottom: 3.4vh
+            margin-bottom: .4vh
         p 
           font-size: 2.7vh
         p:last-of-type
@@ -938,9 +953,11 @@ html
     .left
       width: 30vw
       .map
-        padding-top: 1.7%
-        .mapPp
-          +pStyle(undefined, undefined,  232%, 8vh, 1.9vh, beige, 8vh, 1.5px, .8vw)
+        width: 30vw
+        padding-top: 0
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 90%, 8vh, 14px, beige, 8vh, 1.6px, 0 0 0 1.3vw)
       .logo
         width: 30%
     .center
@@ -1001,12 +1018,15 @@ html
           margin-top: 2vh
           padding: 3vh 3vw 2.8vh 0
           border-top: $borders2
-    #arrow
-
   *
     color: yellow
 @media (min-width: 410px) and (min-height: 730px) and (orientation: portrait) // Pixel 2
   #section1, #section2
+    .left
+      .map
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 90%, 8vh, 13px, beige, 8vh, 1.4px, 0 0 0 1.3vw)
     .center
       .sectionHead
         p
@@ -1024,7 +1044,7 @@ html
           img:nth-of-type(10)
             margin-bottom: 3.4vh
           img:nth-of-type(11)
-            margin-bottom: 3.4vh
+            margin-bottom: .8vh
         p 
           font-size: 2.7vh
         p:last-of-type
@@ -1063,13 +1083,14 @@ html
         padding-top: 0.5vh
   #section1, #section2
     .left
-      width: 30vw
+      width: 25vw
       .map
+        width: 25vw
         padding-top: 1.7%
         .mapPp
-          +pStyle(undefined, undefined, 232%, 8vh, 1.9vh, beige, 8vh, 1.5px, .8vw)
+          +pStyle(50px, undefined, 90%, 8vh, 13px, beige, 8vh, 1.3px, 2.7vh 0 2.7vh 1.3vw)
       .logo
-        width: 30%
+        width: 25%
     .center
       width: 70%
       .sectionHead
@@ -1095,7 +1116,7 @@ html
           display: flex
           flex-direction: column
           top: 129.3vh
-          left: 32vw
+          left: 28vw
           img
             display: block
             height: 3vh
@@ -1141,71 +1162,6 @@ html
             margin-bottom: .7vh
   *
     color: cadetblue
-@media (min-width: 532px) and (min-height: 319px) and (max-height: 415px) and (max-width: 732px) and (orientation: landscape) // Nokia Lumia
-  .headerWrap
-    p:first-of-type
-      font-size: 11vw
-    p:nth-of-type(2)
-      font-size: 3.8vw
-    p:nth-of-type(3)
-      font-size: 1.9vw
-  .underline, .underlineCover
-    width: 41.7vw
-    left: 29vw
-  .burger
-    top: 1vh
-    left: 96vw
-    font-size: 6vh
-  .headerP
-    display: none
-  .headerP1
-    top: 4vh
-  .headerP2
-    top: 14vh
-  .headerP3
-    top: 24vh
-  nav
-    top: 79.4vh
-    ul
-      +mediaUl(20vh, 3.8vh, 20vh, .4px)
-      li
-        width: calc(100vw/6)
-        height: 20vh
-        padding-top: 0.5vh
-  #section1, #section2
-    .symbol1, .symbol2
-      width: 17vh
-      left: 6.3vh
-      display: block
-    .left
-      width: 17vw
-      .map
-        padding-top: 1.2%
-        .mapNav
-          display: block
-        .mapNavBorders
-          display: block
-        .mapPp
-          +pStyle(undefined, undefined, 113%, 5vh, 3vh, beige, 4.7vh, .2vw, 2.8vw)
-        .filler, .filler2
-          display: block
-      .logo
-        width: 17%
-    .center
-      .sectionHead
-        p
-          margin-top: 1%
-          margin-left: 6%
-          font-size: 16vh
-      .sectionWrap1, .sectionWrap2
-        h1
-          font-size: 5vh
-        p
-          font-size: 4vh
-    #arrow
-
-  *
-    color: yellowgreen
 @media (min-width: 599px) and (min-height: 959px) and (max-height: 1025px) and (orientation: portrait) // Asus Nexus 7"
   .headerWrap
     p:first-of-type
@@ -1239,9 +1195,11 @@ html
     .left
       width: 30vw
       .map
-        padding-top: 1.5%
-        .mapPp
-          +pStyle(undefined, undefined, 232%, 8vh, 2.6vh, beige, 8vh, 1.9px, .8vw)
+        width: 30vw
+        padding-top: .6%
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 90%, 8vh, 24px, beige, 8vh, 1.3px, 0 0 0 1.3vw)
       .logo
         width: 30%
     .center
@@ -1278,7 +1236,7 @@ html
           img:nth-of-type(2)
             margin-bottom: 3.7vh
           img:nth-of-type(3)
-            margin-bottom: .5vh
+            margin-bottom: .8vh
           img:nth-of-type(4)
             margin-bottom: .7vh
           img:nth-of-type(5)
@@ -1288,7 +1246,7 @@ html
           img:nth-of-type(8)
             margin-bottom: 13.5vh
           img:nth-of-type(9)
-            margin-bottom: 1vh
+            margin-bottom: .7vh
           img:nth-of-type(10)
             margin-bottom: .5vh
           img:nth-of-type(11)
@@ -1303,25 +1261,99 @@ html
           margin-top: 2vh
           padding: 3vh 3vw 2.8vh 0
           border-top: $borders2
-    #arrow
-
   *
     color: lightblue
+@media (min-width: 532px) and (min-height: 319px) and (max-height: 415px) and (max-width: 732px) and (orientation: landscape) // Nokia Lumia
+  .headerWrap
+    p:first-of-type
+      font-size: 11vw
+    p:nth-of-type(2)
+      font-size: 3.8vw
+    p:nth-of-type(3)
+      font-size: 1.9vw
+  .underline, .underlineCover
+    width: 41.7vw
+    left: 29vw
+  .burger
+    top: 1vh
+    left: 96vw
+    font-size: 6vh
+  .headerP
+    display: none
+  .headerP1
+    top: 4vh
+  .headerP2
+    top: 14vh
+  .headerP3
+    top: 24vh
+  nav
+    top: 79.4vh
+    ul
+      +mediaUl(20vh, 3.8vh, 20vh, .4px)
+      li
+        width: calc(100vw/6)
+        height: 20vh
+        padding-top: 0.5vh
+  #section1, #section2
+    .symbol1, .symbol2
+      width: 17vh
+      left: 4.5vh
+      display: block
+    .left
+      width: 15vw
+      .symbol
+        width: 15vw
+      .map
+        width: 15vw
+        .mapNav
+          display: flex
+          position: absolute
+        .mapNavBorders
+          div
+            display: block
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 78%, 5vh, 10px, beige, 15px, 0, 0 0 0 2.9vw)
+        .filler, .filler2
+          display: block
+      .logo
+        width: 15vw
+    .center
+      .sectionHead
+        padding: 0 0 0 15.4vw
+        p
+          margin-top: 1%
+          font-size: 16vh
+      .sectionWrap1, .sectionWrap2
+        h1
+          font-size: 5vh
+        p
+          font-size: 4vh
+  *
+    color: yellowgreen
 @media (min-width: 639px) and (min-height: 359px) and (max-width: 641px) and (orientation: landscape) // Galaxy S5
   #section1, #section2
     .symbol1, .symbol2
-      left: 6.5vw
+      left: 2.7vw
+    .left
+      .map
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 76%, 5vh, 11px, beige, 17px, .5px, 0 0 0 2.9vw)
     #arrow
   *
     color: green
-@media (min-width: 730px) and (min-height: 410px) and (orientation: landscape) // Pixel 2
+@media (min-width: 730px) and (min-height: 410px) and (max-width: 732px) and (orientation: landscape) // Pixel 2
   #section1, #section2
+    .left
+      .map
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 76%, 5vh, 11px, beige, 19px, 1.2px, 0 0 0 2.9vw)
     .center
       .sectionHead
         p
           margin-top: 2.5%
-    #arrow
-
 @media (min-width: 735px) and (min-height: 413px) and (max-height: 415px) and (orientation: landscape) // iPhone 6/7/8 Plus
   .headerWrap
     p:first-of-type
@@ -1361,22 +1393,25 @@ html
     .left
       width: 17vw
       .map
-        padding-top: 1.2%
+        width: 17vw
         .mapNav
-          display: block
+          display: flex
+          position: absolute
         .mapNavBorders
-          display: block
-        .mapPp
-          +pStyle(undefined, undefined, 113%, 5vh, 3vh, beige, 4.7vh, .2vw, 2.8vw)
-        .filler, .filler2
+          div
+            display: block
+        .mapP
+          .mapPp
+            +pStyle(50px, undefined, 78%, 5vh, 14px, beige, 19px, 1px, 0 0 0 2.9vw)
+        .filler
           display: block
       .logo
         width: 17%
     .center
       .sectionHead
+        padding: 0 0 0 17.4vw
         p
           margin-top: 1.5%
-          margin-left: 6%
           font-size: 17vh
       .sectionWrap1, .sectionWrap2
         h1
@@ -1387,8 +1422,13 @@ html
 
   *
     color: crimson  
-@media (min-width: 767px) and (min-height: 1023px) and (orientation: portrait) // iPad
+@media (min-width: 767px) and (min-height: 1023px) and (max-width: 769px) and (orientation: portrait) // iPad
   #section1, #section2
+    .left
+      .map
+        .mapP
+          .mapPp
+            font-size: 30px
     .center
       .sectionHead
         p
@@ -1471,33 +1511,33 @@ html
     .left
       width: 17vw
       .map
-        padding-top: 1.2%
         .mapNav
-          display: block
+          display: flex
+          position: absolute
         .mapNavBorders
-          display: block
-        .mapPp
-          +pStyle(undefined, undefined, 113%, 5vh, 3vh, beige, 4.7vh, .2vw, 2.8vw)
+          div
+            display: flex
+        .mapP
+          .mapPp
+            +pStyle(undefined, undefined, 90%, 5vh, 3vh, beige, 4.7vh, 2px, 0 0 0 2.9vw)
         .filler, .filler2
           display: block
       .logo
         width: 17%
     .center
       .sectionHead
+        padding: 0 0 0 17.4vw
         p
           margin-top: 1.5%
-          margin-left: 6%
           font-size: 17vh
       .sectionWrap1, .sectionWrap2
         h1
           font-size: 6.5vh
         p
           font-size: 4.2vh
-    #arrow
-
   *
     color: lightgreen 
-@media (min-width: 822px) and (min-height: 410px) and (max-width: 823px) and (orientation: landscape) // Pixel 2 XL
+@media (min-width: 822px) and (min-height: 410px) and (max-width: 824px) and (orientation: landscape) // Pixel 2 XL
   .headerWrap
     p:first-of-type
       font-size: 11vw
@@ -1531,38 +1571,34 @@ html
   #section1, #section2
     .symbol1, .symbol2
       width: 17vh
-      left: 8.5vh
+      left: 6.5vh
       display: block
     .left
-      width: 17vw
       .map
-        padding-top: 1.2%
         .mapNav
-          display: block
+          display: flex
+          position: absolute
         .mapNavBorders
-          display: block
-        .mapPp
-          +pStyle(undefined, undefined, 113%, 5vh, 3vh, beige, 4.7vh, .2vw, 2.8vw)
+          div
+            display: block
+        .mapP
+          .mapPp
+            +pStyle(undefined, undefined, 76%, 5vh, 3vh, beige, 4.7vh, 1.7px, 0 0 0 2.9vw)
         .filler, .filler2
           display: block
-      .logo
-        width: 17%
     .center
       .sectionHead
         p
           margin-top: 1.5%
-          margin-left: 6%
           font-size: 17vh
       .sectionWrap1, .sectionWrap2
         h1
           font-size: 6vh
         p
           font-size: 4vh
-    #arrow
-  
   *
     color: yellow
-@media (min-width: 1023px) and (min-height: 768px) and (orientation: landscape) //iPad
+@media (min-width: 1023px) and (min-height: 768px) and (max-width: 1025px) and (orientation: landscape) //iPad
   .headerWrap
     p:first-of-type
       font-size: 11vw
@@ -1574,17 +1610,11 @@ html
     width: 41.7vw
     left: 29vw
   .burger
-    top: 1vh
+    top: .5vh
     left: 95.1vw
     font-size: 6vh
   .headerP
     display: none
-  .headerP1
-    top: 4vh
-  .headerP2
-    top: 14vh
-  .headerP3
-    top: 24vh
   nav
     top: 79.4vh
     ul
@@ -1596,37 +1626,46 @@ html
   #section1, #section2
     .symbol1, .symbol2
       width: 17vh
-      left: 3vh
+      left: 4vw
       display: block
     .left
-      width: 17vw
+      width: 21vw
+      .symbol
+        width: 21vw
       .map
-        padding-top: 1.2%
+        width: 21vw
         .mapNav
-          display: block
+          display: none
+          div
+            
         .mapNavBorders
-          display: block
-        .mapPp
-          +pStyle(undefined, undefined, 113%, 5vh, 2.6vh, beige, 4.7vh, .2vw, 2.8vw)
+          div
+            display: none
+        .mapP
+          .mapPp
+            +pStyle(undefined, undefined, 91%, 8vh, 28px, beige, 61px, 2.7px, 0 0 0 1vw)
         .filler, .filler2
-          display: block
+          display: none
       .logo
-        width: 17%
+        width: 21%
     .center
-      width: 83%
+      width: 79%
       .sectionHead
-        width: 100%
+        left: 0
+        width: 100vw
+        padding: 0 0 0 21.4vw
         p
+          margin-top: 1.5%
           font-size: 17vh
       .sectionWrap1, .sectionWrap2
         h1
           font-size: 5vh
         p
-          font-size: 3.5vh
+          font-size: 3vh
     .right
       display: none
-    #arrow
-  
+      img
+        display: none
   *
     color: gray
 @media (min-width: 1023px) and (min-height: 1365px) and (max-height: 1367px) and (orientation: portrait) // iPad Pro
@@ -1641,9 +1680,11 @@ html
     left: 21vw
     width: 58vw
   .burger
-    left: 94.3vw
+    top: .3vh
+    left: 93.1vw
+    font-size: 5vh
   .headerP
-   display: none
+    display: none
   nav
     top: 70vh
     ul
@@ -1653,16 +1694,25 @@ html
         height: 10vh
         padding-top: 0.5vh
   #section1, #section2
+    .symbol1, .symbol2
+      width: 15vh
+      left: 2.5vw
+      display: block
     .left
       width: 25vw
+      .symbol
+        width: 25vw
       .map
-        padding-top: 1.2%
+        width: 25vw
         .mapNav
-          display: none
+          div
+            display: none
         .mapNavBorders
-          display: none
-        .mapPp
-          +pStyle(undefined, undefined, 193%, 8vh, 2.6vh, beige, 8vh, 1.9px, .8vw)
+          div
+            display: none
+        .mapP
+          .mapPp
+            +pStyle(undefined, undefined, 93%, 8vh, 2.6vh, beige, 8vh, 1.9px, 0 0 0 .8vw)
         .filler, .filler2
           display: none
       .logo
@@ -1670,23 +1720,19 @@ html
     .center
       width: 75%
       .sectionHead
-        left: -16%
-        width: 116%
-        padding-top: 2.8vh
-        padding-left: 0
-        background-color: black
+        left: 0
+        width: 100vw
+        padding: 0 0 0 25.4vw
         p
-          margin-top: 2%
-          margin-left: 15%
-          font-size: 14.5vh
+          margin-top: 3% 
+          font-size: 10.5vh
       .sectionWrap1, .sectionWrap2
         width: 100%
         height: 23%
         letter-spacing: .2px
         h1
-          padding: 3vh 0 3vh 0
+          padding: 3vh 0 3vh 4vh
           font-size: 4vh
-          text-align: center
         .list
           position: absolute
           display: flex
@@ -1696,12 +1742,24 @@ html
           img
             display: block
             height: 3vh
+          img:first-of-type
+            margin-bottom: 1.2vh  
+          img:nth-of-type(2)
+            margin-bottom: 1.4vh
+          img:nth-of-type(3)
+            margin-bottom: 1vh  
           img:nth-of-type(4)
-            margin-bottom: .7vh
-          img:nth-of-type(8)
-            margin-bottom: 13.8vh
-          img:nth-of-type(10)
             margin-bottom: .9vh
+          img:nth-of-type(5)
+            margin-bottom: .9vh
+          img:nth-of-type(6)
+            margin-bottom: 1.2vh
+          img:nth-of-type(8)
+            margin-bottom: 14.3vh
+          img:nth-of-type(10)
+            margin-bottom: 1.1vh
+          img:nth-of-type(11)
+            margin-bottom: 1vh
         p 
           padding: 0 0vw 1vh 8.5vw
           font-size: 3vh
@@ -1710,10 +1768,15 @@ html
         border-left: none
         h1
           margin-top: 2vh
-          padding: 3vh 3vw 2.8vh 0
           border-top: $borders2
-    #arrow
-
+    .circle
+      width: 100px
+      height: 100px
+      #arrow
+        width: 95px
+        height: 95px
+        padding-top: 20px
+        font-size: 50px
   *
     color: cadetblue
 @media (min-width: 1365px) and (min-height: 767px) and (max-width: 1367px) and (orientation: landscape) // iPad Pro
@@ -1727,13 +1790,17 @@ html
   .underline, .underlineCover
     left: 27vw
     width: 45.5vw
+  .burger
+    right: 11px
+    top: 11px
   .headerP
+    +pStyle(undefined, 10px, 141px, 5vh, 20px, beige, 50px, 2px, undefined)
   .headerP1
-    top: 2vh
+    top: 10px
   .headerP2
-    top: 9vh
+    top: 70px
   .headerP3
-    top: 16vh
+    top: 130px
   nav
     top: 79.4vh
     ul
@@ -1746,10 +1813,35 @@ html
     .symbol1, .symbol2
       width: 12vw
       height: 16.7vh
-      left: 3.4vh
-    .mapPp
-      +pStyle(undefined, undefined, 70%, 5vh, 2.6vh, beige, 5vh, undefined, 2.8vw)
-    #arrow
+      left: 2vh
+    .left
+      .map
+        .mapNav
+          div
+            width: 1.0vw
+        .mapP
+          .mapPp
+            +pStyle(undefined, undefined, 70%, 5vh, 20px, beige, 5vh, undefined, 0 0 0 2.9vw)
+    .center
+      width: 60vw
+      .sectionHead
+        width: 80vw
+      .sectionWrap1, .sectionWrap2
+        width: 30vw
+    .right
+      width: 25vw
+      .sideImg
+        left: 75vw
+        width: 25vw
+
+    .circle
+      width: 100px
+      height: 100px
+      #arrow
+        width: 95px
+        height: 95px
+        padding-top: 20px
+        font-size: 50px
 
   *
     color: orchid

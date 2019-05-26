@@ -196,34 +196,56 @@ html body #section1 .left .map, html body #section2 .left .map {
 }
 
 html body #section1 .left .map .mapNav, html body #section2 .left .map .mapNav {
-  float: left;
-  width: 10%;
-  height: 97%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 15%;
+  height: 100%;
 }
 
 html body #section1 .left .map .mapNav div, html body #section2 .left .map .mapNav div {
-  width: 1.1vw;
   height: 5vh;
   background-color: #F018E6;
   opacity: .6;
-  margin: .7vh 0 6.5vh .5vw;
+  margin-left: .5vw;
 }
 
 html body #section1 .left .map .mapNavBorders, html body #section2 .left .map .mapNavBorders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: fixed;
   left: 0.5vw;
-  height: 62.5%;
+  height: 66%;
   width: 1.1vw;
   z-index: 1;
 }
 
 html body #section1 .left .map .mapNavBorders div, html body #section2 .left .map .mapNavBorders div {
   height: 5vh;
-  margin-bottom: 6.5vh;
   border: solid 1px #555555;
 }
 
 html body #section1 .left .map .mapP, html body #section2 .left .map .mapP {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 66vh;
   width: 100%;
 }
 
@@ -245,8 +267,8 @@ html body #section1 .left .map .filler, html body #section1 .left .map .filler2,
   top: 10vh;
   left: 0.55vw;
   width: 1vw;
-  background-color: black;
   height: 87.6%;
+  background-color: black;
   -webkit-transition: top 2s;
   transition: top 2s;
 }
@@ -304,7 +326,6 @@ html body #section1 .center .sectionWrap1 p, html body #section1 .center .sectio
 
 html body #section1 .right, html body #section2 .right {
   height: 100%;
-  float: left;
   border-left: solid 1px #333333;
 }
 
@@ -519,11 +540,15 @@ html body #section2 .right .sideImg {
   }
   #section1 .left .map .mapNav, #section2 .left .map .mapNav {
     display: none;
+    height: 100%;
   }
-  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+    width: 1.1vw;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
     display: none;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 90%;
@@ -532,7 +557,7 @@ html body #section2 .right .sideImg {
     color: beige;
     line-height: 8vh;
     letter-spacing: 1.6px;
-    margin: 2.7vh 0 1.9vh 0.9vw;
+    margin: 0vh 0 0 0.9vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
     display: none;
@@ -574,6 +599,7 @@ html body #section2 .right .sideImg {
     border-left: solid 1px #222222;
   }
   #section1 .right, #section2 .right {
+    float: left;
     display: none;
   }
   #section1 .right .sideImg, #section2 .right .sideImg {
@@ -823,22 +849,31 @@ html body #section2 .right .sideImg {
     width: 17vw;
   }
   #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-firection: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     position: absolute;
+  }
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+    display: block;
+    margin-left: .5vw;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
     display: block;
   }
-  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
-    display: block;
-  }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
-    width: 76%;
+    width: 75%;
     height: 5vh;
     font-size: 15px;
     color: beige;
     line-height: 5vh;
     letter-spacing: 1.6px;
-    margin: 6.5vh 0 6.4vh 2.9vw;
+    margin: 0 0 0 2.9vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
     display: block;
@@ -863,7 +898,7 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 1000px) and (min-height: 400px) and (max-width: 1400px) {
+@media (min-width: 1000px) and (min-height: 400px) and (max-width: 1420px) {
   .headerWrap p:first-of-type {
     font-size: 7vw;
   }
@@ -981,16 +1016,16 @@ html body #section2 .right .sideImg {
   #section1 .left .map, #section2 .left .map {
     width: 12vw;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
-    width: 69%;
+    width: 70%;
     height: 5vh;
     font-size: 18px;
     color: beige;
     line-height: 5vh;
     letter-spacing: 1.6px;
-    margin: 6.5vh 0 6.4vh 2.9vw;
+    margin: 0 0 0 2.9vw;
   }
   #section1 .left .logo, #section2 .left .logo {
     width: 12vw;
@@ -1045,15 +1080,6 @@ html body #section2 .right .sideImg {
   .headerP {
     display: none;
   }
-  .headerP1 {
-    top: 1vh;
-  }
-  .headerP2 {
-    top: 7vh;
-  }
-  .headerP3 {
-    top: 13vh;
-  }
   nav {
     top: 69.8vh;
   }
@@ -1075,10 +1101,22 @@ html body #section2 .right .sideImg {
     display: none;
   }
   #section1 .left, #section2 .left {
-    width: 27vw;
+    width: 25vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 25vw;
   }
   #section1 .left .map, #section2 .left .map {
-    padding-top: 1.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 25vw;
   }
   #section1 .left .map .mapNav, #section2 .left .map .mapNav {
     display: none;
@@ -1086,25 +1124,25 @@ html body #section2 .right .sideImg {
   #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
     display: none;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
-    left: undefined;
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
     right: undefined;
-    width: 210%;
+    width: 90%;
     height: 8vh;
-    font-size: 2vh;
+    font-size: 10px;
     color: beige;
     line-height: 8vh;
-    letter-spacing: 1.6px;
-    margin: 0.8vw;
+    letter-spacing: 1.1px;
+    margin: 0 0 0 0.9vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
     display: none;
   }
   #section1 .left .logo, #section2 .left .logo {
-    width: 27%;
+    width: 25%;
   }
   #section1 .center, #section2 .center {
-    width: 73%;
+    width: 75%;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
     left: -16%;
@@ -1139,7 +1177,7 @@ html body #section2 .right .sideImg {
         -ms-flex-direction: column;
             flex-direction: column;
     top: 130vh;
-    left: 28.6vw;
+    left: 26.6vw;
     width: 5vw;
     height: 35%;
   }
@@ -1149,7 +1187,7 @@ html body #section2 .right .sideImg {
     margin-bottom: .8vh;
   }
   #section1 .center .sectionWrap1 .list img:first-of-type, #section1 .center .sectionWrap2 .list img:first-of-type, #section2 .center .sectionWrap1 .list img:first-of-type, #section2 .center .sectionWrap2 .list img:first-of-type {
-    margin-bottom: .7vh;
+    margin-bottom: .8vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
     margin-bottom: 4.3vh;
@@ -1158,7 +1196,7 @@ html body #section2 .right .sideImg {
     margin-bottom: 12.3vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 3.7vh;
+    margin-bottom: .7vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
     padding: 0 3vw 1vh 8vw;
@@ -1204,10 +1242,7 @@ html body #section2 .right .sideImg {
     margin-bottom: .9vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 3.2vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: 3.4vh;
+    margin-bottom: 3.1vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
     padding: 0 3vw 1vh 8vw;
@@ -1231,6 +1266,17 @@ html body #section2 .right .sideImg {
   .burger {
     top: 1%;
   }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 90%;
+    height: 8vh;
+    font-size: 12px;
+    color: beige;
+    line-height: 8vh;
+    letter-spacing: 1.1px;
+    margin: 0 0 0 0.9vw;
+  }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     letter-spacing: 1vw;
   }
@@ -1247,7 +1293,7 @@ html body #section2 .right .sideImg {
     margin-bottom: .8vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 3.7vh;
+    margin-bottom: 3.5vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
     margin-bottom: .7vh;
@@ -1256,13 +1302,13 @@ html body #section2 .right .sideImg {
     margin-bottom: .7vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 13.6vh;
+    margin-bottom: 13.9vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 3.2vh;
+    margin-bottom: 3vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: 3.2vh;
+    margin-bottom: .6vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
     font-size: 2.7vh;
@@ -1298,7 +1344,7 @@ html body #section2 .right .sideImg {
     margin-bottom: 3.5vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: 3.4vh;
+    margin-bottom: .4vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
     font-size: 2.7vh;
@@ -1364,18 +1410,19 @@ html body #section2 .right .sideImg {
     width: 30vw;
   }
   #section1 .left .map, #section2 .left .map {
-    padding-top: 1.7%;
+    width: 30vw;
+    padding-top: 0;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
-    left: undefined;
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
     right: undefined;
-    width: 232%;
+    width: 90%;
     height: 8vh;
-    font-size: 1.9vh;
+    font-size: 14px;
     color: beige;
     line-height: 8vh;
-    letter-spacing: 1.5px;
-    margin: 0.8vw;
+    letter-spacing: 1.6px;
+    margin: 0 0 0 1.3vw;
   }
   #section1 .left .logo, #section2 .left .logo {
     width: 30%;
@@ -1468,6 +1515,17 @@ html body #section2 .right .sideImg {
 }
 
 @media (min-width: 410px) and (min-height: 730px) and (orientation: portrait) {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 90%;
+    height: 8vh;
+    font-size: 13px;
+    color: beige;
+    line-height: 8vh;
+    letter-spacing: 1.4px;
+    margin: 0 0 0 1.3vw;
+  }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
     font-size: 3.6vh;
   }
@@ -1487,7 +1545,7 @@ html body #section2 .right .sideImg {
     margin-bottom: 3.4vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: 3.4vh;
+    margin-bottom: .8vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
     font-size: 2.7vh;
@@ -1545,24 +1603,25 @@ html body #section2 .right .sideImg {
     padding-top: 0.5vh;
   }
   #section1 .left, #section2 .left {
-    width: 30vw;
+    width: 25vw;
   }
   #section1 .left .map, #section2 .left .map {
+    width: 25vw;
     padding-top: 1.7%;
   }
   #section1 .left .map .mapPp, #section2 .left .map .mapPp {
-    left: undefined;
+    left: 50px;
     right: undefined;
-    width: 232%;
+    width: 90%;
     height: 8vh;
-    font-size: 1.9vh;
+    font-size: 13px;
     color: beige;
     line-height: 8vh;
-    letter-spacing: 1.5px;
-    margin: 0.8vw;
+    letter-spacing: 1.3px;
+    margin: 2.7vh 0 2.7vh 1.3vw;
   }
   #section1 .left .logo, #section2 .left .logo {
-    width: 30%;
+    width: 25%;
   }
   #section1 .center, #section2 .center {
     width: 70%;
@@ -1599,7 +1658,7 @@ html body #section2 .right .sideImg {
         -ms-flex-direction: column;
             flex-direction: column;
     top: 129.3vh;
-    left: 32vw;
+    left: 28vw;
   }
   #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
     display: block;
@@ -1660,101 +1719,6 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 532px) and (min-height: 319px) and (max-height: 415px) and (max-width: 732px) and (orientation: landscape) {
-  .headerWrap p:first-of-type {
-    font-size: 11vw;
-  }
-  .headerWrap p:nth-of-type(2) {
-    font-size: 3.8vw;
-  }
-  .headerWrap p:nth-of-type(3) {
-    font-size: 1.9vw;
-  }
-  .underline, .underlineCover {
-    width: 41.7vw;
-    left: 29vw;
-  }
-  .burger {
-    top: 1vh;
-    left: 96vw;
-    font-size: 6vh;
-  }
-  .headerP {
-    display: none;
-  }
-  .headerP1 {
-    top: 4vh;
-  }
-  .headerP2 {
-    top: 14vh;
-  }
-  .headerP3 {
-    top: 24vh;
-  }
-  nav {
-    top: 79.4vh;
-  }
-  nav ul {
-    height: 20vh;
-    font-size: 3.8vh;
-    line-height: 20vh;
-    letter-spacing: 0.4px;
-  }
-  nav ul li {
-    width: calc(100vw/6);
-    height: 20vh;
-    padding-top: 0.5vh;
-  }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    width: 17vh;
-    left: 6.3vh;
-    display: block;
-  }
-  #section1 .left, #section2 .left {
-    width: 17vw;
-  }
-  #section1 .left .map, #section2 .left .map {
-    padding-top: 1.2%;
-  }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
-    display: block;
-  }
-  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
-    display: block;
-  }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
-    left: undefined;
-    right: undefined;
-    width: 113%;
-    height: 5vh;
-    font-size: 3vh;
-    color: beige;
-    line-height: 4.7vh;
-    letter-spacing: 0.2vw;
-    margin: 2.8vw;
-  }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
-    display: block;
-  }
-  #section1 .left .logo, #section2 .left .logo {
-    width: 17%;
-  }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    margin-top: 1%;
-    margin-left: 6%;
-    font-size: 16vh;
-  }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 5vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 4vh;
-  }
-  * {
-    color: yellowgreen;
-  }
-}
-
 @media (min-width: 599px) and (min-height: 959px) and (max-height: 1025px) and (orientation: portrait) {
   .headerWrap p:first-of-type {
     font-size: 15vw;
@@ -1802,18 +1766,19 @@ html body #section2 .right .sideImg {
     width: 30vw;
   }
   #section1 .left .map, #section2 .left .map {
-    padding-top: 1.5%;
+    width: 30vw;
+    padding-top: .6%;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
-    left: undefined;
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
     right: undefined;
-    width: 232%;
+    width: 90%;
     height: 8vh;
-    font-size: 2.6vh;
+    font-size: 24px;
     color: beige;
     line-height: 8vh;
-    letter-spacing: 1.9px;
-    margin: 0.8vw;
+    letter-spacing: 1.3px;
+    margin: 0 0 0 1.3vw;
   }
   #section1 .left .logo, #section2 .left .logo {
     width: 30%;
@@ -1866,7 +1831,7 @@ html body #section2 .right .sideImg {
     margin-bottom: 3.7vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(3), #section1 .center .sectionWrap2 .list img:nth-of-type(3), #section2 .center .sectionWrap1 .list img:nth-of-type(3), #section2 .center .sectionWrap2 .list img:nth-of-type(3) {
-    margin-bottom: .5vh;
+    margin-bottom: .8vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(4), #section1 .center .sectionWrap2 .list img:nth-of-type(4), #section2 .center .sectionWrap1 .list img:nth-of-type(4), #section2 .center .sectionWrap2 .list img:nth-of-type(4) {
     margin-bottom: .7vh;
@@ -1881,7 +1846,7 @@ html body #section2 .right .sideImg {
     margin-bottom: 13.5vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(9), #section1 .center .sectionWrap2 .list img:nth-of-type(9), #section2 .center .sectionWrap1 .list img:nth-of-type(9), #section2 .center .sectionWrap2 .list img:nth-of-type(9) {
-    margin-bottom: 1vh;
+    margin-bottom: .7vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
     margin-bottom: .5vh;
@@ -1907,16 +1872,141 @@ html body #section2 .right .sideImg {
   }
 }
 
+@media (min-width: 532px) and (min-height: 319px) and (max-height: 415px) and (max-width: 732px) and (orientation: landscape) {
+  .headerWrap p:first-of-type {
+    font-size: 11vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 3.8vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.9vw;
+  }
+  .underline, .underlineCover {
+    width: 41.7vw;
+    left: 29vw;
+  }
+  .burger {
+    top: 1vh;
+    left: 96vw;
+    font-size: 6vh;
+  }
+  .headerP {
+    display: none;
+  }
+  .headerP1 {
+    top: 4vh;
+  }
+  .headerP2 {
+    top: 14vh;
+  }
+  .headerP3 {
+    top: 24vh;
+  }
+  nav {
+    top: 79.4vh;
+  }
+  nav ul {
+    height: 20vh;
+    font-size: 3.8vh;
+    line-height: 20vh;
+    letter-spacing: 0.4px;
+  }
+  nav ul li {
+    width: calc(100vw/6);
+    height: 20vh;
+    padding-top: 0.5vh;
+  }
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    width: 17vh;
+    left: 4.5vh;
+    display: block;
+  }
+  #section1 .left, #section2 .left {
+    width: 15vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 15vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 15vw;
+  }
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: block;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 78%;
+    height: 5vh;
+    font-size: 10px;
+    color: beige;
+    line-height: 15px;
+    letter-spacing: 0;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    display: block;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 15vw;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    padding: 0 0 0 15.4vw;
+  }
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+    margin-top: 1%;
+    font-size: 16vh;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    font-size: 5vh;
+  }
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+    font-size: 4vh;
+  }
+  * {
+    color: yellowgreen;
+  }
+}
+
 @media (min-width: 639px) and (min-height: 359px) and (max-width: 641px) and (orientation: landscape) {
   #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    left: 6.5vw;
+    left: 2.7vw;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 76%;
+    height: 5vh;
+    font-size: 11px;
+    color: beige;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    margin: 0 0 0 2.9vw;
   }
   * {
     color: green;
   }
 }
 
-@media (min-width: 730px) and (min-height: 410px) and (orientation: landscape) {
+@media (min-width: 730px) and (min-height: 410px) and (max-width: 732px) and (orientation: landscape) {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 76%;
+    height: 5vh;
+    font-size: 11px;
+    color: beige;
+    line-height: 19px;
+    letter-spacing: 1.2px;
+    margin: 0 0 0 2.9vw;
+  }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 2.5%;
   }
@@ -1976,34 +2066,39 @@ html body #section2 .right .sideImg {
     width: 17vw;
   }
   #section1 .left .map, #section2 .left .map {
-    padding-top: 1.2%;
+    width: 17vw;
   }
   #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
     display: block;
   }
-  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
-    display: block;
-  }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
-    left: undefined;
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
     right: undefined;
-    width: 113%;
+    width: 78%;
     height: 5vh;
-    font-size: 3vh;
+    font-size: 14px;
     color: beige;
-    line-height: 4.7vh;
-    letter-spacing: 0.2vw;
-    margin: 2.8vw;
+    line-height: 19px;
+    letter-spacing: 1px;
+    margin: 0 0 0 2.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section2 .left .map .filler {
     display: block;
   }
   #section1 .left .logo, #section2 .left .logo {
     width: 17%;
   }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    padding: 0 0 0 17.4vw;
+  }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 1.5%;
-    margin-left: 6%;
     font-size: 17vh;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
@@ -2017,7 +2112,10 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 767px) and (min-height: 1023px) and (orientation: portrait) {
+@media (min-width: 767px) and (min-height: 1023px) and (max-width: 769px) and (orientation: portrait) {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    font-size: 30px;
+  }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 2.5%;
     font-size: 14.5vh;
@@ -2130,25 +2228,27 @@ html body #section2 .right .sideImg {
   #section1 .left, #section2 .left {
     width: 17vw;
   }
-  #section1 .left .map, #section2 .left .map {
-    padding-top: 1.2%;
-  }
   #section1 .left .map .mapNav, #section2 .left .map .mapNav {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
   }
-  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
-    display: block;
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
-    width: 113%;
+    width: 90%;
     height: 5vh;
     font-size: 3vh;
     color: beige;
     line-height: 4.7vh;
-    letter-spacing: 0.2vw;
-    margin: 2.8vw;
+    letter-spacing: 2px;
+    margin: 0 0 0 2.9vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
     display: block;
@@ -2156,9 +2256,11 @@ html body #section2 .right .sideImg {
   #section1 .left .logo, #section2 .left .logo {
     width: 17%;
   }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    padding: 0 0 0 17.4vw;
+  }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 1.5%;
-    margin-left: 6%;
     font-size: 17vh;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
@@ -2172,7 +2274,7 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 822px) and (min-height: 410px) and (max-width: 823px) and (orientation: landscape) {
+@media (min-width: 822px) and (min-height: 410px) and (max-width: 824px) and (orientation: landscape) {
   .headerWrap p:first-of-type {
     font-size: 11vw;
   }
@@ -2219,41 +2321,34 @@ html body #section2 .right .sideImg {
   }
   #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
     width: 17vh;
-    left: 8.5vh;
+    left: 6.5vh;
     display: block;
-  }
-  #section1 .left, #section2 .left {
-    width: 17vw;
-  }
-  #section1 .left .map, #section2 .left .map {
-    padding-top: 1.2%;
   }
   #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
     display: block;
   }
-  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
-    display: block;
-  }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
-    width: 113%;
+    width: 76%;
     height: 5vh;
     font-size: 3vh;
     color: beige;
     line-height: 4.7vh;
-    letter-spacing: 0.2vw;
-    margin: 2.8vw;
+    letter-spacing: 1.7px;
+    margin: 0 0 0 2.9vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
     display: block;
   }
-  #section1 .left .logo, #section2 .left .logo {
-    width: 17%;
-  }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 1.5%;
-    margin-left: 6%;
     font-size: 17vh;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
@@ -2267,7 +2362,7 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 1023px) and (min-height: 768px) and (orientation: landscape) {
+@media (min-width: 1023px) and (min-height: 768px) and (max-width: 1025px) and (orientation: landscape) {
   .headerWrap p:first-of-type {
     font-size: 11vw;
   }
@@ -2282,21 +2377,12 @@ html body #section2 .right .sideImg {
     left: 29vw;
   }
   .burger {
-    top: 1vh;
+    top: .5vh;
     left: 95.1vw;
     font-size: 6vh;
   }
   .headerP {
     display: none;
-  }
-  .headerP1 {
-    top: 4vh;
-  }
-  .headerP2 {
-    top: 14vh;
-  }
-  .headerP3 {
-    top: 24vh;
   }
   nav {
     top: 79.4vh;
@@ -2314,54 +2400,63 @@ html body #section2 .right .sideImg {
   }
   #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
     width: 17vh;
-    left: 3vh;
+    left: 4vw;
     display: block;
   }
   #section1 .left, #section2 .left {
-    width: 17vw;
+    width: 21vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 21vw;
   }
   #section1 .left .map, #section2 .left .map {
-    padding-top: 1.2%;
+    width: 21vw;
   }
   #section1 .left .map .mapNav, #section2 .left .map .mapNav {
-    display: block;
+    display: none;
   }
-  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
-    display: block;
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: none;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
-    width: 113%;
-    height: 5vh;
-    font-size: 2.6vh;
+    width: 91%;
+    height: 8vh;
+    font-size: 28px;
     color: beige;
-    line-height: 4.7vh;
-    letter-spacing: 0.2vw;
-    margin: 2.8vw;
+    line-height: 61px;
+    letter-spacing: 2.7px;
+    margin: 0 0 0 1vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
-    display: block;
+    display: none;
   }
   #section1 .left .logo, #section2 .left .logo {
-    width: 17%;
+    width: 21%;
   }
   #section1 .center, #section2 .center {
-    width: 83%;
+    width: 79%;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
-    width: 100%;
+    left: 0;
+    width: 100vw;
+    padding: 0 0 0 21.4vw;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+    margin-top: 1.5%;
     font-size: 17vh;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
     font-size: 5vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 3.5vh;
+    font-size: 3vh;
   }
   #section1 .right, #section2 .right {
+    display: none;
+  }
+  #section1 .right img, #section2 .right img {
     display: none;
   }
   * {
@@ -2384,7 +2479,9 @@ html body #section2 .right .sideImg {
     width: 58vw;
   }
   .burger {
-    left: 94.3vw;
+    top: .3vh;
+    left: 93.1vw;
+    font-size: 5vh;
   }
   .headerP {
     display: none;
@@ -2403,28 +2500,36 @@ html body #section2 .right .sideImg {
     height: 10vh;
     padding-top: 0.5vh;
   }
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    width: 15vh;
+    left: 2.5vw;
+    display: block;
+  }
   #section1 .left, #section2 .left {
     width: 25vw;
   }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 25vw;
+  }
   #section1 .left .map, #section2 .left .map {
-    padding-top: 1.2%;
+    width: 25vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
     display: none;
   }
-  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
     display: none;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
-    width: 193%;
+    width: 93%;
     height: 8vh;
     font-size: 2.6vh;
     color: beige;
     line-height: 8vh;
     letter-spacing: 1.9px;
-    margin: 0.8vw;
+    margin: 0 0 0 0.8vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
     display: none;
@@ -2436,16 +2541,13 @@ html body #section2 .right .sideImg {
     width: 75%;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
-    left: -16%;
-    width: 116%;
-    padding-top: 2.8vh;
-    padding-left: 0;
-    background-color: black;
+    left: 0;
+    width: 100vw;
+    padding: 0 0 0 25.4vw;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    margin-top: 2%;
-    margin-left: 15%;
-    font-size: 14.5vh;
+    margin-top: 3%;
+    font-size: 10.5vh;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
     width: 100%;
@@ -2453,9 +2555,8 @@ html body #section2 .right .sideImg {
     letter-spacing: .2px;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    padding: 3vh 0 3vh 0;
+    padding: 3vh 0 3vh 4vh;
     font-size: 4vh;
-    text-align: center;
   }
   #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
     position: absolute;
@@ -2473,14 +2574,32 @@ html body #section2 .right .sideImg {
     display: block;
     height: 3vh;
   }
+  #section1 .center .sectionWrap1 .list img:first-of-type, #section1 .center .sectionWrap2 .list img:first-of-type, #section2 .center .sectionWrap1 .list img:first-of-type, #section2 .center .sectionWrap2 .list img:first-of-type {
+    margin-bottom: 1.2vh;
+  }
+  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
+    margin-bottom: 1.4vh;
+  }
+  #section1 .center .sectionWrap1 .list img:nth-of-type(3), #section1 .center .sectionWrap2 .list img:nth-of-type(3), #section2 .center .sectionWrap1 .list img:nth-of-type(3), #section2 .center .sectionWrap2 .list img:nth-of-type(3) {
+    margin-bottom: 1vh;
+  }
   #section1 .center .sectionWrap1 .list img:nth-of-type(4), #section1 .center .sectionWrap2 .list img:nth-of-type(4), #section2 .center .sectionWrap1 .list img:nth-of-type(4), #section2 .center .sectionWrap2 .list img:nth-of-type(4) {
-    margin-bottom: .7vh;
+    margin-bottom: .9vh;
+  }
+  #section1 .center .sectionWrap1 .list img:nth-of-type(5), #section1 .center .sectionWrap2 .list img:nth-of-type(5), #section2 .center .sectionWrap1 .list img:nth-of-type(5), #section2 .center .sectionWrap2 .list img:nth-of-type(5) {
+    margin-bottom: .9vh;
+  }
+  #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
+    margin-bottom: 1.2vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 13.8vh;
+    margin-bottom: 14.3vh;
   }
   #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: .9vh;
+    margin-bottom: 1.1vh;
+  }
+  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
+    margin-bottom: 1vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
     padding: 0 0vw 1vh 8.5vw;
@@ -2492,8 +2611,17 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
     margin-top: 2vh;
-    padding: 3vh 3vw 2.8vh 0;
     border-top: solid 1px #222222;
+  }
+  #section1 .circle, #section2 .circle {
+    width: 100px;
+    height: 100px;
+  }
+  #section1 .circle #arrow, #section2 .circle #arrow {
+    width: 95px;
+    height: 95px;
+    padding-top: 20px;
+    font-size: 50px;
   }
   * {
     color: cadetblue;
@@ -2514,14 +2642,29 @@ html body #section2 .right .sideImg {
     left: 27vw;
     width: 45.5vw;
   }
+  .burger {
+    right: 11px;
+    top: 11px;
+  }
+  .headerP {
+    left: undefined;
+    right: 10px;
+    width: 141px;
+    height: 5vh;
+    font-size: 20px;
+    color: beige;
+    line-height: 50px;
+    letter-spacing: 2px;
+    margin: undefined;
+  }
   .headerP1 {
-    top: 2vh;
+    top: 10px;
   }
   .headerP2 {
-    top: 9vh;
+    top: 70px;
   }
   .headerP3 {
-    top: 16vh;
+    top: 130px;
   }
   nav {
     top: 79.4vh;
@@ -2540,18 +2683,47 @@ html body #section2 .right .sideImg {
   #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
     width: 12vw;
     height: 16.7vh;
-    left: 3.4vh;
+    left: 2vh;
   }
-  #section1 .mapPp, #section2 .mapPp {
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+    width: 1.0vw;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
     width: 70%;
     height: 5vh;
-    font-size: 2.6vh;
+    font-size: 20px;
     color: beige;
     line-height: 5vh;
     letter-spacing: undefined;
-    margin: 2.8vw;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 60vw;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    width: 80vw;
+  }
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+    width: 30vw;
+  }
+  #section1 .right, #section2 .right {
+    width: 25vw;
+  }
+  #section1 .right .sideImg, #section2 .right .sideImg {
+    left: 75vw;
+    width: 25vw;
+  }
+  #section1 .circle, #section2 .circle {
+    width: 100px;
+    height: 100px;
+  }
+  #section1 .circle #arrow, #section2 .circle #arrow {
+    width: 95px;
+    height: 95px;
+    padding-top: 20px;
+    font-size: 50px;
   }
   * {
     color: orchid;
