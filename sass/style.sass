@@ -384,7 +384,7 @@ html
       .logo
         width: 20%
     .center
-      width: 75%
+      width: 80%
       .sectionHead
         left: 0
         width: 100%
@@ -399,7 +399,9 @@ html
           padding: 5vh 0 5vh 4vw
           font-size: 3.3vh
         .list
-          display: none
+          img
+            display: none
+        .list2
           img
             display: none
         p
@@ -776,41 +778,37 @@ html
         height: 23%
         letter-spacing: .2px
         h1
-          padding: 3vh 0 3vh 0
+          padding: 3vh 0 1vh 0
           font-size: 4vh
           text-align: center
-        .list
-          display: block
+        .list, .list2
           position: absolute
           display: flex
           flex-direction: column
           top: 130vh
           left: 26.6vw
-          width: 5vw
+          width: 75%
           height: 35%
-          img
-            display: block
-            height: 3vh
-            margin-bottom: .8vh
-          img:first-of-type
-            margin-bottom: .8vh
-          img:nth-of-type(2)
-            margin-bottom: 4.3vh
-          img:nth-of-type(8)
-            margin-bottom: 12.3vh
-          img:nth-of-type(10)
-            margin-bottom: .7vh
-        p 
-          padding: 0 3vw 1vh 8vw
-          font-size: 2.8vh
+          div
+            display: flex
+            padding: .5vh 3vw 0 0
+            img
+              display: block
+              height: 3vh
+              padding-top: .2vh
+            p 
+              padding: 0vw 0 0vh 1vw
+              font-size: 2.8vh
       .sectionWrap2
         height: 37%
         border-left: none
-
         h1
           margin-top: 2vh
-          padding: 3vh 3vw 2.8vh 0
+          padding: 3vh 3vw 0vh 0
           border-top: $borders2
+        .list2
+          top: 175vh
+          height: 20%
   *
     color: gray
 @media (min-width: 319px) and (min-height: 567px) and (orientation: portrait) // iPhone 5/SE
@@ -823,30 +821,6 @@ html
         left: -15%
         p
           font-size: 12vh
-      .sectionWrap1, .sectionWrap2
-        .list
-          top: 129.8vh
-          img
-            margin-bottom: .6vh
-          img:nth-of-type(2)
-            margin-bottom: 3.9vh
-          img:nth-of-type(8)
-            margin-bottom: 13.7vh
-          img:nth-of-type(9)
-            margin-bottom: .9vh
-          img:nth-of-type(10)
-            margin-bottom: 3.1vh
-        p 
-          padding: 0 3vw 1vh 8vw
-          font-size: 2.7vh
-      .sectionWrap2
-        height: 37%
-        border-left: none
-
-        h1
-          margin-top: 2vh
-          padding: 3vh 3vw 2.8vh 0
-          border-top: $borders2
   *
     color: green
 @media (min-width: 359px) and (min-height: 639px) and (orientation: portrait) // Galaxy S5
@@ -862,58 +836,6 @@ html
       .sectionHead
         p
           letter-spacing: 1vw
-      .sectionWrap1, .sectionWrap2
-        h1
-          font-size: 3.6vh
-        .list
-          top: 129.5vh
-          img
-            margin-bottom: .5vh
-          img:first-of-type
-            margin-bottom: .8vh
-          img:nth-of-type(2)
-            margin-bottom: 3.5vh
-          img:nth-of-type(6)
-            margin-bottom: .7vh
-          img:nth-of-type(7)
-            margin-bottom: .7vh
-          img:nth-of-type(8)
-            margin-bottom: 13.9vh
-          img:nth-of-type(10)
-            margin-bottom: 3vh
-          img:nth-of-type(11)
-            margin-bottom: .6vh
-        p 
-          font-size: 2.7vh
-        p:last-of-type
-          padding-right: 5vw
-  *
-    color: red
-@media (min-width: 374px) and (min-height: 666px) and (orientation: portrait) // iPhone 6/7/8
-  #section1, #section2
-    .center
-      .sectionWrap1, .sectionWrap2
-        .list
-          img
-            margin-bottom: .7vh
-          img:nth-of-type(2)
-            margin-bottom: 4vh
-          img:nth-of-type(6)
-            margin-bottom: 1vh
-          img:nth-of-type(7)
-            margin-bottom: .6vh
-          img:nth-of-type(8)
-            margin-bottom: 12.9vh
-          img:nth-of-type(9)
-            margin-bottom: .9vh
-          img:nth-of-type(10)
-            margin-bottom: 3.5vh
-          img:nth-of-type(11)
-            margin-bottom: .4vh
-        p 
-          font-size: 2.7vh
-        p:last-of-type
-          padding-right: 5vw
   *
     color: red
 @media (min-width: 374px) and (min-height: 811px) and (max-height: 813px) and (orientation: portrait) // iPhone X
@@ -977,47 +899,37 @@ html
         height: 23%
         letter-spacing: .2px
         h1
-          padding: 3vh 0 3vh 0
-          font-size: 3.1vh
+          padding: 3vh 0 0 0
+          font-size: 3vh
           text-align: center
-        .list
+        .list, .list2
           position: absolute
           display: flex
           flex-direction: column
-          top: 128.8vh
-          left: 32vw
-          img
-            display: block
-            height: 3vh
-            margin-bottom: .1vh
-          img:first-of-type
-            margin-bottom: 2.8vh
-          img:nth-of-type(2)
-            margin-bottom: 3.1vh
-          img:nth-of-type(3)
-            margin-bottom: 2.7vh
-          img:nth-of-type(4)
-            margin-bottom: .5vh
-          img:nth-of-type(6)
-            margin-bottom: .5vh
-          img:nth-of-type(8)
-            margin-bottom: 11.1vh
-          img:nth-of-type(9)
-            margin-bottom: .5vh
-          img:nth-of-type(10)
-            margin-bottom: 2.6vh
-          img:nth-of-type(11)
-            margin-bottom: 2.6vh
-        p 
-          padding: 0 0vw 1vh 10vw
-          font-size: 2.4vh
+          top: 128vh
+          left: 31.6vw
+          width: 69%
+          height: 35%
+          div
+            display: flex
+            padding: .5vh 2vw 0 0
+            img
+              display: block
+              height: 3vh
+              padding-top: 0vh
+            p 
+              padding: .5vw 0 0vh 1vw
+              font-size: 2.4vh
       .sectionWrap2
         height: 37%
         border-left: none
         h1
           margin-top: 2vh
-          padding: 3vh 3vw 2.8vh 0
+          padding: 3vh 3vw 0vh 0
           border-top: $borders2
+        .list2
+          top: 173vh
+          height: 20%  
   *
     color: yellow
 @media (min-width: 410px) and (min-height: 730px) and (orientation: portrait) // Pixel 2
@@ -1027,28 +939,6 @@ html
         .mapP
           .mapPp
             +pStyle(50px, undefined, 90%, 8vh, 13px, beige, 8vh, 1.4px, 0 0 0 1.3vw)
-    .center
-      .sectionHead
-        p
-      .sectionWrap1, .sectionWrap2
-        h1
-          font-size: 3.6vh
-        .list
-          top: 129.6vh
-          img
-            margin-bottom: .7vh
-          img:nth-of-type(2)
-            margin-bottom: 3.7vh
-          img:nth-of-type(8)
-            margin-bottom: 13vh
-          img:nth-of-type(10)
-            margin-bottom: 3.4vh
-          img:nth-of-type(11)
-            margin-bottom: .8vh
-        p 
-          font-size: 2.7vh
-        p:last-of-type
-          padding-right: 5vw
   *
     color: blue
 @media (min-width: 410px) and (min-height: 822px) and (max-height: 824px) and (orientation: portrait) // Pixel 2 XL
@@ -1108,60 +998,38 @@ html
         height: 23%
         letter-spacing: .2px
         h1
-          padding: 3vh 0 3vh 0
-          font-size: 3.4vh
+          padding: 3vh 0 0vh 6vw
+          font-size: 3.2vh
           text-align: center
-        .list
+        .list, .list2
           position: absolute
           display: flex
           flex-direction: column
-          top: 129.3vh
-          left: 28vw
-          img
-            display: block
-            height: 3vh
-            margin-bottom: .4vh
-          img:first-of-type
-            margin-bottom: 2.8vh
-          img:nth-of-type(2)
-            margin-bottom: 3.3vh
-          img:nth-of-type(3)
-            margin-bottom: 2.6vh
-          img:nth-of-type(4)
-            margin-bottom: .5vh
-          img:nth-of-type(6)
-            margin-bottom: .4vh
-          img:nth-of-type(8)
-            margin-bottom: 10.5vh
-          img:nth-of-type(9)
-            margin-bottom: .6vh
-          img:nth-of-type(10)
-            margin-bottom: 2.7vh
-          img:nth-of-type(11)
-            margin-bottom: 2.8vh
-        p 
-          padding: 0 0vw 1vh 10vw
-          font-size: 2.5vh
+          top: 129vh
+          left: 26.6vw
+          width: 75%
+          height: 35%
+          div
+            display: flex
+            padding: .5vh 3vw 0 0
+            img
+              display: block
+              height: 3vh
+              padding-top: .2vh
+            p 
+              padding: 0vw 0 0vh 1vw
+              font-size: 2.4vh
       .sectionWrap2
         height: 37%
         border-left: none
         h1
           margin-top: 2vh
-          padding: 3vh 3vw 2.8vh 0
           border-top: $borders2
-    #arrow
-
+        .list2
+          top: 174vh
+          height: 20%   
   *
     color: pink
-@media (min-width: 413px) and (min-height: 735px) and (orientation: portrait) // iPhone 6/7/8 Plus
-  #section1, #section2
-    .center
-      .sectionWrap1, .sectionWrap2
-        .list
-          img:nth-of-type(6)
-            margin-bottom: .7vh
-  *
-    color: cadetblue
 @media (min-width: 599px) and (min-height: 959px) and (max-height: 1025px) and (orientation: portrait) // Asus Nexus 7"
   .headerWrap
     p:first-of-type
@@ -1219,48 +1087,36 @@ html
         height: 23%
         letter-spacing: .2px
         h1
-          padding: 3vh 0 3vh 0
-          font-size: 3.9vh
+          padding: 3vh 0 0 0
+          font-size: 3.7vh
           text-align: center
-        .list
+        .list, .list2
           position: absolute
           display: flex
           flex-direction: column
-          top: 129.8vh
-          left: 32vw
-          img
-            display: block
-            height: 3vh
-          img:first-of-type
-            margin-bottom: .6vh
-          img:nth-of-type(2)
-            margin-bottom: 3.7vh
-          img:nth-of-type(3)
-            margin-bottom: .8vh
-          img:nth-of-type(4)
-            margin-bottom: .7vh
-          img:nth-of-type(5)
-            margin-bottom: .6vh  
-          img:nth-of-type(6)
-            margin-bottom: .7vh
-          img:nth-of-type(8)
-            margin-bottom: 13.5vh
-          img:nth-of-type(9)
-            margin-bottom: .7vh
-          img:nth-of-type(10)
-            margin-bottom: .5vh
-          img:nth-of-type(11)
-            margin-bottom: .8vh
-        p 
-          padding: 0 0vw 1vh 8.5vw
-          font-size: 2.7vh
+          top: 129vh
+          left: 31.6vw
+          width: 75%
+          height: 35%
+          div
+            display: flex
+            padding: .5vh 3vw 0 0
+            img
+              display: block
+              height: 3vh
+              padding-top: .2vh
+            p 
+              padding: .5vw 0 0 1.5vw
+              font-size: 2.6vh
       .sectionWrap2
         height: 37%
         border-left: none
         h1
           margin-top: 2vh
-          padding: 3vh 3vw 2.8vh 0
           border-top: $borders2
+        .list2
+          top: 174vh
+          height: 20%    
   *
     color: lightblue
 @media (min-width: 532px) and (min-height: 319px) and (max-height: 415px) and (max-width: 732px) and (orientation: landscape) // Nokia Lumia
@@ -1319,12 +1175,14 @@ html
       .logo
         width: 15vw
     .center
+      width: 85%
       .sectionHead
         padding: 0 0 0 15.4vw
         p
           margin-top: 1%
           font-size: 16vh
       .sectionWrap1, .sectionWrap2
+        width: 50%
         h1
           font-size: 5vh
         p
@@ -1351,6 +1209,7 @@ html
           .mapPp
             +pStyle(50px, undefined, 76%, 5vh, 11px, beige, 19px, 1.2px, 0 0 0 2.9vw)
     .center
+      width: 85%
       .sectionHead
         p
           margin-top: 2.5%
@@ -1408,6 +1267,7 @@ html
       .logo
         width: 17%
     .center
+      width: 83%
       .sectionHead
         padding: 0 0 0 17.4vw
         p
@@ -1435,41 +1295,40 @@ html
           margin-top: 2.5%
           font-size: 14.5vh
       .sectionWrap1, .sectionWrap2
+        width: 100%
+        height: 23%
+        letter-spacing: .2px
         h1
-          padding: 3vh 0 3vh 0
-          font-size: 4.7vh
-        .list
-          top: 130.7vh
-          img
-            display: block
-            height: 3vh
-          img:first-of-type
-            margin-bottom: 1.3vh
-          img:nth-of-type(2)
-            margin-bottom: 1.3vh
-          img:nth-of-type(3)
-            margin-bottom: 1vh
-          img:nth-of-type(4)
-            margin-bottom: 1vh
-          img:nth-of-type(5)
-            margin-bottom: 1vh  
-          img:nth-of-type(6)
-            margin-bottom: 1.2vh
-          img:nth-of-type(7)
-            margin-bottom: 1vh
-          img:nth-of-type(8)
-            margin-bottom: 13.6vh
-          img:nth-of-type(9)
-            margin-bottom: 1.2vh
-          img:nth-of-type(10)
-            margin-bottom: 1.2vh
-          img:nth-of-type(11)
-            margin-bottom: .8vh
-        p
-          font-size: 3vh
+          padding: 3vh 0 0 0
+          font-size: 4vh
+          text-align: center
+        .list, .list2
+          position: absolute
+          display: flex
+          flex-direction: column
+          top: 129vh
+          left: 31.6vw
+          width: 75%
+          height: 35%
+          div
+            display: flex
+            padding: .5vh 3vw .7vw 0
+            img
+              display: block
+              height: 3vh
+              padding-top: .2vh
+            p 
+              padding: 0 0 0 1.5vw
+              font-size: 3vh
       .sectionWrap2
+        height: 37%
+        border-left: none
         h1
-          padding: 3vh 3vh 3vh 0     
+          margin-top: 2vh
+          border-top: $borders2
+        .list2
+          top: 174vh
+          height: 20% 
   *
     color: royalblue
 @media (min-width: 811px) and (min-height: 374px) and (max-height: 376px) and (orientation: landscape) // iPhone X
@@ -1525,6 +1384,7 @@ html
       .logo
         width: 17%
     .center
+      width: 83%
       .sectionHead
         padding: 0 0 0 17.4vw
         p
@@ -1587,6 +1447,7 @@ html
         .filler, .filler2
           display: block
     .center
+      width: 85%
       .sectionHead
         p
           margin-top: 1.5%
@@ -1636,8 +1497,6 @@ html
         width: 21vw
         .mapNav
           display: none
-          div
-            
         .mapNavBorders
           div
             display: none
@@ -1731,44 +1590,35 @@ html
         height: 23%
         letter-spacing: .2px
         h1
-          padding: 3vh 0 3vh 4vh
-          font-size: 4vh
-        .list
+          padding: 3vh 0 0 7vw
+          font-size: 4.2vh
+        .list, .list2
           position: absolute
           display: flex
           flex-direction: column
-          top: 129.8vh
-          left: 27vw
-          img
-            display: block
-            height: 3vh
-          img:first-of-type
-            margin-bottom: 1.2vh  
-          img:nth-of-type(2)
-            margin-bottom: 1.4vh
-          img:nth-of-type(3)
-            margin-bottom: 1vh  
-          img:nth-of-type(4)
-            margin-bottom: .9vh
-          img:nth-of-type(5)
-            margin-bottom: .9vh
-          img:nth-of-type(6)
-            margin-bottom: 1.2vh
-          img:nth-of-type(8)
-            margin-bottom: 14.3vh
-          img:nth-of-type(10)
-            margin-bottom: 1.1vh
-          img:nth-of-type(11)
-            margin-bottom: 1vh
-        p 
-          padding: 0 0vw 1vh 8.5vw
-          font-size: 3vh
+          top: 129vh
+          left: 26.6vw
+          width: 75%
+          height: 35%
+          div
+            display: flex
+            padding: .5vh 3vw .7vw 0
+            img
+              display: block
+              height: 3vh
+              padding-top: .2vh
+            p 
+              padding: 0 0 0 1.5vw
+              font-size: 2.8vh
       .sectionWrap2
         height: 37%
         border-left: none
         h1
           margin-top: 2vh
           border-top: $borders2
+        .list2
+          top: 174vh
+          height: 20% 
     .circle
       width: 100px
       height: 100px
@@ -1833,7 +1683,6 @@ html
       .sideImg
         left: 75vw
         width: 25vw
-
     .circle
       width: 100px
       height: 100px
@@ -1842,6 +1691,5 @@ html
         height: 95px
         padding-top: 20px
         font-size: 50px
-
   *
     color: orchid

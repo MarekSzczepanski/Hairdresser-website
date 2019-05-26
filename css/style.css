@@ -566,7 +566,7 @@ html body #section2 .right .sideImg {
     width: 20%;
   }
   #section1 .center, #section2 .center {
-    width: 75%;
+    width: 80%;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
     left: 0;
@@ -585,10 +585,10 @@ html body #section2 .right .sideImg {
     padding: 5vh 0 5vh 4vw;
     font-size: 3.3vh;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
+  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
     display: none;
   }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
+  #section1 .center .sectionWrap1 .list2 img, #section1 .center .sectionWrap2 .list2 img, #section2 .center .sectionWrap1 .list2 img, #section2 .center .sectionWrap2 .list2 img {
     display: none;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
@@ -1162,12 +1162,11 @@ html body #section2 .right .sideImg {
     letter-spacing: .2px;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    padding: 3vh 0 3vh 0;
+    padding: 3vh 0 1vh 0;
     font-size: 4vh;
     text-align: center;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
-    display: block;
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1178,28 +1177,22 @@ html body #section2 .right .sideImg {
             flex-direction: column;
     top: 130vh;
     left: 26.6vw;
-    width: 5vw;
+    width: 75%;
     height: 35%;
   }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5vh 3vw 0 0;
+  }
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
-    margin-bottom: .8vh;
+    padding-top: .2vh;
   }
-  #section1 .center .sectionWrap1 .list img:first-of-type, #section1 .center .sectionWrap2 .list img:first-of-type, #section2 .center .sectionWrap1 .list img:first-of-type, #section2 .center .sectionWrap2 .list img:first-of-type {
-    margin-bottom: .8vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 4.3vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 12.3vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: .7vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    padding: 0 3vw 1vh 8vw;
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+    padding: 0vw 0 0vh 1vw;
     font-size: 2.8vh;
   }
   #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
@@ -1208,8 +1201,12 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
     margin-top: 2vh;
-    padding: 3vh 3vw 2.8vh 0;
+    padding: 3vh 3vw 0vh 0;
     border-top: solid 1px #222222;
+  }
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+    top: 175vh;
+    height: 20%;
   }
   * {
     color: gray;
@@ -1225,37 +1222,6 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     font-size: 12vh;
-  }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
-    top: 129.8vh;
-  }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
-    margin-bottom: .6vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 3.9vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 13.7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(9), #section1 .center .sectionWrap2 .list img:nth-of-type(9), #section2 .center .sectionWrap1 .list img:nth-of-type(9), #section2 .center .sectionWrap2 .list img:nth-of-type(9) {
-    margin-bottom: .9vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 3.1vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    padding: 0 3vw 1vh 8vw;
-    font-size: 2.7vh;
-  }
-  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
-    height: 37%;
-    border-left: none;
-  }
-  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
-    margin-top: 2vh;
-    padding: 3vh 3vw 2.8vh 0;
-    border-top: solid 1px #222222;
   }
   * {
     color: green;
@@ -1279,78 +1245,6 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     letter-spacing: 1vw;
-  }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 3.6vh;
-  }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
-    top: 129.5vh;
-  }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
-    margin-bottom: .5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:first-of-type, #section1 .center .sectionWrap2 .list img:first-of-type, #section2 .center .sectionWrap1 .list img:first-of-type, #section2 .center .sectionWrap2 .list img:first-of-type {
-    margin-bottom: .8vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 3.5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
-    margin-bottom: .7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(7), #section1 .center .sectionWrap2 .list img:nth-of-type(7), #section2 .center .sectionWrap1 .list img:nth-of-type(7), #section2 .center .sectionWrap2 .list img:nth-of-type(7) {
-    margin-bottom: .7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 13.9vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 3vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: .6vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 2.7vh;
-  }
-  #section1 .center .sectionWrap1 p:last-of-type, #section1 .center .sectionWrap2 p:last-of-type, #section2 .center .sectionWrap1 p:last-of-type, #section2 .center .sectionWrap2 p:last-of-type {
-    padding-right: 5vw;
-  }
-  * {
-    color: red;
-  }
-}
-
-@media (min-width: 374px) and (min-height: 666px) and (orientation: portrait) {
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
-    margin-bottom: .7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 4vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
-    margin-bottom: 1vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(7), #section1 .center .sectionWrap2 .list img:nth-of-type(7), #section2 .center .sectionWrap1 .list img:nth-of-type(7), #section2 .center .sectionWrap2 .list img:nth-of-type(7) {
-    margin-bottom: .6vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 12.9vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(9), #section1 .center .sectionWrap2 .list img:nth-of-type(9), #section2 .center .sectionWrap1 .list img:nth-of-type(9), #section2 .center .sectionWrap2 .list img:nth-of-type(9) {
-    margin-bottom: .9vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 3.5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: .4vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 2.7vh;
-  }
-  #section1 .center .sectionWrap1 p:last-of-type, #section1 .center .sectionWrap2 p:last-of-type, #section2 .center .sectionWrap1 p:last-of-type, #section2 .center .sectionWrap2 p:last-of-type {
-    padding-right: 5vw;
   }
   * {
     color: red;
@@ -1448,11 +1342,11 @@ html body #section2 .right .sideImg {
     letter-spacing: .2px;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    padding: 3vh 0 3vh 0;
-    font-size: 3.1vh;
+    padding: 3vh 0 0 0;
+    font-size: 3vh;
     text-align: center;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1461,43 +1355,24 @@ html body #section2 .right .sideImg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 128.8vh;
-    left: 32vw;
+    top: 128vh;
+    left: 31.6vw;
+    width: 69%;
+    height: 35%;
   }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5vh 2vw 0 0;
+  }
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
-    margin-bottom: .1vh;
+    padding-top: 0vh;
   }
-  #section1 .center .sectionWrap1 .list img:first-of-type, #section1 .center .sectionWrap2 .list img:first-of-type, #section2 .center .sectionWrap1 .list img:first-of-type, #section2 .center .sectionWrap2 .list img:first-of-type {
-    margin-bottom: 2.8vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 3.1vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(3), #section1 .center .sectionWrap2 .list img:nth-of-type(3), #section2 .center .sectionWrap1 .list img:nth-of-type(3), #section2 .center .sectionWrap2 .list img:nth-of-type(3) {
-    margin-bottom: 2.7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(4), #section1 .center .sectionWrap2 .list img:nth-of-type(4), #section2 .center .sectionWrap1 .list img:nth-of-type(4), #section2 .center .sectionWrap2 .list img:nth-of-type(4) {
-    margin-bottom: .5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
-    margin-bottom: .5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 11.1vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(9), #section1 .center .sectionWrap2 .list img:nth-of-type(9), #section2 .center .sectionWrap1 .list img:nth-of-type(9), #section2 .center .sectionWrap2 .list img:nth-of-type(9) {
-    margin-bottom: .5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 2.6vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: 2.6vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    padding: 0 0vw 1vh 10vw;
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+    padding: .5vw 0 0vh 1vw;
     font-size: 2.4vh;
   }
   #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
@@ -1506,8 +1381,12 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
     margin-top: 2vh;
-    padding: 3vh 3vw 2.8vh 0;
+    padding: 3vh 3vw 0vh 0;
     border-top: solid 1px #222222;
+  }
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+    top: 173vh;
+    height: 20%;
   }
   * {
     color: yellow;
@@ -1525,33 +1404,6 @@ html body #section2 .right .sideImg {
     line-height: 8vh;
     letter-spacing: 1.4px;
     margin: 0 0 0 1.3vw;
-  }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 3.6vh;
-  }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
-    top: 129.6vh;
-  }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
-    margin-bottom: .7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 3.7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 13vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 3.4vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: .8vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 2.7vh;
-  }
-  #section1 .center .sectionWrap1 p:last-of-type, #section1 .center .sectionWrap2 p:last-of-type, #section2 .center .sectionWrap1 p:last-of-type, #section2 .center .sectionWrap2 p:last-of-type {
-    padding-right: 5vw;
   }
   * {
     color: blue;
@@ -1644,11 +1496,11 @@ html body #section2 .right .sideImg {
     letter-spacing: .2px;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    padding: 3vh 0 3vh 0;
-    font-size: 3.4vh;
+    padding: 3vh 0 0vh 6vw;
+    font-size: 3.2vh;
     text-align: center;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1657,44 +1509,25 @@ html body #section2 .right .sideImg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 129.3vh;
-    left: 28vw;
+    top: 129vh;
+    left: 26.6vw;
+    width: 75%;
+    height: 35%;
   }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5vh 3vw 0 0;
+  }
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
-    margin-bottom: .4vh;
+    padding-top: .2vh;
   }
-  #section1 .center .sectionWrap1 .list img:first-of-type, #section1 .center .sectionWrap2 .list img:first-of-type, #section2 .center .sectionWrap1 .list img:first-of-type, #section2 .center .sectionWrap2 .list img:first-of-type {
-    margin-bottom: 2.8vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 3.3vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(3), #section1 .center .sectionWrap2 .list img:nth-of-type(3), #section2 .center .sectionWrap1 .list img:nth-of-type(3), #section2 .center .sectionWrap2 .list img:nth-of-type(3) {
-    margin-bottom: 2.6vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(4), #section1 .center .sectionWrap2 .list img:nth-of-type(4), #section2 .center .sectionWrap1 .list img:nth-of-type(4), #section2 .center .sectionWrap2 .list img:nth-of-type(4) {
-    margin-bottom: .5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
-    margin-bottom: .4vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 10.5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(9), #section1 .center .sectionWrap2 .list img:nth-of-type(9), #section2 .center .sectionWrap1 .list img:nth-of-type(9), #section2 .center .sectionWrap2 .list img:nth-of-type(9) {
-    margin-bottom: .6vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 2.7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: 2.8vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    padding: 0 0vw 1vh 10vw;
-    font-size: 2.5vh;
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+    padding: 0vw 0 0vh 1vw;
+    font-size: 2.4vh;
   }
   #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
     height: 37%;
@@ -1702,20 +1535,14 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
     margin-top: 2vh;
-    padding: 3vh 3vw 2.8vh 0;
     border-top: solid 1px #222222;
+  }
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+    top: 174vh;
+    height: 20%;
   }
   * {
     color: pink;
-  }
-}
-
-@media (min-width: 413px) and (min-height: 735px) and (orientation: portrait) {
-  #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
-    margin-bottom: .7vh;
-  }
-  * {
-    color: cadetblue;
   }
 }
 
@@ -1804,11 +1631,11 @@ html body #section2 .right .sideImg {
     letter-spacing: .2px;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    padding: 3vh 0 3vh 0;
-    font-size: 3.9vh;
+    padding: 3vh 0 0 0;
+    font-size: 3.7vh;
     text-align: center;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1817,46 +1644,25 @@ html body #section2 .right .sideImg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 129.8vh;
-    left: 32vw;
+    top: 129vh;
+    left: 31.6vw;
+    width: 75%;
+    height: 35%;
   }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5vh 3vw 0 0;
+  }
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
+    padding-top: .2vh;
   }
-  #section1 .center .sectionWrap1 .list img:first-of-type, #section1 .center .sectionWrap2 .list img:first-of-type, #section2 .center .sectionWrap1 .list img:first-of-type, #section2 .center .sectionWrap2 .list img:first-of-type {
-    margin-bottom: .6vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 3.7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(3), #section1 .center .sectionWrap2 .list img:nth-of-type(3), #section2 .center .sectionWrap1 .list img:nth-of-type(3), #section2 .center .sectionWrap2 .list img:nth-of-type(3) {
-    margin-bottom: .8vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(4), #section1 .center .sectionWrap2 .list img:nth-of-type(4), #section2 .center .sectionWrap1 .list img:nth-of-type(4), #section2 .center .sectionWrap2 .list img:nth-of-type(4) {
-    margin-bottom: .7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(5), #section1 .center .sectionWrap2 .list img:nth-of-type(5), #section2 .center .sectionWrap1 .list img:nth-of-type(5), #section2 .center .sectionWrap2 .list img:nth-of-type(5) {
-    margin-bottom: .6vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
-    margin-bottom: .7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 13.5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(9), #section1 .center .sectionWrap2 .list img:nth-of-type(9), #section2 .center .sectionWrap1 .list img:nth-of-type(9), #section2 .center .sectionWrap2 .list img:nth-of-type(9) {
-    margin-bottom: .7vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: .5vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: .8vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    padding: 0 0vw 1vh 8.5vw;
-    font-size: 2.7vh;
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+    padding: .5vw 0 0 1.5vw;
+    font-size: 2.6vh;
   }
   #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
     height: 37%;
@@ -1864,8 +1670,11 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
     margin-top: 2vh;
-    padding: 3vh 3vw 2.8vh 0;
     border-top: solid 1px #222222;
+  }
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+    top: 174vh;
+    height: 20%;
   }
   * {
     color: lightblue;
@@ -1957,12 +1766,18 @@ html body #section2 .right .sideImg {
   #section1 .left .logo, #section2 .left .logo {
     width: 15vw;
   }
+  #section1 .center, #section2 .center {
+    width: 85%;
+  }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
     padding: 0 0 0 15.4vw;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 1%;
     font-size: 16vh;
+  }
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+    width: 50%;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
     font-size: 5vh;
@@ -2006,6 +1821,9 @@ html body #section2 .right .sideImg {
     line-height: 19px;
     letter-spacing: 1.2px;
     margin: 0 0 0 2.9vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 85%;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 2.5%;
@@ -2094,6 +1912,9 @@ html body #section2 .right .sideImg {
   #section1 .left .logo, #section2 .left .logo {
     width: 17%;
   }
+  #section1 .center, #section2 .center {
+    width: 83%;
+  }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
     padding: 0 0 0 17.4vw;
   }
@@ -2120,55 +1941,56 @@ html body #section2 .right .sideImg {
     margin-top: 2.5%;
     font-size: 14.5vh;
   }
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+    width: 100%;
+    height: 23%;
+    letter-spacing: .2px;
+  }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    padding: 3vh 0 3vh 0;
-    font-size: 4.7vh;
+    padding: 3vh 0 0 0;
+    font-size: 4vh;
+    text-align: center;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
-    top: 130.7vh;
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 129vh;
+    left: 31.6vw;
+    width: 75%;
+    height: 35%;
   }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5vh 3vw .7vw 0;
+  }
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
+    padding-top: .2vh;
   }
-  #section1 .center .sectionWrap1 .list img:first-of-type, #section1 .center .sectionWrap2 .list img:first-of-type, #section2 .center .sectionWrap1 .list img:first-of-type, #section2 .center .sectionWrap2 .list img:first-of-type {
-    margin-bottom: 1.3vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 1.3vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(3), #section1 .center .sectionWrap2 .list img:nth-of-type(3), #section2 .center .sectionWrap1 .list img:nth-of-type(3), #section2 .center .sectionWrap2 .list img:nth-of-type(3) {
-    margin-bottom: 1vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(4), #section1 .center .sectionWrap2 .list img:nth-of-type(4), #section2 .center .sectionWrap1 .list img:nth-of-type(4), #section2 .center .sectionWrap2 .list img:nth-of-type(4) {
-    margin-bottom: 1vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(5), #section1 .center .sectionWrap2 .list img:nth-of-type(5), #section2 .center .sectionWrap1 .list img:nth-of-type(5), #section2 .center .sectionWrap2 .list img:nth-of-type(5) {
-    margin-bottom: 1vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
-    margin-bottom: 1.2vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(7), #section1 .center .sectionWrap2 .list img:nth-of-type(7), #section2 .center .sectionWrap1 .list img:nth-of-type(7), #section2 .center .sectionWrap2 .list img:nth-of-type(7) {
-    margin-bottom: 1vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 13.6vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(9), #section1 .center .sectionWrap2 .list img:nth-of-type(9), #section2 .center .sectionWrap1 .list img:nth-of-type(9), #section2 .center .sectionWrap2 .list img:nth-of-type(9) {
-    margin-bottom: 1.2vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 1.2vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: .8vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+    padding: 0 0 0 1.5vw;
     font-size: 3vh;
   }
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
+    height: 37%;
+    border-left: none;
+  }
   #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
-    padding: 3vh 3vh 3vh 0;
+    margin-top: 2vh;
+    border-top: solid 1px #222222;
+  }
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+    top: 174vh;
+    height: 20%;
   }
   * {
     color: royalblue;
@@ -2255,6 +2077,9 @@ html body #section2 .right .sideImg {
   }
   #section1 .left .logo, #section2 .left .logo {
     width: 17%;
+  }
+  #section1 .center, #section2 .center {
+    width: 83%;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
     padding: 0 0 0 17.4vw;
@@ -2346,6 +2171,9 @@ html body #section2 .right .sideImg {
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
     display: block;
+  }
+  #section1 .center, #section2 .center {
+    width: 85%;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 1.5%;
@@ -2555,10 +2383,10 @@ html body #section2 .right .sideImg {
     letter-spacing: .2px;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    padding: 3vh 0 3vh 4vh;
-    font-size: 4vh;
+    padding: 3vh 0 0 7vw;
+    font-size: 4.2vh;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap2 .list, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap2 .list {
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2567,43 +2395,25 @@ html body #section2 .right .sideImg {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    top: 129.8vh;
-    left: 27vw;
+    top: 129vh;
+    left: 26.6vw;
+    width: 75%;
+    height: 35%;
   }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5vh 3vw .7vw 0;
+  }
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
+    padding-top: .2vh;
   }
-  #section1 .center .sectionWrap1 .list img:first-of-type, #section1 .center .sectionWrap2 .list img:first-of-type, #section2 .center .sectionWrap1 .list img:first-of-type, #section2 .center .sectionWrap2 .list img:first-of-type {
-    margin-bottom: 1.2vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(2), #section1 .center .sectionWrap2 .list img:nth-of-type(2), #section2 .center .sectionWrap1 .list img:nth-of-type(2), #section2 .center .sectionWrap2 .list img:nth-of-type(2) {
-    margin-bottom: 1.4vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(3), #section1 .center .sectionWrap2 .list img:nth-of-type(3), #section2 .center .sectionWrap1 .list img:nth-of-type(3), #section2 .center .sectionWrap2 .list img:nth-of-type(3) {
-    margin-bottom: 1vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(4), #section1 .center .sectionWrap2 .list img:nth-of-type(4), #section2 .center .sectionWrap1 .list img:nth-of-type(4), #section2 .center .sectionWrap2 .list img:nth-of-type(4) {
-    margin-bottom: .9vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(5), #section1 .center .sectionWrap2 .list img:nth-of-type(5), #section2 .center .sectionWrap1 .list img:nth-of-type(5), #section2 .center .sectionWrap2 .list img:nth-of-type(5) {
-    margin-bottom: .9vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(6), #section1 .center .sectionWrap2 .list img:nth-of-type(6), #section2 .center .sectionWrap1 .list img:nth-of-type(6), #section2 .center .sectionWrap2 .list img:nth-of-type(6) {
-    margin-bottom: 1.2vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(8), #section1 .center .sectionWrap2 .list img:nth-of-type(8), #section2 .center .sectionWrap1 .list img:nth-of-type(8), #section2 .center .sectionWrap2 .list img:nth-of-type(8) {
-    margin-bottom: 14.3vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(10), #section1 .center .sectionWrap2 .list img:nth-of-type(10), #section2 .center .sectionWrap1 .list img:nth-of-type(10), #section2 .center .sectionWrap2 .list img:nth-of-type(10) {
-    margin-bottom: 1.1vh;
-  }
-  #section1 .center .sectionWrap1 .list img:nth-of-type(11), #section1 .center .sectionWrap2 .list img:nth-of-type(11), #section2 .center .sectionWrap1 .list img:nth-of-type(11), #section2 .center .sectionWrap2 .list img:nth-of-type(11) {
-    margin-bottom: 1vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    padding: 0 0vw 1vh 8.5vw;
-    font-size: 3vh;
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+    padding: 0 0 0 1.5vw;
+    font-size: 2.8vh;
   }
   #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
     height: 37%;
@@ -2612,6 +2422,10 @@ html body #section2 .right .sideImg {
   #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
     margin-top: 2vh;
     border-top: solid 1px #222222;
+  }
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+    top: 174vh;
+    height: 20%;
   }
   #section1 .circle, #section2 .circle {
     width: 100px;
