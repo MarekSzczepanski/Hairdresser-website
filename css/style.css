@@ -265,8 +265,7 @@ html body #section1 .left .map .mapP p:hover, html body #section2 .left .map .ma
 html body #section1 .left .map .filler, html body #section1 .left .map .filler2, html body #section2 .left .map .filler, html body #section2 .left .map .filler2 {
   position: absolute;
   top: 10vh;
-  left: 0.55vw;
-  width: 1vw;
+  width: 1.1vw;
   height: 87.6%;
   background-color: black;
   -webkit-transition: top 2s;
@@ -368,19 +367,15 @@ html body #section2 .symbol2 {
   top: 202.1vh;
 }
 
-html body #section2 .center {
-  width: 50%;
-}
-
 html body #section2 .center .sectionWrap1 {
   width: 100%;
+  height: 100%;
 }
 
 html body #section2 .center .sectionWrap1 .container {
   padding-top: 0.5vh;
   height: calc(80vh/5);
   border-bottom: solid 1px #222222;
-  line-height: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,22 +386,12 @@ html body #section2 .center .sectionWrap1 .container {
           align-items: center;
 }
 
-html body #section2 .center .sectionWrap1 .container div {
-  font-size: 3vh;
-  height: 5vh;
-}
-
-html body #section2 .center .sectionWrap1 .container .imgContainerRight {
-  width: 90%;
-  height: 90%;
-  margin: .33vw;
-}
-
-html body #section2 .center .sectionWrap1 .container .imgBox {
-  margin-bottom: 0.5vh;
+html body #section2 .center .sectionWrap1 .container .hair {
   width: 13vh;
   height: 13vh;
+  padding: 5px;
   border: solid 1px #222222;
+  margin-bottom: .5vh;
 }
 
 html body #section2 .center .sectionWrap1 .container .pointing {
@@ -416,13 +401,14 @@ html body #section2 .center .sectionWrap1 .container .pointing {
 }
 
 html body #section2 .right {
-  float: left;
-  width: 20%;
+  height: 100%;
+  border-left: solid 1px #333333;
 }
 
 html body #section2 .right .sideImg {
   position: absolute;
-  left: 120vw;
+  height: 100vh;
+  opacity: .3;
 }
 
 @-webkit-keyframes coverColor {
@@ -560,6 +546,7 @@ html body #section2 .right .sideImg {
     margin: 0vh 0 0 0.9vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    left: 0.55vw;
     display: none;
   }
   #section1 .left .logo, #section2 .left .logo {
@@ -625,447 +612,7 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 580px) {
-  .headerWrap p:first-of-type {
-    font-size: 11vw;
-  }
-  .headerWrap p:nth-of-type(2) {
-    font-size: 3.8vw;
-  }
-  .headerWrap p:nth-of-type(3) {
-    font-size: 1.9vw;
-  }
-  .underline, .underlineCover {
-    width: 41.7vw;
-    left: 29vw;
-  }
-  .burger {
-    right: 5px;
-    top: 5px;
-    font-size: 3.8vh;
-  }
-  nav {
-    top: 79.4vh;
-  }
-  nav ul {
-    height: 20vh;
-    font-size: 2.7vh;
-    line-height: 20vh;
-    letter-spacing: undefined;
-  }
-  nav ul li {
-    width: calc(100vw/6);
-    height: 20vh;
-    padding-top: 0.5vh;
-  }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    top: 103vh;
-    left: .5vw;
-    width: 14vw;
-    height: 14vh;
-  }
-  #section1 .left, #section2 .left {
-    width: 15vw;
-  }
-  #section1 .left .symbol, #section2 .left .symbol {
-    width: 15vw;
-  }
-  #section1 .left .map, #section2 .left .map {
-    width: 15vw;
-  }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
-    left: 50px;
-    right: undefined;
-    width: 90%;
-    height: 8vh;
-    font-size: 11px;
-    color: beige;
-    line-height: 8vh;
-    letter-spacing: 1.6px;
-    margin: 0 0 0 0.7vw;
-  }
-  #section1 .left .logo, #section2 .left .logo {
-    width: 15vw;
-  }
-  #section1 .center, #section2 .center {
-    width: 85%;
-  }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
-    width: 50%;
-  }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 3.8vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 3.1vh;
-  }
-  #section1 .right, #section2 .right {
-    display: none;
-  }
-  #section1 .right .sideImg, #section2 .right .sideImg {
-    display: none;
-  }
-  * {
-    color: brown;
-  }
-}
-
-@media (min-width: 700px) and (max-height: 460px) {
-  .headerWrap p:first-of-type {
-    font-size: 6.2vw;
-  }
-  .headerWrap p:nth-of-type(2) {
-    font-size: 2vw;
-  }
-  .headerWrap p:nth-of-type(3) {
-    font-size: 1.2vw;
-  }
-  .underline, .underlineCover {
-    width: 24.6vw;
-    left: 37.6vw;
-  }
-  nav {
-    top: 79.4vh;
-  }
-  nav ul {
-    height: 20vh;
-    font-size: 4.6vh;
-    line-height: 20vh;
-    letter-spacing: 1px;
-  }
-  nav ul li {
-    width: calc(100vw/6);
-    height: 20vh;
-    padding-top: 0.5vh;
-  }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    width: 8vw;
-    left: 3.5vw;
-  }
-  #section1 .left, #section2 .left {
-    width: 15vw;
-  }
-  #section1 .left .symbol, #section2 .left .symbol {
-    width: 15vw;
-  }
-  #section1 .left .map, #section2 .left .map {
-    width: 15vw;
-  }
-  #section1 .left .logo, #section2 .left .logo {
-    width: 15vw;
-  }
-  #section1 .center, #section2 .center {
-    width: 85%;
-  }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
-    padding: 0 0 0 15.4vw;
-  }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
-    width: 50%;
-  }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 3.9vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 3.5vh;
-  }
-  #section1 .right, #section2 .right {
-    display: none;
-  }
-  #section1 .right .sideImg, #section2 .right .sideImg {
-    display: none;
-  }
-  * {
-    color: seagreen;
-  }
-}
-
-@media (min-width: 840px) and (min-height: 460px) {
-  .headerWrap p:first-of-type {
-    font-size: 9vw;
-  }
-  .headerWrap p:nth-of-type(2) {
-    font-size: 3.1vw;
-  }
-  .headerWrap p:nth-of-type(3) {
-    font-size: 1.5vw;
-  }
-  .underline, .underlineCover {
-    width: 35.7vw;
-    left: 32vw;
-  }
-  .burger {
-    font-size: 1px;
-  }
-  .headerP {
-    display: block;
-    left: undefined;
-    right: 5px;
-    width: 75px;
-    height: 30px;
-    font-size: 18px;
-    color: beige;
-    line-height: 29px;
-    letter-spacing: 0.5px;
-    margin: undefined;
-  }
-  .headerP1 {
-    top: 5px;
-  }
-  .headerP2 {
-    top: 40px;
-  }
-  .headerP3 {
-    top: 75px;
-  }
-  nav {
-    top: 79.4vh;
-  }
-  nav ul {
-    height: 20vh;
-    font-size: 3vh;
-    line-height: 20vh;
-    letter-spacing: 2px;
-  }
-  nav ul li {
-    width: calc(100vw/6);
-    height: 20vh;
-    padding-top: 0.5vh;
-  }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    top: 103.8vh;
-    left: 3.5vw;
-    width: 10vw;
-    height: 13vh;
-    z-index: 1;
-  }
-  #section1 .left, #section2 .left {
-    width: 17vw;
-  }
-  #section1 .left .symbol, #section2 .left .symbol {
-    width: 17vw;
-  }
-  #section1 .left .map, #section2 .left .map {
-    width: 17vw;
-  }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    position: absolute;
-  }
-  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
-    display: block;
-    margin-left: .5vw;
-  }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
-    display: block;
-  }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
-    left: 50px;
-    right: undefined;
-    width: 75%;
-    height: 5vh;
-    font-size: 15px;
-    color: beige;
-    line-height: 5vh;
-    letter-spacing: 1.6px;
-    margin: 0 0 0 2.9vw;
-  }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
-    display: block;
-  }
-  #section1 .left .logo, #section2 .left .logo {
-    width: 17vw;
-  }
-  #section1 .center, #section2 .center {
-    width: 83%;
-  }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
-    padding: 2.5vh 0 0 15.5vw;
-  }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    font-size: 80px;
-  }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 4.2vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 3.2vh;
-  }
-  * {
-    color: cadetblue;
-  }
-}
-
-@media (min-width: 1000px) and (min-height: 400px) and (max-width: 1420px) {
-  .headerWrap p:first-of-type {
-    font-size: 7vw;
-  }
-  .headerWrap p:nth-of-type(2) {
-    font-size: 2.3vw;
-  }
-  .headerWrap p:nth-of-type(3) {
-    font-size: 1.1vw;
-  }
-  .underline, .underlineCover {
-    width: 27.7vw;
-    left: 36vw;
-  }
-  nav {
-    top: 79.4vh;
-  }
-  nav ul {
-    height: 20vh;
-    font-size: 3.7vh;
-    line-height: 20vh;
-    letter-spacing: 2px;
-  }
-  nav ul li {
-    width: calc(100vw/6);
-    height: 20vh;
-    padding-top: 0.5vh;
-  }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    top: 102.2vh;
-    left: 2.5vw;
-    width: 10vw;
-    height: 16vh;
-  }
-  #section1 .left, #section2 .left {
-    width: 15vw;
-  }
-  #section1 .left .symbol, #section2 .left .symbol {
-    width: 15vw;
-  }
-  #section1 .left .map, #section2 .left .map {
-    width: 15vw;
-  }
-  #section1 .left .logo, #section2 .left .logo {
-    width: 15vw;
-  }
-  #section1 .center, #section2 .center {
-    width: 47%;
-  }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
-    width: 62%;
-    padding: 0 0 0 15.5vw;
-  }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    font-size: 75px;
-  }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 3.4vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 2.7vh;
-  }
-  #section1 .right, #section2 .right {
-    display: block;
-    width: 38vw;
-  }
-  #section1 .right .sideImg, #section2 .right .sideImg {
-    display: block;
-    width: 38vw;
-  }
-  * {
-    color: green;
-  }
-}
-
-@media (min-width: 1420px) and (min-height: 430px) {
-  .headerWrap p:first-of-type {
-    font-size: 7vw;
-  }
-  .headerWrap p:nth-of-type(2) {
-    font-size: 2.3vw;
-  }
-  .headerWrap p:nth-of-type(3) {
-    font-size: 1.1vw;
-  }
-  .underline, .underlineCover {
-    width: 27.7vw;
-    left: 36vw;
-  }
-  nav {
-    top: 79.4vh;
-  }
-  nav ul {
-    height: 20vh;
-    font-size: 3.7vh;
-    line-height: 20vh;
-    letter-spacing: 2px;
-  }
-  nav ul li {
-    width: calc(100vw/6);
-    height: 20vh;
-    padding-top: 0.5vh;
-  }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    top: 102.2vh;
-    left: 1vw;
-    width: 10vw;
-    height: 16vh;
-  }
-  #section1 .left, #section2 .left {
-    width: 12vw;
-  }
-  #section1 .left .symbol, #section2 .left .symbol {
-    width: 12vw;
-  }
-  #section1 .left .map, #section2 .left .map {
-    width: 12vw;
-  }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
-    left: 50px;
-    right: undefined;
-    width: 70%;
-    height: 5vh;
-    font-size: 18px;
-    color: beige;
-    line-height: 5vh;
-    letter-spacing: 1.6px;
-    margin: 0 0 0 2.9vw;
-  }
-  #section1 .left .logo, #section2 .left .logo {
-    width: 12vw;
-  }
-  #section1 .center, #section2 .center {
-    width: 50%;
-  }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
-    width: 62%;
-    padding: 0 0 0 12.5vw;
-  }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    font-size: 100px;
-  }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 3.8vh;
-  }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 3vh;
-  }
-  #section1 .right, #section2 .right {
-    display: block;
-    width: 38vw;
-  }
-  #section1 .right .sideImg, #section2 .right .sideImg {
-    display: block;
-    width: 38vw;
-  }
-  * {
-    color: deeppink;
-  }
-}
-
-@media (min-width: 285px) and (max-height: 737px) and (orientation: portrait) {
+@media (min-width: 285px) and (max-width: 580px) and (orientation: portrait) {
   .headerWrap p:first-of-type {
     font-size: 16vw;
   }
@@ -1079,8 +626,8 @@ html body #section2 .right .sideImg {
     width: 0;
   }
   .burger {
-    left: 91.6%;
-    top: 1.5%;
+    right: 5px;
+    top: 5px;
     font-size: 3.8vh;
   }
   .headerP {
@@ -1135,7 +682,7 @@ html body #section2 .right .sideImg {
     right: undefined;
     width: 90%;
     height: 8vh;
-    font-size: 10px;
+    font-size: 8px;
     color: beige;
     line-height: 8vh;
     letter-spacing: 1.1px;
@@ -1160,7 +707,7 @@ html body #section2 .right .sideImg {
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 5%;
     margin-left: 13%;
-    font-size: 12vh;
+    font-size: 10vh;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
     width: 100%;
@@ -1169,7 +716,7 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
     padding: 3vh 0 1vh 0;
-    font-size: 4vh;
+    font-size: 3.2vh;
     text-align: center;
   }
   #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
@@ -1199,7 +746,140 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
     padding: 0vw 0 0vh 1vw;
-    font-size: 2.8vh;
+    font-size: 2.2vh;
+  }
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
+    height: 37%;
+    border-left: none;
+  }
+  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
+    margin-top: 2vh;
+    padding: 3vh 3vw 0vh 0;
+    border-top: solid 1px #222222;
+  }
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+    top: 175vh;
+    height: 20%;
+  }
+  #section1 .center .container, #section2 .center .container {
+    padding-right: 7vw;
+    line-height: 2.5vh;
+  }
+  #section1 .center .container .ofContainer, #section2 .center .container .ofContainer {
+    font-size: 2.5vh;
+    width: 30%;
+  }
+  #section1 .center .container .lastHairImg, #section2 .center .container .lastHairImg {
+    margin-right: 13%;
+  }
+  * {
+    color: gray;
+  }
+}
+
+@media (min-width: 319px) and (min-height: 567px) and (orientation: portrait) {
+  #section1 .left .map, #section2 .left .map {
+    padding-top: 1.5%;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 90%;
+    height: 8vh;
+    font-size: 10px;
+    color: beige;
+    line-height: 8vh;
+    letter-spacing: 1.1px;
+    margin: 0 0 0 0.9vw;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    left: -15%;
+  }
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+    font-size: 10vh;
+  }
+  * {
+    color: green;
+  }
+}
+
+@media (min-width: 359px) and (min-height: 639px) and (orientation: portrait) {
+  .burger {
+    top: 1%;
+  }
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    display: none;
+  }
+  #section1 .left, #section2 .left {
+    width: 25vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 25vw;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 90%;
+    height: 8vh;
+    font-size: 12px;
+    color: beige;
+    line-height: 8vh;
+    letter-spacing: 1.1px;
+    margin: 0 0 0 0.9vw;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 25vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 75vw;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    left: -16%;
+    width: 116vw;
+    background-color: black;
+    padding: 0 0 0 2vw;
+  }
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+    letter-spacing: 1vw;
+  }
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+    width: 100%;
+    height: 23%;
+    letter-spacing: .2px;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    padding: 3vh 0 1vh 0;
+    font-size: 3.2vh;
+    text-align: center;
+  }
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 130vh;
+    left: 26.6vw;
+    width: 75%;
+    height: 35%;
+  }
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: .5vh 3vw 0 0;
+  }
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
+    display: block;
+    height: 3vh;
+    padding-top: .2vh;
+  }
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+    padding: 0vw 0 0vh 1vw;
+    font-size: 2.2vh;
   }
   #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
     height: 37%;
@@ -1215,49 +895,11 @@ html body #section2 .right .sideImg {
     height: 20%;
   }
   * {
-    color: gray;
+    color: orange;
   }
 }
 
-@media (min-width: 319px) and (min-height: 567px) and (orientation: portrait) {
-  #section1 .left .map, #section2 .left .map {
-    padding-top: 1.5%;
-  }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
-    left: -15%;
-  }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    font-size: 12vh;
-  }
-  * {
-    color: green;
-  }
-}
-
-@media (min-width: 359px) and (min-height: 639px) and (orientation: portrait) {
-  .burger {
-    top: 1%;
-  }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
-    left: 50px;
-    right: undefined;
-    width: 90%;
-    height: 8vh;
-    font-size: 12px;
-    color: beige;
-    line-height: 8vh;
-    letter-spacing: 1.1px;
-    margin: 0 0 0 0.9vw;
-  }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    letter-spacing: 1vw;
-  }
-  * {
-    color: red;
-  }
-}
-
-@media (min-width: 374px) and (min-height: 811px) and (max-height: 813px) and (orientation: portrait) {
+@media (min-width: 374px) and (min-height: 811px) and (orientation: portrait) {
   .headerWrap p:first-of-type {
     font-size: 16vw;
   }
@@ -1271,8 +913,8 @@ html body #section2 .right .sideImg {
     width: 0;
   }
   .burger {
-    left: 88.7%;
-    top: 1.7%;
+    right: 5px;
+    top: 5px;
   }
   .headerP {
     display: none;
@@ -1291,7 +933,7 @@ html body #section2 .right .sideImg {
   }
   nav ul {
     height: 20vh;
-    font-size: 4vh;
+    font-size: 3vh;
     line-height: 10vh;
     letter-spacing: 0.7px;
   }
@@ -1338,9 +980,9 @@ html body #section2 .right .sideImg {
     background-color: black;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 15%;
-    font-size: 10vh;
+    font-size: 8.5vh;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
     width: 100%;
@@ -1349,7 +991,7 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
     padding: 3vh 0 0 0;
-    font-size: 3vh;
+    font-size: 2.7vh;
     text-align: center;
   }
   #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
@@ -1379,7 +1021,7 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
     padding: .5vw 0 0vh 1vw;
-    font-size: 2.4vh;
+    font-size: 2.2vh;
   }
   #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
     height: 37%;
@@ -1395,7 +1037,7 @@ html body #section2 .right .sideImg {
     height: 20%;
   }
   * {
-    color: yellow;
+    color: gray;
   }
 }
 
@@ -1416,7 +1058,7 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 410px) and (min-height: 822px) and (max-height: 824px) and (orientation: portrait) {
+@media (min-width: 410px) and (min-height: 822px) and (orientation: portrait) {
   .headerWrap p:first-of-type {
     font-size: 19vw;
   }
@@ -1461,98 +1103,277 @@ html body #section2 .right .sideImg {
     padding-top: 0.5vh;
   }
   #section1 .left, #section2 .left {
-    width: 25vw;
+    width: 30vw;
   }
   #section1 .left .map, #section2 .left .map {
-    width: 25vw;
-    padding-top: 1.7%;
+    width: 30vw;
   }
-  #section1 .left .map .mapPp, #section2 .left .map .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 90%;
     height: 8vh;
-    font-size: 13px;
+    font-size: 15px;
     color: beige;
     line-height: 8vh;
     letter-spacing: 1.3px;
-    margin: 2.7vh 0 2.7vh 1.3vw;
+    margin: 0 0 0 1.4vw;
   }
   #section1 .left .logo, #section2 .left .logo {
-    width: 25%;
+    width: 30%;
   }
   #section1 .center, #section2 .center {
     width: 70%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
-    left: -16%;
-    width: 116%;
-    padding-top: 2.8vh;
-    padding-left: 0;
-    background-color: black;
-  }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    margin-top: 5%;
-    margin-left: 15%;
-    font-size: 11vh;
-  }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
-    width: 100%;
-    height: 23%;
-    letter-spacing: .2px;
-  }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    padding: 3vh 0 0vh 6vw;
-    font-size: 3.2vh;
-    text-align: center;
-  }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    top: 129vh;
-    left: 26.6vw;
-    width: 75%;
-    height: 35%;
-  }
-  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: .5vh 3vw 0 0;
-  }
-  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
-    display: block;
-    height: 3vh;
-    padding-top: .2vh;
-  }
   #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
-    padding: 0vw 0 0vh 1vw;
-    font-size: 2.4vh;
-  }
-  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
-    height: 37%;
-    border-left: none;
-  }
-  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
-    margin-top: 2vh;
-    border-top: solid 1px #222222;
-  }
-  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
-    top: 174vh;
-    height: 20%;
+    font-size: 2vh;
   }
   * {
     color: pink;
   }
 }
 
-@media (min-width: 599px) and (min-height: 959px) and (max-height: 1025px) and (orientation: portrait) {
+@media (min-width: 532px) and (min-height: 319px) and (max-height: 350px) and (orientation: landscape) {
+  .headerWrap p:first-of-type {
+    font-size: 11vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 3.8vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.9vw;
+  }
+  .underline, .underlineCover {
+    width: 41.7vw;
+    left: 29vw;
+  }
+  .burger {
+    top: 1vh;
+    left: 96vw;
+    font-size: 6vh;
+  }
+  .headerP {
+    display: none;
+  }
+  .headerP1 {
+    top: 4vh;
+  }
+  .headerP2 {
+    top: 14vh;
+  }
+  .headerP3 {
+    top: 24vh;
+  }
+  nav {
+    top: 79.4vh;
+  }
+  nav ul {
+    height: 20vh;
+    font-size: 3.8vh;
+    line-height: 20vh;
+    letter-spacing: 0.4px;
+  }
+  nav ul li {
+    width: calc(100vw/6);
+    height: 20vh;
+    padding-top: 0.5vh;
+  }
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    width: 17vh;
+    top: 105vh;
+    left: 4.5vh;
+    display: block;
+  }
+  #section1 .left, #section2 .left {
+    width: 15vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 15vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 15vw;
+  }
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: block;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 78%;
+    height: 5vh;
+    font-size: 10px;
+    color: beige;
+    line-height: 15px;
+    letter-spacing: 0;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    display: block;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 15vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 85%;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    padding: 0 0 0 15.4vw;
+  }
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+    font-size: 16vh;
+  }
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+    width: 50%;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    font-size: 5vh;
+  }
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+    font-size: 4vh;
+  }
+  * {
+    color: orange;
+  }
+}
+
+@media (min-width: 580px) and (max-height: 636px) {
+  .headerWrap p:first-of-type {
+    font-size: 11vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 3.8vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.9vw;
+  }
+  .underline, .underlineCover {
+    width: 41.7vw;
+    left: 29vw;
+  }
+  .burger {
+    right: 5px;
+    top: 5px;
+    font-size: 3.8vh;
+  }
+  nav {
+    top: 79.4vh;
+  }
+  nav ul {
+    height: 20vh;
+    font-size: 2.7vh;
+    line-height: 20vh;
+    letter-spacing: undefined;
+  }
+  nav ul li {
+    width: calc(100vw/6);
+    height: 20vh;
+    padding-top: 0.5vh;
+  }
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    top: 103vh;
+    left: .5vw;
+    width: 14vw;
+    height: 14vh;
+  }
+  #section1 .left, #section2 .left {
+    width: 15vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 15vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 15vw;
+  }
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: none;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: none;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 90%;
+    height: 8vh;
+    font-size: 11px;
+    color: beige;
+    line-height: 8vh;
+    letter-spacing: 1.6px;
+    margin: 0 0 0 0.7vw;
+  }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    display: none;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 15vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 80%;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    left: 0;
+    width: 100%;
+    padding: 0 0 0 20.4vw;
+  }
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+    font-size: 60px;
+    letter-spacing: 0.6vw;
+  }
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+    width: 50%;
+    height: 80vh;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    padding: 5vh 0 5vh 4vw;
+    font-size: 3.3vh;
+  }
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap2 .list div img {
+    display: none;
+  }
+  #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list2 div img {
+    display: none;
+  }
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+    padding: 0 3vw 3vh;
+    font-size: 2.7vh;
+  }
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
+    border-left: solid 1px #222222;
+  }
+  #section1 .right, #section2 .right {
+    float: left;
+    display: none;
+  }
+  #section1 .right .sideImg, #section2 .right .sideImg {
+    display: none;
+  }
+  #section1 .circle, #section2 .circle {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 51px;
+    height: 51px;
+  }
+  #section1 .circle #arrow, #section2 .circle #arrow {
+    float: left;
+    padding-top: 8px;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    font-size: 24px;
+  }
+  * {
+    color: brown;
+  }
+}
+
+@media (min-width: 599px) and (min-height: 959px) and (orientation: portrait) {
   .headerWrap p:first-of-type {
     font-size: 15vw;
   }
@@ -1620,15 +1441,10 @@ html body #section2 .right .sideImg {
     width: 70%;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
-    left: -16%;
-    width: 116%;
-    padding-top: 2.8vh;
-    padding-left: 0;
-    background-color: black;
+    width: 100vw;
+    padding: 0 0 0 30.4vw;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    margin-top: 4%;
-    margin-left: 15%;
     font-size: 12vh;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
@@ -1687,7 +1503,7 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 532px) and (min-height: 319px) and (max-height: 415px) and (max-width: 732px) and (orientation: landscape) {
+@media (min-width: 639px) and (min-height: 359px) and (orientation: landscape) {
   .headerWrap p:first-of-type {
     font-size: 11vw;
   }
@@ -1702,30 +1518,18 @@ html body #section2 .right .sideImg {
     left: 29vw;
   }
   .burger {
-    top: 1vh;
-    left: 96vw;
-    font-size: 6vh;
-  }
-  .headerP {
-    display: none;
-  }
-  .headerP1 {
-    top: 4vh;
-  }
-  .headerP2 {
-    top: 14vh;
-  }
-  .headerP3 {
-    top: 24vh;
+    right: 5px;
+    top: 5px;
+    font-size: 3.8vh;
   }
   nav {
     top: 79.4vh;
   }
   nav ul {
     height: 20vh;
-    font-size: 3.8vh;
+    font-size: 2.7vh;
     line-height: 20vh;
-    letter-spacing: 0.4px;
+    letter-spacing: undefined;
   }
   nav ul li {
     width: calc(100vw/6);
@@ -1733,18 +1537,17 @@ html body #section2 .right .sideImg {
     padding-top: 0.5vh;
   }
   #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    width: 17vh;
-    left: 4.5vh;
-    display: block;
+    left: 3.5vw;
+    width: 13vw;
   }
   #section1 .left, #section2 .left {
-    width: 15vw;
+    width: 20vw;
   }
   #section1 .left .symbol, #section2 .left .symbol {
-    width: 15vw;
+    width: 20vw;
   }
   #section1 .left .map, #section2 .left .map {
-    width: 15vw;
+    width: 20vw;
   }
   #section1 .left .map .mapNav, #section2 .left .map .mapNav {
     display: -webkit-box;
@@ -1758,16 +1561,91 @@ html body #section2 .right .sideImg {
   #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
-    width: 78%;
+    width: 76%;
     height: 5vh;
-    font-size: 10px;
+    font-size: 13px;
     color: beige;
-    line-height: 15px;
-    letter-spacing: 0;
+    line-height: 5vh;
+    letter-spacing: 1.5px;
     margin: 0 0 0 2.9vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
     display: block;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 20vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 80%;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    padding: 0 0 0 20.4vw;
+  }
+  * {
+    color: darkorchid;
+  }
+}
+
+@media (min-width: 700px) and (max-height: 460px) {
+  .headerWrap p:first-of-type {
+    font-size: 6.2vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.2vw;
+  }
+  .underline, .underlineCover {
+    width: 24.6vw;
+    left: 37.6vw;
+  }
+  nav {
+    top: 79.4vh;
+  }
+  nav ul {
+    height: 20vh;
+    font-size: 4.6vh;
+    line-height: 20vh;
+    letter-spacing: 1px;
+  }
+  nav ul li {
+    width: calc(100vw/6);
+    height: 20vh;
+    padding-top: 0.5vh;
+  }
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    width: 8vw;
+    left: 3.5vw;
+  }
+  #section1 .left, #section2 .left {
+    width: 15vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 15vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 15vw;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 90%;
+    height: 8vh;
+    font-size: 11px;
+    color: beige;
+    line-height: 8vh;
+    letter-spacing: 1.6px;
+    margin: 0 0 0 0.7vw;
+  }
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: none;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: none;
+  }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    display: none;
   }
   #section1 .left .logo, #section2 .left .logo {
     width: 15vw;
@@ -1778,65 +1656,95 @@ html body #section2 .right .sideImg {
   #section1 .center .sectionHead, #section2 .center .sectionHead {
     padding: 0 0 0 15.4vw;
   }
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+    width: 50%;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    font-size: 3.9vh;
+  }
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+    font-size: 3.5vh;
+  }
+  #section1 .right, #section2 .right {
+    display: none;
+  }
+  #section1 .right .sideImg, #section2 .right .sideImg {
+    display: none;
+  }
+  * {
+    color: seagreen;
+  }
+}
+
+@media (min-width: 730px) and (min-height: 410px) and (orientation: landscape) {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    top: 103vh;
+    left: 3.5vw;
+    width: 10vw;
+  }
+  #section1 .left, #section2 .left {
+    width: 17vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 17vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 17vw;
+  }
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: block;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 76%;
+    height: 5vh;
+    font-size: 11px;
+    color: beige;
+    line-height: 4.5vh;
+    letter-spacing: 1.2px;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    display: block;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 17%;
+  }
+  #section1 .center, #section2 .center {
+    width: 83%;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    width: 100%;
+    padding: 0 0 0 17.4vw;
+  }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    margin-top: 1%;
-    font-size: 16vh;
+    margin-top: 2.5%;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
     width: 50%;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 5vh;
+    font-size: 20px;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 4vh;
+    font-size: 15px;
+  }
+  #section1 .circle #arrow, #section2 .circle #arrow {
+    padding-top: 9px;
   }
   * {
-    color: yellowgreen;
+    color: white;
   }
 }
 
-@media (min-width: 639px) and (min-height: 359px) and (max-width: 641px) and (orientation: landscape) {
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    left: 2.7vw;
-  }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
-    left: 50px;
-    right: undefined;
-    width: 76%;
-    height: 5vh;
-    font-size: 11px;
-    color: beige;
-    line-height: 17px;
-    letter-spacing: 0.5px;
-    margin: 0 0 0 2.9vw;
-  }
-  * {
-    color: green;
-  }
-}
-
-@media (min-width: 730px) and (min-height: 410px) and (max-width: 732px) and (orientation: landscape) {
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
-    left: 50px;
-    right: undefined;
-    width: 76%;
-    height: 5vh;
-    font-size: 11px;
-    color: beige;
-    line-height: 19px;
-    letter-spacing: 1.2px;
-    margin: 0 0 0 2.9vw;
-  }
-  #section1 .center, #section2 .center {
-    width: 85%;
-  }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    margin-top: 2.5%;
-  }
-}
-
-@media (min-width: 735px) and (min-height: 413px) and (max-height: 415px) and (orientation: landscape) {
+@media (min-width: 735px) and (min-height: 413px) and (max-height: 450px) and (orientation: landscape) {
   .headerWrap p:first-of-type {
     font-size: 11vw;
   }
@@ -1939,13 +1847,13 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 767px) and (min-height: 1023px) and (max-width: 769px) and (orientation: portrait) {
+@media (min-width: 767px) and (min-height: 1023px) and (orientation: portrait) {
   #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     font-size: 30px;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     margin-top: 2.5%;
-    font-size: 14.5vh;
+    font-size: 140px;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
     width: 100%;
@@ -1954,7 +1862,7 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
     padding: 3vh 0 0 0;
-    font-size: 4vh;
+    font-size: 40px;
     text-align: center;
   }
   #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
@@ -1984,7 +1892,7 @@ html body #section2 .right .sideImg {
   }
   #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
     padding: 0 0 0 1.5vw;
-    font-size: 3vh;
+    font-size: 31px;
   }
   #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
     height: 37%;
@@ -2003,7 +1911,7 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 811px) and (min-height: 374px) and (max-height: 376px) and (orientation: landscape) {
+@media (min-width: 811px) and (min-height: 374px) and (max-width: 880px) and (orientation: landscape) {
   .headerWrap p:first-of-type {
     font-size: 11vw;
   }
@@ -2018,8 +1926,8 @@ html body #section2 .right .sideImg {
     left: 29vw;
   }
   .burger {
-    top: 1vh;
-    left: 96.9vw;
+    top: 7px;
+    right: 7px;
     font-size: 6vh;
   }
   .headerP {
@@ -2049,8 +1957,9 @@ html body #section2 .right .sideImg {
     padding-top: 0.5vh;
   }
   #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    width: 17vh;
-    left: 9.9vh;
+    top: 103.3vh;
+    left: 1.5vw;
+    width: 14vw;
     display: block;
   }
   #section1 .left, #section2 .left {
@@ -2070,12 +1979,12 @@ html body #section2 .right .sideImg {
   #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
-    width: 90%;
+    width: 80%;
     height: 5vh;
-    font-size: 3vh;
+    font-size: 13px;
     color: beige;
     line-height: 4.7vh;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 0 0 0 2.9vw;
   }
   #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
@@ -2095,17 +2004,20 @@ html body #section2 .right .sideImg {
     font-size: 17vh;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 6.5vh;
+    font-size: 25px;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 4.2vh;
+    font-size: 15px;
+  }
+  #section1 .circle #arrow, #section2 .circle #arrow {
+    padding-top: 9px;
   }
   * {
     color: lightgreen;
   }
 }
 
-@media (min-width: 822px) and (min-height: 410px) and (max-width: 824px) and (orientation: landscape) {
+@media (min-width: 822px) and (min-height: 410px) and (max-height: 475px) and (orientation: landscape) {
   .headerWrap p:first-of-type {
     font-size: 11vw;
   }
@@ -2151,52 +2063,268 @@ html body #section2 .right .sideImg {
     padding-top: 0.5vh;
   }
   #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    width: 17vh;
-    left: 6.5vh;
-    display: block;
+    left: 3.5vw;
+    width: 10vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
+  #section1 .left, #section2 .left {
+    width: 17vw;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
-    display: block;
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 17vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 17vw;
   }
   #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
-    width: 76%;
+    width: 80%;
     height: 5vh;
     font-size: 3vh;
     color: beige;
     line-height: 4.7vh;
-    letter-spacing: 1.7px;
+    letter-spacing: 2px;
     margin: 0 0 0 2.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
-    display: block;
+  #section1 .left .logo, #section2 .left .logo {
+    width: 17%;
   }
   #section1 .center, #section2 .center {
-    width: 85%;
+    width: 83%;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    padding: 0 0 0 17.4vw;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    margin-top: 1.5%;
-    font-size: 17vh;
+    font-size: 18vh;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
-    font-size: 6vh;
+    font-size: 5.5vh;
   }
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
-    font-size: 4vh;
+    font-size: 3.5vh;
   }
   * {
     color: yellow;
   }
 }
 
-@media (min-width: 1023px) and (min-height: 768px) and (max-width: 1025px) and (orientation: landscape) {
+@media (min-width: 840px) and (min-height: 460px) {
+  .headerWrap p:first-of-type {
+    font-size: 9vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 3.1vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.5vw;
+  }
+  .underline, .underlineCover {
+    width: 35.7vw;
+    left: 32vw;
+  }
+  .burger {
+    font-size: 25px;
+  }
+  nav {
+    top: 79.4vh;
+  }
+  nav ul {
+    height: 20vh;
+    font-size: 3vh;
+    line-height: 20vh;
+    letter-spacing: 2px;
+  }
+  nav ul li {
+    width: calc(100vw/6);
+    height: 20vh;
+    padding-top: 0.5vh;
+  }
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    top: 103.8vh;
+    left: 3.5vw;
+    width: 10vw;
+    height: 13vh;
+    z-index: 1;
+  }
+  #section1 .left, #section2 .left {
+    width: 17vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 17vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 17vw;
+  }
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+  }
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+    display: block;
+    margin-left: .5vw;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: block;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 75%;
+    height: 5vh;
+    font-size: 15px;
+    color: beige;
+    line-height: 5vh;
+    letter-spacing: 1.6px;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    display: block;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 17vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 83%;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    padding: 2.5vh 0 0 15.5vw;
+  }
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+    font-size: 80px;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    font-size: 4.2vh;
+  }
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+    font-size: 3.2vh;
+  }
+  * {
+    color: cadetblue;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 400px) and (max-width: 1420px) {
+  .headerWrap p:first-of-type {
+    font-size: 7vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2.3vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.1vw;
+  }
+  .underline, .underlineCover {
+    width: 27.7vw;
+    left: 36vw;
+  }
+  .burger {
+    font-size: 1px;
+  }
+  .headerP {
+    display: block;
+    left: undefined;
+    right: 5px;
+    width: 75px;
+    height: 30px;
+    font-size: 18px;
+    color: beige;
+    line-height: 29px;
+    letter-spacing: 0.5px;
+    margin: undefined;
+  }
+  .headerP1 {
+    top: 5px;
+  }
+  .headerP2 {
+    top: 40px;
+  }
+  .headerP3 {
+    top: 75px;
+  }
+  nav {
+    top: 79.4vh;
+  }
+  nav ul {
+    height: 20vh;
+    font-size: 3.7vh;
+    line-height: 20vh;
+    letter-spacing: 2px;
+  }
+  nav ul li {
+    width: calc(100vw/6);
+    height: 20vh;
+    padding-top: 0.5vh;
+  }
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    top: 102.2vh;
+    left: 2.5vw;
+    width: 10vw;
+    height: 16vh;
+  }
+  #section1 .left, #section2 .left {
+    width: 15vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 15vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 15vw;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 75%;
+    height: 5vh;
+    font-size: 15px;
+    color: beige;
+    line-height: 5vh;
+    letter-spacing: 1.6px;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 15vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 47%;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    width: 62%;
+    padding: 0 0 0 15.5vw;
+  }
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+    font-size: 75px;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    font-size: 4.5vh;
+    padding: 6vh 2vw 6vh;
+  }
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+    font-size: 17px;
+    padding: 0 .5vw 2.5vh 1.5vw;
+  }
+  #section1 .right, #section2 .right {
+    display: block;
+    width: 38vw;
+  }
+  #section1 .right .sideImg, #section2 .right .sideImg {
+    display: block;
+    width: 38vw;
+  }
+  * {
+    color: green;
+  }
+}
+
+@media (min-width: 1023px) and (min-height: 768px) and (orientation: landscape) {
   .headerWrap p:first-of-type {
     font-size: 11vw;
   }
@@ -2211,8 +2339,8 @@ html body #section2 .right .sideImg {
     left: 29vw;
   }
   .burger {
-    top: .5vh;
-    left: 95.1vw;
+    top: 10px;
+    right: 10px;
     font-size: 6vh;
   }
   .headerP {
@@ -2259,7 +2387,7 @@ html body #section2 .right .sideImg {
     height: 8vh;
     font-size: 28px;
     color: beige;
-    line-height: 61px;
+    line-height: 8vh;
     letter-spacing: 2.7px;
     margin: 0 0 0 1vw;
   }
@@ -2298,7 +2426,7 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 1023px) and (min-height: 1365px) and (max-height: 1367px) and (orientation: portrait) {
+@media (min-width: 1023px) and (min-height: 1335px) and (orientation: portrait) {
   .headerWrap p:first-of-type {
     font-size: 15vw;
   }
@@ -2313,8 +2441,8 @@ html body #section2 .right .sideImg {
     width: 58vw;
   }
   .burger {
-    top: .3vh;
-    left: 93.1vw;
+    top: 10px;
+    right: 10px;
     font-size: 5vh;
   }
   .headerP {
@@ -2333,11 +2461,6 @@ html body #section2 .right .sideImg {
     width: 50vw;
     height: 10vh;
     padding-top: 0.5vh;
-  }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    width: 15vh;
-    left: 2.5vw;
-    display: block;
   }
   #section1 .left, #section2 .left {
     width: 25vw;
@@ -2377,11 +2500,10 @@ html body #section2 .right .sideImg {
   #section1 .center .sectionHead, #section2 .center .sectionHead {
     left: 0;
     width: 100vw;
-    padding: 0 0 0 25.4vw;
+    padding: 0 12vw 0 0;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    margin-top: 3%;
-    font-size: 10.5vh;
+    font-size: 130px;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
     width: 100%;
@@ -2403,7 +2525,7 @@ html body #section2 .right .sideImg {
             flex-direction: column;
     top: 129vh;
     left: 26.6vw;
-    width: 75%;
+    width: 73%;
     height: 35%;
   }
   #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
@@ -2433,6 +2555,9 @@ html body #section2 .right .sideImg {
     top: 174vh;
     height: 20%;
   }
+  #section1 .right, #section2 .right {
+    display: none;
+  }
   #section1 .circle, #section2 .circle {
     width: 100px;
     height: 100px;
@@ -2448,7 +2573,7 @@ html body #section2 .right .sideImg {
   }
 }
 
-@media (min-width: 1365px) and (min-height: 767px) and (max-width: 1367px) and (orientation: landscape) {
+@media (min-width: 1365px) and (min-height: 767px) and (orientation: landscape) {
   .headerWrap p:first-of-type {
     font-size: 12vw;
   }
@@ -2501,39 +2626,62 @@ html body #section2 .right .sideImg {
     padding-top: 0.5vh;
   }
   #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
-    width: 12vw;
-    height: 16.7vh;
-    left: 2vh;
+    width: 15vw;
+    left: 3vw;
+  }
+  #section1 .left, #section2 .left {
+    width: 21vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 21vw;
+  }
+  #section1 .left .map .symbol, #section2 .left .map .symbol {
+    width: 21vw;
+  }
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
   }
   #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
     width: 1.0vw;
   }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: block;
+  }
   #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
-    width: 70%;
+    width: 80%;
     height: 5vh;
-    font-size: 20px;
+    font-size: 27px;
     color: beige;
     line-height: 5vh;
     letter-spacing: undefined;
     margin: 0 0 0 2.9vw;
   }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    display: block;
+  }
   #section1 .center, #section2 .center {
-    width: 60vw;
+    width: 79vw;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead {
-    width: 80vw;
+    width: 100vw;
+    padding: 0 0 0 21.4vw;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
-    width: 30vw;
+    width: 39.5vw;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    font-size: 40px;
+  }
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+    font-size: 28px;
   }
   #section1 .right, #section2 .right {
-    width: 25vw;
-  }
-  #section1 .right .sideImg, #section2 .right .sideImg {
-    left: 75vw;
-    width: 25vw;
+    display: none;
   }
   #section1 .circle, #section2 .circle {
     width: 100px;
@@ -2547,6 +2695,261 @@ html body #section2 .right .sideImg {
   }
   * {
     color: orchid;
+  }
+}
+
+@media (min-width: 1420px) and (min-height: 430px) {
+  .headerWrap p:first-of-type {
+    font-size: 7vw;
+  }
+  .headerWrap p:nth-of-type(2) {
+    font-size: 2.3vw;
+  }
+  .headerWrap p:nth-of-type(3) {
+    font-size: 1.1vw;
+  }
+  .underline, .underlineCover {
+    width: 27.7vw;
+    left: 36vw;
+  }
+  nav {
+    top: 79.4vh;
+  }
+  nav ul {
+    height: 20vh;
+    font-size: 3.7vh;
+    line-height: 20vh;
+    letter-spacing: 2px;
+  }
+  nav ul li {
+    width: calc(100vw/6);
+    height: 20vh;
+    padding-top: 0.5vh;
+  }
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    top: 102.2vh;
+    left: 1vw;
+    width: 10vw;
+    height: 16vh;
+  }
+  #section1 .left, #section2 .left {
+    width: 12vw;
+  }
+  #section1 .left .symbol, #section2 .left .symbol {
+    width: 12vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 12vw;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: 50px;
+    right: undefined;
+    width: 70%;
+    height: 5vh;
+    font-size: 2.2vh;
+    color: beige;
+    line-height: 5vh;
+    letter-spacing: 1.6px;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 12vw;
+  }
+  #section1 .center, #section2 .center {
+    width: 50%;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    width: 62%;
+    padding: 0 0 0 12.5vw;
+  }
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+    font-size: 13vh;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    font-size: 3.8vh;
+  }
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+    font-size: 3vh;
+  }
+  #section1 .right, #section2 .right {
+    display: block;
+    width: 38vw;
+  }
+  #section1 .right .sideImg, #section2 .right .sideImg {
+    display: block;
+    width: 38vw;
+  }
+  * {
+    color: deeppink;
+  }
+}
+
+@media (min-width: 1439px) and (min-height: 899px) {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    width: 15vw;
+    left: 1vw;
+  }
+  #section1 .left, #section2 .left {
+    width: 17vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 17vw;
+  }
+  #section1 .left .map .symbol, #section2 .left .map .symbol {
+    width: 17vw;
+  }
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+  }
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+    width: 1.0vw;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: block;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: undefined;
+    right: undefined;
+    width: 80%;
+    height: 5vh;
+    font-size: 27px;
+    color: beige;
+    line-height: 5vh;
+    letter-spacing: undefined;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    display: block;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 17%;
+  }
+  #section1 .center, #section2 .center {
+    width: 79vw;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    width: 100vw;
+    padding: 0 0 0 21.4vw;
+  }
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+    width: 39.5vw;
+  }
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+    font-size: 3.8vh;
+  }
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+    font-size: 3vh;
+  }
+  #section1 .right, #section2 .right {
+    display: none;
+  }
+  #section1 .circle, #section2 .circle {
+    width: 100px;
+    height: 100px;
+  }
+  #section1 .circle #arrow, #section2 .circle #arrow {
+    width: 95px;
+    height: 95px;
+    padding-top: 20px;
+    font-size: 50px;
+  }
+  * {
+    color: blue;
+  }
+}
+
+@media (min-width: 1900px) {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+    width: 15vw;
+    left: 1vw;
+  }
+  #section1 .left, #section2 .left {
+    width: 17vw;
+  }
+  #section1 .left .map, #section2 .left .map {
+    width: 17vw;
+  }
+  #section1 .left .map .symbol, #section2 .left .map .symbol {
+    width: 17vw;
+  }
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+  }
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+    width: 1.0vw;
+  }
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    display: block;
+    margin-right: 2px;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: undefined;
+    right: undefined;
+    width: 80%;
+    height: 5vh;
+    font-size: 27px;
+    color: beige;
+    line-height: 5vh;
+    letter-spacing: undefined;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    display: block;
+  }
+  #section1 .left .logo, #section2 .left .logo {
+    width: 17%;
+  }
+  #section1 .center, #section2 .center {
+    width: 79vw;
+  }
+  #section1 .center .sectionHead, #section2 .center .sectionHead {
+    width: 100vw;
+    padding: 0 0 0 17.4vw;
+  }
+  #section1 .right, #section2 .right {
+    display: none;
+  }
+  #section1 .circle, #section2 .circle {
+    width: 100px;
+    height: 100px;
+  }
+  #section1 .circle #arrow, #section2 .circle #arrow {
+    width: 95px;
+    height: 95px;
+    padding-top: 20px;
+    font-size: 50px;
+  }
+  * {
+    color: goldenrod;
+  }
+}
+
+@media (min-width: 2800px) {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+    margin-right: 3px;
+  }
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+    left: undefined;
+    right: undefined;
+    width: 80%;
+    height: 5vh;
+    font-size: 45px;
+    color: beige;
+    line-height: 5vh;
+    letter-spacing: undefined;
+    margin: 0 0 0 2.9vw;
+  }
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+    left: 0.5vw;
+  }
+  * {
+    color: white;
   }
 }
 /*# sourceMappingURL=style.css.map */
