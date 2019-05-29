@@ -15,12 +15,12 @@ const moveToSection = (e) => {
                 behavior: 'smooth'
             });
             sessionStorage.setItem('selectedSection', e.target.id);
-            if (i === 1) {
+            /* if (i === 1) {
                 const doAnimationsSymbol2 = this.newAnimations.animation(document.querySelector(".symbol"+1), "top", "-20vh", "101.9vh", 1000)
             }
             else if (i === 2){
                 const doAnimationsSymbol = this.newAnimations.animation(document.querySelector(".symbol"+2), "top", "80vh", "202.1vh", 1000)
-            }
+            } */
             document.querySelector(".filler").style.top = fillerScroll-4+"vh";
             document.querySelector(".mapP"+i).style.border = "solid #B51FAD 1px";
             document.querySelector(".mapP"+i).style.color = "orchid";
@@ -57,3 +57,27 @@ if (selected !== null) {
         fillerPosition += 12;
     }
 } 
+
+const showImage = (e) => {
+    for (let i=1; i<6; i++) {
+        if (e.target.id === "hair"+i) {
+            e.target.style.zIndex = "1"
+            e.target.style.position = "absolute"
+            if (window.innerHeight < window.innerWidth) {
+                e.target.style.width = "60vw";
+                e.target.style.height = "98vh";
+                e.target.style.top = "201vh"
+                e.target.style.left = "20vw"
+            }
+            else {
+                e.target.style.width = "95vw";
+                e.target.style.height = "95vh";
+                e.target.style.top = "202.5vh"
+                e.target.style.left = "2.5vw"
+            }
+        }     
+    }      
+}
+for (let i=1; i<6; i++) {
+    document.getElementById("hair"+i).addEventListener("click", showImage);
+}
