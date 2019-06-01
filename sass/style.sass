@@ -4,11 +4,14 @@
   margin: 0
   padding: 0
   box-sizing: border-box
-  list-style-type: none
+  list-style-type: none 
 ::-webkit-scrollbar  
   display: none
 html
   overflow: hidden
+  font-size: 16px
+  line-height: 1.15
+  -webkit-text-size-adjust: 100%
   body
     background-color: black
     font-family: 'Josefin Sans'
@@ -103,11 +106,11 @@ html
         border-top: $borders2
       li:hover
         +hover(orchid)
-    #section1, #section2
+    section
       height: 100vh
       border-bottom: $borders2
       border-top: $borders2
-      .symbol1, .symbol2
+      .symbol1, .symbol2, .symbol3
         position: absolute
         opacity: 0.6
       .left      
@@ -249,7 +252,12 @@ html
         .sideImg
           position: absolute
           height: 100vh
-          opacity: .3  
+          opacity: .3 
+    #section3
+      .center
+        .sectionWrap1
+          width: 100%
+          float: none
 @keyframes coverColor
     0%
       left: 15vw
@@ -290,7 +298,7 @@ html
         width: 50vw
         height: 10vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       top: 101.9vh
       left: 2.6vw
@@ -315,7 +323,7 @@ html
             display: none
         .mapP
           .mapPp
-            +pStyle(50px, undefined, 90%, 8vh, 2.7vh, beige, 8vh, 1.6px, 0vh 0 0 .9vw)
+            +pStyle(50px, undefined, 90%, 8vh, .6em, beige, 8vh, 1.6px, 0vh 0 0 .9vw)
         .filler, .filler2
           left: 0.55vw
           display: none
@@ -377,7 +385,99 @@ html
           margin-right: 13% 
         .pointing
           width: 6vw
-          height: 6vw   
+          height: 6vw
+  #section3
+    .symbol3
+      top: 303vh
+      left: 3vw
+      width: 14vw
+      height: 14vh
+    .center
+      .sectionWrap1
+        display: flex
+        justify-content: center
+        height: 55vh
+        .textWrap
+          display: flex
+          width: 18em
+          height: 15em
+          text-transform: uppercase
+          margin-top: 1em
+          .vertical
+            display: flex
+            flex-direction: column
+            width: 1.2em
+            height: $textWrapHeight11
+            p
+              font-weight: 200
+              padding: 0
+              font-size: 1.4em
+              transform: rotate(270deg)
+              margin-top: 215px
+              letter-spacing: 10px
+              height: 30px
+          .horizontal
+            width: 250px
+            p
+              font-weight: 400
+              width: 160px
+              font-size: 5.3em
+              padding: 0 
+              height: 75px
+            p:nth-of-type(2)
+              letter-spacing: .13em
+            p:nth-of-type(4)
+              letter-spacing: .09em
+            p:first-of-type
+              height: 15px
+              width: 190px
+              font-size: 1.55em
+              letter-spacing: .34em
+          .vertical2
+            margin-top: 23px
+            width: 20px
+            p
+              height: 160px
+              width: 20px
+              writing-mode: vertical-rl
+              text-orientation: upright
+              font-size: 2em
+              padding: 0
+              font-weight: 400
+              letter-spacing: .17em
+      .arrows
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 73vw
+        height: 10.9vh
+        i
+          font-size: 3em
+      .offerWrap
+        width: 68vw
+        height: 14vh
+        background-color: #29072A
+        position: absolute
+        z-index: -2
+        border-top: $borders2
+        .offer, .offer2
+          position: absolute
+          display: flex
+          justify-content: space-around
+          align-items: center 
+          height: 14vh
+          white-space: nowrap
+          p 
+            font-size: 1em
+            margin-left: 3vw
+            color: beige
+        .offer2
+          margin-left: 120vw
+      .section3Cover
+        background-color: black
+        width: 12vw
+        height: 14vh
+        float: right     
   *
     color: blue
 @media (min-width: 285px) and (max-width: 580px) and (orientation: portrait) // Nokia Lumia
@@ -1575,7 +1675,7 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       top: 102.2vh
       left: 2.5vw
@@ -1619,6 +1719,13 @@ html
       .container
         #hair5
           margin-right: 0
+  #section3
+    .symbol3
+      top: 302.5vh
+      left: 2.5vw
+      width: 7vw
+    .center
+      
   *
     color: green
 @media (min-width: 1023px) and (min-height: 768px) and (orientation: landscape) //iPad
@@ -1906,7 +2013,7 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       top: 102.2vh
       left: 1vw
@@ -1947,8 +2054,114 @@ html
   #section2
     .symbol2
       top: 202.3vh
+  #section3
+    .symbol3
+      top: 302.5vh
+      left: 2.5vw
+      width: 7vw
+    .center
+      .sectionWrap1
+        height: 55vh
+        .textWrap
+          display: flex
+          width: 24em
+          height: 19em
+          text-transform: uppercase
+          margin-top: 4em
+          .vertical
+            display: flex
+            flex-direction: column
+            width: 2em
+            height: 19em
+            p
+              font-weight: 400
+              padding: 0
+              font-size: 31px
+              transform: rotate(270deg)
+              margin-top: 270px
+              letter-spacing: 10px
+              height: 30px
+              animation: textWrapVerticalFromDown 4s ease-in 1s
+          .horizontal
+            width: 290px
+            p
+              color: black
+              font-weight: 400
+              width: 260px
+              height: calc(270px/3)
+              font-size: 6.6em
+              padding: 0 
+              height: 89px
+              transform-origin: 10% 10%
+            p:nth-of-type(2)
+              margin-top: .03em
+              letter-spacing: .13em
+            p:nth-of-type(4)
+              letter-spacing: .09em
+            p:first-of-type
+              color: beige
+              height: 30px
+              width: 340px
+              font-size: 2em
+              letter-spacing: .33em
+          .vertical2
+            margin-top: 35px
+            width: 50px   
+            p
+              margin-left: 0
+              height: 170px
+              width: 50px
+              writing-mode: vertical-rl
+              text-orientation: upright
+              font-size: 2.83em
+              padding: 0
+              color: #F018E6
+      .arrows
+        display: flex
+        justify-content: space-around
+        align-items: center
+        width: 73vw
+        height: 10.9vh
+        i
+          font-size: 3em
+      .offerWrap
+        width: 73vw
+        height: 14vh
+        background-color: #29072A
+        position: absolute
+        z-index: -2
+        border-top: $borders2
+        .offer
+          position: absolute
+          display: flex
+          justify-content: space-around
+          align-items: center 
+          width: 73vw
+          height: 14vh
+          background-color: #29072A
+          p 
+            font-size: 2em
+            color: beige
+        .offer2
+          margin-left: 90vw
+          display: flex
+          float: left
+          justify-content: space-around
+          align-items: center 
+          width: 73vw
+          height: 14vh
+          p 
+            font-size: 2em
+            color: beige
+    .right
+      div
+        float: right
+        margin-top: 86vh
+        width: 15vw  
+        height: 14vh
+        background-color: black
   *
-    color: deeppink
+    color: beige
 @media (min-width: 1439px) and (min-height: 899px)
   header
     .headerP

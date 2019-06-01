@@ -4,3 +4,4 @@
 4) Lower contrast between element's border and background makes the borders look thinner.  
 5) How to use conditional statements with media querries in JS.
 6) Window innerHeight and innerWidth properties (helpful with displaying images from section2).
+7) White-space: no-wrap property.

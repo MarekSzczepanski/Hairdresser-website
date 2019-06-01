@@ -12,6 +12,9 @@
 
 html {
   overflow: hidden;
+  font-size: 16px;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
 }
 
 html body {
@@ -161,25 +164,25 @@ html body nav li:hover {
   color: orchid;
 }
 
-html body #section1, html body #section2 {
+html body section {
   height: 100vh;
   border-bottom: solid 1px #222222;
   border-top: solid 1px #222222;
 }
 
-html body #section1 .symbol1, html body #section1 .symbol2, html body #section2 .symbol1, html body #section2 .symbol2 {
+html body section .symbol1, html body section .symbol2, html body section .symbol3 {
   position: absolute;
   opacity: 0.6;
 }
 
-html body #section1 .left, html body #section2 .left {
+html body section .left {
   height: 100%;
   float: left;
   background-color: black;
   border-right: solid 1px #222222;
 }
 
-html body #section1 .left .symbol, html body #section2 .left .symbol {
+html body section .left .symbol {
   position: fixed;
   top: 0;
   left: 0;
@@ -187,14 +190,14 @@ html body #section1 .left .symbol, html body #section2 .left .symbol {
   z-index: 2;
 }
 
-html body #section1 .left .map, html body #section2 .left .map {
+html body section .left .map {
   position: fixed;
   top: 20vh;
   height: 66%;
   text-align: center;
 }
 
-html body #section1 .left .map .mapNav, html body #section2 .left .map .mapNav {
+html body section .left .map .mapNav {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -205,14 +208,14 @@ html body #section1 .left .map .mapNav, html body #section2 .left .map .mapNav {
   height: 100%;
 }
 
-html body #section1 .left .map .mapNav div, html body #section2 .left .map .mapNav div {
+html body section .left .map .mapNav div {
   height: 5vh;
   background-color: #F018E6;
   opacity: .6;
   margin-left: .5vw;
 }
 
-html body #section1 .left .map .mapNavBorders, html body #section2 .left .map .mapNavBorders {
+html body section .left .map .mapNavBorders {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,12 +232,12 @@ html body #section1 .left .map .mapNavBorders, html body #section2 .left .map .m
   z-index: 1;
 }
 
-html body #section1 .left .map .mapNavBorders div, html body #section2 .left .map .mapNavBorders div {
+html body section .left .map .mapNavBorders div {
   height: 5vh;
   border: solid 1px #555555;
 }
 
-html body #section1 .left .map .mapP, html body #section2 .left .map .mapP {
+html body section .left .map .mapP {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,7 +251,7 @@ html body #section1 .left .map .mapP, html body #section2 .left .map .mapP {
   width: 100%;
 }
 
-html body #section1 .left .map .mapP p, html body #section2 .left .map .mapP p {
+html body section .left .map .mapP p {
   padding-top: 0.3vh;
   font-weight: bold;
   border: solid 1px #555555;
@@ -256,12 +259,12 @@ html body #section1 .left .map .mapP p, html body #section2 .left .map .mapP p {
   transition: color 2s;
 }
 
-html body #section1 .left .map .mapP p:hover, html body #section2 .left .map .mapP p:hover {
+html body section .left .map .mapP p:hover {
   cursor: pointer;
   color: orchid;
 }
 
-html body #section1 .left .map .filler, html body #section1 .left .map .filler2, html body #section2 .left .map .filler, html body #section2 .left .map .filler2 {
+html body section .left .map .filler, html body section .left .map .filler2 {
   position: absolute;
   top: 10vh;
   width: 1.1vw;
@@ -271,30 +274,30 @@ html body #section1 .left .map .filler, html body #section1 .left .map .filler2,
   transition: top 2s;
 }
 
-html body #section1 .left .map .filler2, html body #section2 .left .map .filler2 {
+html body section .left .map .filler2 {
   top: -55vh;
   height: 86%;
 }
 
-html body #section1 .left .logo, html body #section2 .left .logo {
+html body section .left .logo {
   position: fixed;
   top: 86vh;
   height: 14%;
   border-top: solid 1px #222222;
 }
 
-html body #section1 .left .logo img, html body #section2 .left .logo img {
+html body section .left .logo img {
   width: 80%;
   height: 80%;
   margin: 6% 10%;
 }
 
-html body #section1 .center, html body #section2 .center {
+html body section .center {
   height: 100%;
   float: left;
 }
 
-html body #section1 .center .sectionHead, html body #section2 .center .sectionHead {
+html body section .center .sectionHead {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,31 +312,31 @@ html body #section1 .center .sectionHead, html body #section2 .center .sectionHe
   border-bottom: solid 1px #222222;
 }
 
-html body #section1 .center .sectionHead p, html body #section2 .center .sectionHead p {
+html body section .center .sectionHead p {
   text-align: center;
 }
 
-html body #section1 .center .sectionWrap1, html body #section1 .center .sectionWrap2, html body #section2 .center .sectionWrap1, html body #section2 .center .sectionWrap2 {
+html body section .center .sectionWrap1, html body section .center .sectionWrap2 {
   margin-top: 20vh;
   float: left;
 }
 
-html body #section1 .center .sectionWrap1 p, html body #section1 .center .sectionWrap2 p, html body #section2 .center .sectionWrap1 p, html body #section2 .center .sectionWrap2 p {
+html body section .center .sectionWrap1 p, html body section .center .sectionWrap2 p {
   font-weight: bold;
 }
 
-html body #section1 .right, html body #section2 .right {
+html body section .right {
   height: 100%;
   border-left: solid 1px #333333;
 }
 
-html body #section1 .right .sideImg, html body #section2 .right .sideImg {
+html body section .right .sideImg {
   position: absolute;
   height: 100vh;
   opacity: .3;
 }
 
-html body #section1 .right .credits1, html body #section1 .right .credits2, html body #section1 .right .credits3, html body #section2 .right .credits1, html body #section2 .right .credits2, html body #section2 .right .credits3 {
+html body section .right .credits1, html body section .right .credits2, html body section .right .credits3 {
   position: absolute;
   width: 65vw;
   height: 2vh;
@@ -342,22 +345,22 @@ html body #section1 .right .credits1, html body #section1 .right .credits2, html
   background-color: black;
 }
 
-html body #section1 .right .credits2, html body #section2 .right .credits2 {
+html body section .right .credits2 {
   top: 195vh;
 }
 
-html body #section1 .right .credits3, html body #section2 .right .credits3 {
+html body section .right .credits3 {
   top: 197vh;
 }
 
-html body #section1 .circle #arrow, html body #section2 .circle #arrow {
+html body section .circle #arrow {
   color: beige;
   border: solid 2px beige;
   border-radius: 50%;
   z-index: 1;
 }
 
-html body #section1 #arrow:hover, html body #section2 #arrow:hover {
+html body section #arrow:hover {
   cursor: pointer;
   color: undefined;
 }
@@ -402,6 +405,11 @@ html body #section2 .right .sideImg {
   position: absolute;
   height: 100vh;
   opacity: .3;
+}
+
+html body #section3 .center .sectionWrap1 {
+  width: 100%;
+  float: none;
 }
 
 @-webkit-keyframes coverColor {
@@ -494,19 +502,19 @@ html body #section2 .right .sideImg {
     height: 10vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     top: 101.9vh;
     left: 2.6vw;
     width: 16vw;
     height: 16vh;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 20vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 20vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -518,82 +526,82 @@ html body #section2 .right .sideImg {
         justify-content: space-around;
     width: 20vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
     display: none;
     height: 100%;
   }
-  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div, #section3 .left .map .mapNav div {
     width: 1.1vw;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
     display: none;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 90%;
     height: 8vh;
-    font-size: 2.7vh;
+    font-size: 0.6em;
     color: beige;
     line-height: 8vh;
     letter-spacing: 1.6px;
     margin: 0vh 0 0 0.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     left: 0.55vw;
     display: none;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 20%;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 80%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     left: 0;
     width: 100%;
     padding: 0 0 0 20.4vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     font-size: 60px;
     letter-spacing: 0.6vw;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 50%;
     height: 80vh;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     padding: 5vh 0 5vh 4vw;
     font-size: 3.3vh;
   }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img {
+  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img, #section3 .center .sectionWrap1 .list img, #section3 .center .sectionWrap2 .list img {
     display: none;
   }
-  #section1 .center .sectionWrap1 .list2 img, #section1 .center .sectionWrap2 .list2 img, #section2 .center .sectionWrap1 .list2 img, #section2 .center .sectionWrap2 .list2 img {
+  #section1 .center .sectionWrap1 .list2 img, #section1 .center .sectionWrap2 .list2 img, #section2 .center .sectionWrap1 .list2 img, #section2 .center .sectionWrap2 .list2 img, #section3 .center .sectionWrap1 .list2 img, #section3 .center .sectionWrap2 .list2 img {
     display: none;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     padding: 0 3vw 3vh;
     font-size: 2.7vh;
   }
-  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2, #section3 .center .sectionWrap2 {
     border-left: solid 1px #222222;
   }
-  #section1 .right, #section2 .right {
+  #section1 .right, #section2 .right, #section3 .right {
     float: left;
     display: none;
   }
-  #section1 .right .sideImg, #section2 .right .sideImg {
+  #section1 .right .sideImg, #section2 .right .sideImg, #section3 .right .sideImg {
     display: none;
   }
-  #section1 .circle, #section2 .circle {
+  #section1 .circle, #section2 .circle, #section3 .circle {
     position: fixed;
     right: 0;
     bottom: 0;
     width: 51px;
     height: 51px;
   }
-  #section1 .circle #arrow, #section2 .circle #arrow {
+  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow {
     float: left;
     padding-top: 8px;
     width: 46px;
@@ -614,6 +622,139 @@ html body #section2 .right .sideImg {
   #section2 .sectionWrap1 .container .pointing {
     width: 6vw;
     height: 6vw;
+  }
+  #section3 .symbol3 {
+    top: 303vh;
+    left: 3vw;
+    width: 14vw;
+    height: 14vh;
+  }
+  #section3 .center .sectionWrap1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 55vh;
+  }
+  #section3 .center .sectionWrap1 .textWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 18em;
+    height: 15em;
+    text-transform: uppercase;
+    margin-top: 1em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 1.2em;
+    height: 11em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical p {
+    font-weight: 200;
+    padding: 0;
+    font-size: 1.4em;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    margin-top: 215px;
+    letter-spacing: 10px;
+    height: 30px;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal {
+    width: 250px;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p {
+    font-weight: 400;
+    width: 160px;
+    font-size: 5.3em;
+    padding: 0;
+    height: 75px;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p:nth-of-type(2) {
+    letter-spacing: .13em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p:nth-of-type(4) {
+    letter-spacing: .09em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p:first-of-type {
+    height: 15px;
+    width: 190px;
+    font-size: 1.55em;
+    letter-spacing: .34em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical2 {
+    margin-top: 23px;
+    width: 20px;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical2 p {
+    height: 160px;
+    width: 20px;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2em;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: .17em;
+  }
+  #section3 .center .arrows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 73vw;
+    height: 10.9vh;
+  }
+  #section3 .center .arrows i {
+    font-size: 3em;
+  }
+  #section3 .center .offerWrap {
+    width: 68vw;
+    height: 14vh;
+    background-color: #29072A;
+    position: absolute;
+    z-index: -2;
+    border-top: solid 1px #222222;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 14vh;
+    white-space: nowrap;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    font-size: 1em;
+    margin-left: 3vw;
+    color: beige;
+  }
+  #section3 .center .offerWrap .offer2 {
+    margin-left: 120vw;
+  }
+  #section3 .center .section3Cover {
+    background-color: black;
+    width: 12vw;
+    height: 14vh;
+    float: right;
   }
   * {
     color: blue;
@@ -2394,22 +2535,22 @@ html body #section2 .right .sideImg {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     top: 102.2vh;
     left: 2.5vw;
     width: 10vw;
     height: 16vh;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 15vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 15vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 15vw;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 75%;
@@ -2420,32 +2561,32 @@ html body #section2 .right .sideImg {
     letter-spacing: 1.6px;
     margin: 0 0 0 2.9vw;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 15vw;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 47%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     width: 62%;
     padding: 0 0 0 15.5vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     font-size: 75px;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     font-size: 4.5vh;
     padding: 6vh 2vw 6vh;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     font-size: 17px;
     padding: 0 .5vw 2.5vh 1.5vw;
   }
-  #section1 .right, #section2 .right {
+  #section1 .right, #section2 .right, #section3 .right {
     display: block;
     width: 38vw;
   }
-  #section1 .right .sideImg, #section2 .right .sideImg {
+  #section1 .right .sideImg, #section2 .right .sideImg, #section3 .right .sideImg {
     display: block;
     width: 38vw;
   }
@@ -2454,6 +2595,11 @@ html body #section2 .right .sideImg {
   }
   #section2 .center .container #hair5 {
     margin-right: 0;
+  }
+  #section3 .symbol3 {
+    top: 302.5vh;
+    left: 2.5vw;
+    width: 7vw;
   }
   * {
     color: green;
@@ -2898,22 +3044,22 @@ html body #section2 .right .sideImg {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     top: 102.2vh;
     left: 1vw;
     width: 10vw;
     height: 16vh;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 12vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 12vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 12vw;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 70%;
@@ -2924,43 +3070,193 @@ html body #section2 .right .sideImg {
     letter-spacing: 1.6px;
     margin: 0 0 0 2.9vw;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 12vw;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 50%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     width: 62%;
     padding: 0 0 0 12.5vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     font-size: 13vh;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 50%;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     font-size: 1.9em;
     padding-left: 12%;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     font-size: 3vh;
     padding-bottom: 4%;
   }
-  #section1 .right, #section2 .right {
+  #section1 .right, #section2 .right, #section3 .right {
     display: block;
     width: 38vw;
   }
-  #section1 .right .sideImg, #section2 .right .sideImg {
+  #section1 .right .sideImg, #section2 .right .sideImg, #section3 .right .sideImg {
     display: block;
     width: 38vw;
   }
   #section2 .symbol2 {
     top: 202.3vh;
   }
+  #section3 .symbol3 {
+    top: 302.5vh;
+    left: 2.5vw;
+    width: 7vw;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 55vh;
+  }
+  #section3 .center .sectionWrap1 .textWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 24em;
+    height: 19em;
+    text-transform: uppercase;
+    margin-top: 4em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 2em;
+    height: 19em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical p {
+    font-weight: 400;
+    padding: 0;
+    font-size: 31px;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    margin-top: 270px;
+    letter-spacing: 10px;
+    height: 30px;
+    -webkit-animation: textWrapVerticalFromDown 4s ease-in 1s;
+            animation: textWrapVerticalFromDown 4s ease-in 1s;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal {
+    width: 290px;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p {
+    color: black;
+    font-weight: 400;
+    width: 260px;
+    height: calc(270px/3);
+    font-size: 6.6em;
+    padding: 0;
+    height: 89px;
+    -webkit-transform-origin: 10% 10%;
+            transform-origin: 10% 10%;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p:nth-of-type(2) {
+    margin-top: .03em;
+    letter-spacing: .13em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p:nth-of-type(4) {
+    letter-spacing: .09em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p:first-of-type {
+    color: beige;
+    height: 30px;
+    width: 340px;
+    font-size: 2em;
+    letter-spacing: .33em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical2 {
+    margin-top: 35px;
+    width: 50px;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical2 p {
+    margin-left: 0;
+    height: 170px;
+    width: 50px;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 2.83em;
+    padding: 0;
+    color: #F018E6;
+  }
+  #section3 .center .arrows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 73vw;
+    height: 10.9vh;
+  }
+  #section3 .center .arrows i {
+    font-size: 3em;
+  }
+  #section3 .center .offerWrap {
+    width: 73vw;
+    height: 14vh;
+    background-color: #29072A;
+    position: absolute;
+    z-index: -2;
+    border-top: solid 1px #222222;
+  }
+  #section3 .center .offerWrap .offer {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 73vw;
+    height: 14vh;
+    background-color: #29072A;
+  }
+  #section3 .center .offerWrap .offer p {
+    font-size: 2em;
+    color: beige;
+  }
+  #section3 .center .offerWrap .offer2 {
+    margin-left: 90vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    float: left;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 73vw;
+    height: 14vh;
+  }
+  #section3 .center .offerWrap .offer2 p {
+    font-size: 2em;
+    color: beige;
+  }
+  #section3 .right div {
+    float: right;
+    margin-top: 86vh;
+    width: 15vw;
+    height: 14vh;
+    background-color: black;
+  }
   * {
-    color: deeppink;
+    color: beige;
   }
 }
 
