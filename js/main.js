@@ -1,4 +1,29 @@
+let section3AnimationFlag = 0;
 let selected = sessionStorage.getItem('selectedSection');
+const textAnimations = () => {
+    this.newAnimations = new Animations;
+        if (window.innerWidth < 639 && window.innerHeight > 400 || window.innerWidth == 768 && window.innerHeight == 1024 /* iPad */ || window.innerWidth == 1024 && window.innerHeight == 1366 /* iPad pro */) {
+            const doAnimationsArrows = this.newAnimations.animation(document.querySelector(".arrows"), "paddingTop", "0", "5vh", 700, 0, "linear", "Infinity", "alternate")
+            const doAnimationsOffer1 = this.newAnimations.animation(document.querySelector(".offer"), "marginTop", "40vh", "-50vh", 10500, 0, "linear", "Infinity")
+            const doAnimationsOffer2 = this.newAnimations.animation(document.querySelector(".offer2"), "marginTop", "40vh", "-50vh", 10500, 5200, "linear", "Infinity")
+        }
+        else if (window.innerWidth > 639) {
+            const doAnimationsOffer1 = this.newAnimations.animation(document.querySelector(".offer"), "marginLeft", "90vw", "-85vw", 10500, 0, "linear", "Infinity")
+            const doAnimationsOffer2 = this.newAnimations.animation(document.querySelector(".offer2"), "marginLeft", "90vw", "-85vw", 10500, 5300, "linear", "Infinity") 
+        }
+        else {
+            document.querySelector(".offer").style.marginTop = 0;
+            document.querySelector(".offer").style.paddingTop = ".7em";
+            const allArrowDown = document.querySelectorAll(".arrowDown");
+            allArrowDown.forEach(arrowDown => {
+                arrowDown.style.display = "none";
+            })
+            const allOfferP = document.querySelectorAll(".offerP");
+            allOfferP.forEach(offerP => {
+                offerP.style.fontSize = "3vh";
+            })
+        }
+}
 if (selected !== null) { 
     document.querySelector(".mapP"+selected).style.color = "orchid";
     document.querySelector(".mapP"+selected).style.border = "solid 1px #F018E6";
@@ -16,12 +41,7 @@ if (selected !== null) {
             document.querySelector(".textWrapP3-"+i).style.color = "beige";
         }
         document.querySelector(".textWrapP3-1").style.color = "#F018E6";
-        this.newAnimations = new Animations;
-        if (window.innerWidth < 615) {
-            const doAnimationsArrows = this.newAnimations.animation(document.querySelector(".arrows"), "paddingTop", "0", "5vh", 700, 0, "linear", "Infinity", "alternate")
-            const doAnimationsOffer1 = this.newAnimations.animation(document.querySelector(".offer"), "marginLeft", "120vw", "-105vw", 10500, 0, "linear", "Infinity")
-            const doAnimationsOffer2 = this.newAnimations.animation(document.querySelector(".offer2"), "marginLeft", "120vw", "-105vw", 10500, 5300, "linear", "Infinity")
-        }
+        textAnimations();
     }
 } 
 const moveToSection = (e) => {
@@ -48,6 +68,12 @@ const moveToSection = (e) => {
                 const doAnimationsSymbol = this.newAnimations.animation(document.querySelector(".symbol"+2), "top", "80vh", "202.1vh", 1000)
             } */
             if (i == 3) {
+                if (innerWidth < 1419) {
+                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "7.55em", 800)
+                }
+                else {
+                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "270px", 800)
+                }
                 
                 const doAnimationsTextWrap2 = this.newAnimations.animation(document.querySelector(".textWrapP2"), "marginLeft", "400vw", "0", 1400)
                 const doAnimationsTextWrap31a = this.newAnimations.animation(document.querySelector(".textWrapP3-1"), "color", "#F018E6", "black", 0, 0, "ease-in")
@@ -58,15 +84,9 @@ const moveToSection = (e) => {
                 const doAnimationsTextWrap33b = this.newAnimations.animation(document.querySelector(".textWrapP3-3"), "color", "black", "beige", 2000, 1200, "ease-in")
                 const doAnimationsTextWrap4 = this.newAnimations.animation(document.querySelector(".textWrapP4"), "marginLeft", "700vh", "0", 2000, 200, "ease-in")
                 const doAnimationsArrows = this.newAnimations.animation(document.querySelector(".arrows"), "paddingTop", "0", "5vh", 700, 0, "linear", "Infinity", "alternate")
-                if (window.innerWidth < 615) {
-                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "300vh", "215px", 1000)
-                    const doAnimationsOffer1 = this.newAnimations.animation(document.querySelector(".offer"), "marginLeft", "120vw", "-105vw", 10500, 0, "linear", "Infinity")
-                    const doAnimationsOffer2 = this.newAnimations.animation(document.querySelector(".offer2"), "marginLeft", "120vw", "-105vw", 10500, 5300, "linear", "Infinity")
-                }
-                else {
-                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "300vh", "270px", 1000)
-                    const doAnimationsOffer1 = this.newAnimations.animation(document.querySelector(".offer"), "marginLeft", "90vw", "-85vw", 10500, 0, "linear", "Infinity")
-                    const doAnimationsOffer2 = this.newAnimations.animation(document.querySelector(".offer2"), "marginLeft", "90vw", "-85vw", 10500, 5300, "linear", "Infinity")
+                if (selected !== 3 && section3AnimationFlag == 0) {
+                    textAnimations();
+                    section3AnimationFlag = 1;
                 }
             }
             document.querySelector(".filler").style.top = fillerScroll-4+"vh";
@@ -91,8 +111,6 @@ const moveToTop = () => {
 }
 
 document.getElementById("arrow").addEventListener("click", moveToTop);
-
-
 
 const showImage = (e) => {
     for (let i=1; i<6; i++) {

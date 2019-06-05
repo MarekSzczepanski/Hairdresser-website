@@ -338,6 +338,12 @@ html
         p
           font-size: 60px
           letter-spacing: 0.6vw
+        div
+          position: absolute
+          width: 80vw
+          height: 20vh
+          background-color: black
+          z-index: -1
       .sectionWrap1, .sectionWrap2  
         width: 50%
         height: 80vh
@@ -388,96 +394,77 @@ html
           height: 6vw
   #section3
     .symbol3
+      width: 15vw
+      height: 15vh
+      left: 2vw
       top: 303vh
-      left: 3vw
-      width: 14vw
-      height: 14vh
     .center
       .sectionWrap1
         display: flex
         justify-content: center
-        height: 55vh
+        height: 25vh
         .textWrap
+         display: none
+        .textWrapMobile
           display: flex
-          width: 18em
-          height: 15em
-          text-transform: uppercase
-          margin-top: 1em
-          .vertical
-            display: flex
-            flex-direction: column
-            width: 1.2em
-            height: $textWrapHeight11
-            p
-              font-weight: 200
-              padding: 0
-              font-size: 1.4em
-              transform: rotate(270deg)
-              margin-top: 215px
-              letter-spacing: 10px
-              height: 30px
-          .horizontal
-            width: 250px
-            p
-              font-weight: 400
-              width: 160px
-              font-size: 5.3em
-              padding: 0 
-              height: 75px
-            p:nth-of-type(2)
-              letter-spacing: .13em
-            p:nth-of-type(4)
-              letter-spacing: .09em
-            p:first-of-type
-              height: 15px
-              width: 190px
-              font-size: 1.55em
-              letter-spacing: .34em
-          .vertical2
-            margin-top: 23px
-            width: 20px
-            p
-              height: 160px
-              width: 20px
-              writing-mode: vertical-rl
-              text-orientation: upright
-              font-size: 2em
-              padding: 0
-              font-weight: 400
-              letter-spacing: .17em
+          flex-direction: column
+          justify-content: space-around
+          align-items: center
+          width: 70vw
+          height: 26vh
+          padding-top: 6vh
+          background-color: black
+          p
+            height: 1em
+            font-size: 1.8em
+            text-transform: uppercase
+          p:first-of-type
+            letter-spacing: .13em
+          p:nth-of-type(2)
+            letter-spacing: .06em
+          p:nth-of-type(3)
+            letter-spacing: .03em
+          p:last-of-type
+            letter-spacing: .5em
+            margin-left: .4em
+            color: #4B135F
       .arrows
         display: flex
         justify-content: space-around
         align-items: center
-        width: 73vw
+        width: 80vw
         height: 10.9vh
+        background-color: black
         i
           font-size: 3em
       .offerWrap
-        width: 68vw
-        height: 14vh
-        background-color: #29072A
         position: absolute
-        z-index: -2
+        width: 80vw
+        height: 33vh
+        background-color: #29072A
         border-top: $borders2
+        z-index: -3
         .offer, .offer2
           position: absolute
           display: flex
+          flex-direction: column
           justify-content: space-around
           align-items: center 
-          height: 14vh
+          width: 80vw
+          height: 33vh
           white-space: nowrap
+          margin: 45vh 0 0
           p 
-            font-size: 1em
-            margin-left: 3vw
-            color: beige
-        .offer2
-          margin-left: 120vw
+            margin-left: 0
+            font-size: 1.4em
+            color: beige 
+            margin-bottom: 3vh
+            z-index: -2
       .section3Cover
-        background-color: black
-        width: 12vw
-        height: 14vh
-        float: right     
+        background-color: green
+        width: 80vw
+        height: 11vh
+        margin-top: 33vh
   *
     color: blue
 @media (min-width: 285px) and (max-width: 580px) and (orientation: portrait) // Nokia Lumia
@@ -504,7 +491,7 @@ html
         width: 50vw
         height: 10vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       width: 8vw
       height: 16.7vh
@@ -542,6 +529,8 @@ html
           margin-top: 5%
           margin-left: 13%
           font-size: 10vh
+        div
+          display: none
       .sectionWrap1, .sectionWrap2
         width: 100%
         height: 23%
@@ -592,6 +581,25 @@ html
           text-align: center
         #hair5
           margin-right: 14%
+  #section3
+    .center
+      .sectionHead
+        p
+          font-size: 3.2em
+      .sectionWrap1
+        height: 25vh
+        .textWrap
+         display: none
+        .textWrapMobile
+          width: 70vw
+      .arrows
+        width: 75vw
+      .offerWrap
+        width: 75vw
+        .offer, .offer2
+          width: 75vw
+      .section3Cover
+        width: 75vw
   *
     color: gray
 @media (min-width: 319px) and (min-height: 567px) and (orientation: portrait) // iPhone 5/SE
@@ -705,7 +713,7 @@ html
         padding-top: 0.5vh
   .headerP
     display: none
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       display: none
     .left
@@ -775,6 +783,18 @@ html
           height: 10vh
         .ofContainer
           font-size: 1.2em
+  #section3
+    .center
+      .sectionHead
+        p
+          font-size: 3.8em
+      .offerWrap
+        width: 70vw
+        .offer, .offer2
+          width: 70vw
+      .section3Cover
+        width: 70vw
+        height: 13vh
   *
     color: gray
 @media (min-width: 410px) and (min-height: 730px) and (orientation: portrait) // Pixel 2
@@ -793,6 +813,11 @@ html
           height: 11vh
         .ofContainer
           font-size: 1.4em
+  #section3
+    .center
+      .sectionHead
+        p
+          font-size: 3.6em
   *
     color: blue
 @media (min-width: 410px) and (min-height: 822px) and (orientation: portrait) // Pixel 2 XL
@@ -875,7 +900,7 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       width: 17vh
       top: 105vh
@@ -915,6 +940,29 @@ html
   #section2
     .symbol2
       top: 202.5vh
+  #section3
+    .symbol3
+      top: 304.2vh
+      left: 1.5vw
+      width: 12vw
+      height: 12vh
+    .center
+      .sectionHead
+        p
+          margin-top: .2em
+      .sectionWrap1
+        height: 35vh
+        .textWrapMobile
+          padding-top: 22vh
+      .arrows
+        i
+          display: none
+      .offerWrap
+        width: 85vw
+        .offer
+          margin-left: 2.3vw
+      .section3Cover
+        display: none
   *
     color: orange
 @media (min-width: 580px) and (max-height: 636px)
@@ -940,7 +988,7 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       top: 103vh
       left: .5vw
@@ -1013,6 +1061,23 @@ html
   #section2
     .symbol2
       top: 203vh
+  #section3
+    .symbol3
+      width: 12vw
+      height: 12vh
+      left: 2vw
+      top: 304.3vh
+    .center
+      .sectionWrap1
+        height: 25vh
+      .arrows
+        width: 85vw
+      .offerWrap
+        width: 85vw
+        .offer, .offer2
+          width: 85vw
+      .section3Cover
+        width: 85vw
   *
     color: brown
 @media (min-width: 599px) and (min-height: 959px) and (orientation: portrait) // Asus Nexus 7"
@@ -1044,7 +1109,7 @@ html
         width: 50vw
         height: 10vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .left
       width: 30vw
       .map
@@ -1107,7 +1172,31 @@ html
           height: 11vh
         .ofContainer
           width: 45%
-          font-size: 1.5em  
+          font-size: 1.5em
+  #section3
+    .center
+      .sectionHead
+        p
+          font-size: 6em
+      .sectionWrap1
+        height: 25vh
+        .textWrap
+         display: none
+        .textWrapMobile
+          p
+            font-size: 2.4em
+      .arrows
+        width: 70vw
+        i
+          font-size: 4em
+      .offerWrap
+        width: 70vw
+        .offer, .offer2
+          width: 70vw
+          p
+            font-size: 2.3em
+      .section3Cover
+        width: 70vw
   *
     color: lightblue
 @media (min-width: 639px) and (min-height: 359px) and (orientation: landscape) // Galaxy S5
@@ -1133,7 +1222,7 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       top: 103vh
       left: 2vw
@@ -1163,7 +1252,45 @@ html
         padding: 3vh 0 0 20.4vw
   #section2
     .symbol2
-      top: 203.5vh           
+      top: 203.5vh 
+  #section3
+    #section3
+    .symbol3
+      top: 302.5vh
+      left: 2vw
+      width: 13vw
+      height: 15vh
+    .center
+      .sectionWrap1
+        height: 45vh
+        .textWrap
+          display: none
+        .textWrapMobile
+          .textWrapMobile
+          padding-top: 25vh
+          p
+            font-size: 2.2em
+      .arrows
+        width: 73vw
+      .offerWrap
+        width: 73vw
+        height: 25vh
+        .offer, .offer2
+          width: 73vw
+          height: 25vh
+          flex-direction: row
+          margin: 0
+          p 
+            font-size: 1.1em
+            margin: 0 0 .4em .7em
+        .offer2
+          margin-left: 90vw
+          width: 73vw   
+      .section3Cover
+        float: right
+        width: 10vw
+        height: 25vh  
+        margin: 0
   *
     color: darkorchid
 @media (min-width: 700px) and (max-height: 460px)
@@ -1230,6 +1357,45 @@ html
         .pointing
           width: 13vh
           height: 13vh 
+  #section3
+    #section3
+    .symbol3
+      top: 305.2vh
+      left: 3.5vw
+      width: 8vw
+      height: 10vh
+    .center
+      .sectionWrap1
+        height: 45vh
+        .textWrap
+          display: none
+        .textWrapMobile
+          padding-top: 25vh
+          p
+            font-size: 2.2em
+      .arrows
+        width: 85vw
+        i
+          display: block
+      .offerWrap
+        .offer, .offer2
+          width: 73vw
+          height: 25vh
+          flex-direction: row
+          margin: 0
+          p 
+            font-size: 1.5em
+            margin-left: 1.6em
+            padding-top: .4em
+        .offer2
+          margin-left: 90vw
+          width: 73vw   
+      .section3Cover
+        display: block
+        float: right
+        width: 12vw
+        height: 25vh  
+        margin: 0
   *
     color: seagreen
 @media (min-width: 730px) and (min-height: 410px) and (orientation: landscape) // Pixel 2
@@ -1286,6 +1452,21 @@ html
         .pointing
           width: 10vh
           height: 10vh
+  #section3
+    .symbol3
+      top: 304.4vh
+      left: 3vw
+      width: 11vw
+      height: 12vh
+    .center
+      .arrows
+        width: 83vw
+      .offerWrap
+        .offer, .offer2
+          width: 83vw
+          p 
+            font-size: 1.25em
+            margin-left: .7em 
   *
     color: white
 @media (min-width: 735px) and (min-height: 413px) and (max-height: 450px) and (orientation: landscape) // iPhone 6/7/8 Plus
@@ -1406,6 +1587,14 @@ html
         .list2
           top: 174vh
           height: 20% 
+    .circle
+      width: 100px
+      height: 100px
+      #arrow
+        width: 95px
+        height: 95px
+        padding-top: 20px
+        font-size: 50px
   #section2
     .center
       .sectionHead
@@ -1420,6 +1609,30 @@ html
           text-align: center
         #hair5
           margin-right: 0
+  #section3
+    .center
+      .sectionHead
+        p
+          font-size: 7em
+      .sectionWrap1
+        height: 25vh
+        .textWrap
+         display: none
+        .textWrapMobile
+          p
+            font-size: 3em
+      .arrows
+        width: 70vw
+        i
+          font-size: 4em
+      .offerWrap
+        width: 70vw
+        .offer, .offer2
+          width: 70vwz
+          p
+            font-size: 2.3em
+      .section3Cover
+        width: 70vw
   *
     color: royalblue
 @media (min-width: 811px) and (min-height: 374px) and (max-width: 880px) and (orientation: landscape) // iPhone X
@@ -1453,11 +1666,11 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       top: 103.3vh
-      left: 1.5vw
-      width: 14vw
+      left: 2vw
+      width: 12vw
       display: block
     .left
       width: 16vw
@@ -1509,6 +1722,30 @@ html
           text-align: center
         #hair5
           margin-right: 0
+  #section3
+    .symbol3
+      width: 10vw
+      height: 13vh
+      top: 304vh
+      left: 3.2vw
+    .center
+      .sectionHead
+        p
+          font-size: 4em
+      .textWrapMobile
+        p
+          font-size: 2.4em
+      .arrows
+        width: 84vw
+        i
+          font-size: 3em
+      .offerWrap
+        width: 84vw
+        .offer, .offer2
+          width: 84vw
+          p
+            margin-left: .6em
+            font-size: 1.4em
   *
     color: lightgreen
 @media (min-width: 822px) and (min-height: 410px) and (max-height: 475px) and (orientation: landscape) // Pixel 2 XL
@@ -1542,7 +1779,7 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       left: 3.5vw
       width: 10vw
@@ -1568,6 +1805,9 @@ html
           font-size: 5.5vh
         p
           font-size: 3.5vh
+  #section3
+    .symbol3
+      left: 3.5vw
   *
     color: yellow
 @media (min-width: 840px) and (min-height: 460px)
@@ -1591,7 +1831,7 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       top: 103.8vh
       left: 3.5vw
@@ -1627,7 +1867,7 @@ html
       .sectionHead
         padding: 2.5vh 0 0 15.5vw
         p
-          font-size: 80px
+          font-size: 5em
       .sectionWrap1, .sectionWrap2  
         h1
           font-size: 4.2vh
@@ -1643,6 +1883,26 @@ html
           font-size: 1.2em
         #hair5
           margin-right: 3%
+  #section3
+    .symbol3
+      top: 303.7vh
+      left: 3.4vw
+    .center
+      .sectionWrap1
+        .textWrapMobile
+          p
+            font-size: 2.7em
+      .arrows
+        width: 84vw
+        i
+          font-size: 3.5em
+      .offerWrap
+        width: 83vw
+        .offer, .offer2
+          width: 83vw
+          p
+            margin-left: .6em
+            font-size: 1.4em
   *
     color: cadetblue
 @media (min-width: 1000px) and (min-height: 400px) and (max-width: 1420px)
@@ -1698,7 +1958,7 @@ html
         width: 62%
         padding: 0 0 0 15.5vw
         p
-          font-size: 75px
+          font-size: 4em
       .sectionWrap1, .sectionWrap2 
         h1
           font-size: 4.5vh
@@ -1721,11 +1981,37 @@ html
           margin-right: 0
   #section3
     .symbol3
-      top: 302.5vh
-      left: 2.5vw
-      width: 7vw
+      top: 303.5vh
+      left: 2.8vw
+      width: 9vw
+      height: 13vh
     .center
-      
+      .sectionHead
+        p
+          padding-top: 1vh
+      .sectionWrap1
+        height: 55vh
+        .textWrapMobile
+          p
+            font-size: 3em
+      .offerWrap
+        height: 14vh
+        .offer, .offer2
+          height: 14vh
+          p
+            margin: 0
+            padding: 0
+      .arrows
+        width: 70vw
+    .section3Cover
+      display: none
+    .right
+      .rightCover
+        float: right
+        margin-top: 85vh
+        width: 15vw  
+        height: 15vh
+        background-color: black
   *
     color: green
 @media (min-width: 1023px) and (min-height: 768px) and (orientation: landscape) //iPad
@@ -1753,7 +2039,7 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       width: 17vh
       left: 4vw
@@ -1800,6 +2086,25 @@ html
         line-height: 1.8em
         .ofContainer
           font-size: 1.8em
+  #section3
+    .symbol3
+      width: 12vw
+      left: 4.3vw
+      top: 304vh
+    .center
+      .sectionWrap1
+        height: 45vh
+        .textWrapMobile
+          font-size: 1.5em
+      .offerWrap
+        height: 24vh
+        .offer, .offer2
+          height: 24vh
+          p
+            font-size: 1.7em
+            margin-left: 1em
+      .arrows
+        width: 79vw      
   *
     color: gray
 @media (min-width: 1023px) and (min-height: 1335px) and (orientation: portrait) // iPad Pro
@@ -1827,7 +2132,7 @@ html
         width: 50vw
         height: 10vh
         padding-top: 0.5vh
-  #section1, #section2
+  #section1, #section2, #section3
     .left
       width: 25vw
       .symbol
@@ -1905,6 +2210,37 @@ html
         line-height: 2em
         .ofContainer
           font-size: 2em
+  #section3
+    .center
+      .sectionHead
+        p
+          font-size: 7em
+      .sectionWrap1
+        height: 30vh
+        .textWrap
+          display: none
+        .textWrapMobile
+          height: 31vh
+          padding-top: 2.5em
+          p
+            font-size: 4.5em
+      .arrows
+        width: 75vw
+        i
+          font-size: 5em
+      .offerWrap
+        width: 75vw
+        height: 30vh
+        .offer, .offer2
+          width: 75vw
+          height: 30vh
+          p
+            font-size: 3em
+      .section3Cover
+        display: block
+        width: 75vw
+        height: 10vh
+        margin-top: 30vh
   *
     color: cadetblue
 @media (min-width: 1365px) and (min-height: 767px) and (orientation: landscape) // iPad Pro
@@ -1981,6 +2317,79 @@ html
         height: 95px
         padding-top: 20px
         font-size: 50px
+  #section3
+    .symbol3
+      width: 13vw
+      top: 303.8vh
+      left: 4.1vw
+    .center
+      .sectionWrap1
+        .textWrap
+          display: flex
+          width: 37em
+          height: 28em
+          text-transform: uppercase
+          margin-top: 2em
+          background-color: darkslategray
+          .vertical
+            display: flex
+            flex-direction: column
+            width: 3em
+            height: 19em
+            p
+              font-weight: 400
+              padding: 0
+              font-size: 3.4em
+              transform: rotate(270deg)
+              margin-top: 7.6em
+              letter-spacing: 10px
+              height: 30px
+              animation: textWrapVerticalFromDown 4s ease-in 1s
+          .horizontal
+            width: 29.8em
+            padding-left: .9em
+            background-color: red
+            p
+              color: black
+              font-weight: 400
+              width: 260px
+              height: calc(270px/3)
+              font-size: 10em
+              padding: 0 
+              height: .87em
+              transform-origin: 10% 10%
+            p:nth-of-type(2)
+              margin-top: .03em
+              letter-spacing: .14em
+            p:nth-of-type(4)
+              letter-spacing: .1em
+            p:first-of-type
+              color: beige
+              height: 30px
+              width: 340px
+              font-size: 3em
+              letter-spacing: .33em
+          .vertical2
+            margin-top: 3.5em
+            width: 50px   
+            p
+              margin-left: 0
+              height: 170px
+              width: 50px
+              writing-mode: vertical-rl
+              text-orientation: upright
+              font-size: 4.2em
+              padding: 0
+              color: #F018E6
+        .textWrapMobile
+          display: none
+      .arrows
+        i
+          font-size: 5em
+      .offerWrap
+        .offer, .offer2
+          p
+            font-size: 2.3em
   *
     color: orchid
 @media (min-width: 1420px) and (min-height: 430px)
@@ -2056,9 +2465,9 @@ html
       top: 202.3vh
   #section3
     .symbol3
-      top: 302.5vh
-      left: 2.5vw
-      width: 7vw
+      top: 304.2vh
+      left: 1.4vw
+      width: 9vw
     .center
       .sectionWrap1
         height: 55vh
@@ -2116,6 +2525,8 @@ html
               font-size: 2.83em
               padding: 0
               color: #F018E6
+        .textWrapMobile
+          display: none
       .arrows
         display: flex
         justify-content: space-around
@@ -2131,7 +2542,7 @@ html
         position: absolute
         z-index: -2
         border-top: $borders2
-        .offer
+        .offer, .offer2
           position: absolute
           display: flex
           justify-content: space-around
@@ -2140,21 +2551,14 @@ html
           height: 14vh
           background-color: #29072A
           p 
+            margin-botttom: 0
             font-size: 2em
-            color: beige
-        .offer2
-          margin-left: 90vw
-          display: flex
-          float: left
-          justify-content: space-around
-          align-items: center 
-          width: 73vw
-          height: 14vh
-          p 
-            font-size: 2em
-            color: beige
+            color: beige 
+            z-index: 0
+      .section3Cover
+        display: none  
     .right
-      div
+      .rightCover
         float: right
         margin-top: 86vh
         width: 15vw  
@@ -2175,7 +2579,7 @@ html
       top: 125px
     .burger
       color: black
-  #section1, #section2
+  #section1, #section2, #section3
     .symbol1, .symbol2
       width: 15vw
       left: 1vw

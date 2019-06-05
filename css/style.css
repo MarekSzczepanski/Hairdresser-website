@@ -566,6 +566,13 @@ html body #section3 .center .sectionWrap1 {
     font-size: 60px;
     letter-spacing: 0.6vw;
   }
+  #section1 .center .sectionHead div, #section2 .center .sectionHead div, #section3 .center .sectionHead div {
+    position: absolute;
+    width: 80vw;
+    height: 20vh;
+    background-color: black;
+    z-index: -1;
+  }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 50%;
     height: 80vh;
@@ -624,10 +631,10 @@ html body #section3 .center .sectionWrap1 {
     height: 6vw;
   }
   #section3 .symbol3 {
+    width: 15vw;
+    height: 15vh;
+    left: 2vw;
     top: 303vh;
-    left: 3vw;
-    width: 14vw;
-    height: 14vh;
   }
   #section3 .center .sectionWrap1 {
     display: -webkit-box;
@@ -636,18 +643,12 @@ html body #section3 .center .sectionWrap1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 55vh;
+    height: 25vh;
   }
   #section3 .center .sectionWrap1 .textWrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 18em;
-    height: 15em;
-    text-transform: uppercase;
-    margin-top: 1em;
+    display: none;
   }
-  #section3 .center .sectionWrap1 .textWrap .vertical {
+  #section3 .center .sectionWrap1 .textWrapMobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -655,56 +656,34 @@ html body #section3 .center .sectionWrap1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 1.2em;
-    height: 11em;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70vw;
+    height: 26vh;
+    padding-top: 6vh;
+    background-color: black;
   }
-  #section3 .center .sectionWrap1 .textWrap .vertical p {
-    font-weight: 200;
-    padding: 0;
-    font-size: 1.4em;
-    -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
-    margin-top: 215px;
-    letter-spacing: 10px;
-    height: 30px;
+  #section3 .center .sectionWrap1 .textWrapMobile p {
+    height: 1em;
+    font-size: 1.8em;
+    text-transform: uppercase;
   }
-  #section3 .center .sectionWrap1 .textWrap .horizontal {
-    width: 250px;
-  }
-  #section3 .center .sectionWrap1 .textWrap .horizontal p {
-    font-weight: 400;
-    width: 160px;
-    font-size: 5.3em;
-    padding: 0;
-    height: 75px;
-  }
-  #section3 .center .sectionWrap1 .textWrap .horizontal p:nth-of-type(2) {
+  #section3 .center .sectionWrap1 .textWrapMobile p:first-of-type {
     letter-spacing: .13em;
   }
-  #section3 .center .sectionWrap1 .textWrap .horizontal p:nth-of-type(4) {
-    letter-spacing: .09em;
+  #section3 .center .sectionWrap1 .textWrapMobile p:nth-of-type(2) {
+    letter-spacing: .06em;
   }
-  #section3 .center .sectionWrap1 .textWrap .horizontal p:first-of-type {
-    height: 15px;
-    width: 190px;
-    font-size: 1.55em;
-    letter-spacing: .34em;
+  #section3 .center .sectionWrap1 .textWrapMobile p:nth-of-type(3) {
+    letter-spacing: .03em;
   }
-  #section3 .center .sectionWrap1 .textWrap .vertical2 {
-    margin-top: 23px;
-    width: 20px;
-  }
-  #section3 .center .sectionWrap1 .textWrap .vertical2 p {
-    height: 160px;
-    width: 20px;
-    -webkit-writing-mode: vertical-rl;
-        -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-    text-orientation: upright;
-    font-size: 2em;
-    padding: 0;
-    font-weight: 400;
-    letter-spacing: .17em;
+  #section3 .center .sectionWrap1 .textWrapMobile p:last-of-type {
+    letter-spacing: .5em;
+    margin-left: .4em;
+    color: #4B135F;
   }
   #section3 .center .arrows {
     display: -webkit-box;
@@ -715,46 +694,52 @@ html body #section3 .center .sectionWrap1 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 73vw;
+    width: 80vw;
     height: 10.9vh;
+    background-color: black;
   }
   #section3 .center .arrows i {
     font-size: 3em;
   }
   #section3 .center .offerWrap {
-    width: 68vw;
-    height: 14vh;
-    background-color: #29072A;
     position: absolute;
-    z-index: -2;
+    width: 80vw;
+    height: 33vh;
+    background-color: #29072A;
     border-top: solid 1px #222222;
+    z-index: -3;
   }
   #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 14vh;
+    width: 80vw;
+    height: 33vh;
     white-space: nowrap;
+    margin: 45vh 0 0;
   }
   #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
-    font-size: 1em;
-    margin-left: 3vw;
+    margin-left: 0;
+    font-size: 1.4em;
     color: beige;
-  }
-  #section3 .center .offerWrap .offer2 {
-    margin-left: 120vw;
+    margin-bottom: 3vh;
+    z-index: -2;
   }
   #section3 .center .section3Cover {
-    background-color: black;
-    width: 12vw;
-    height: 14vh;
-    float: right;
+    background-color: green;
+    width: 80vw;
+    height: 11vh;
+    margin-top: 33vh;
   }
   * {
     color: blue;
@@ -796,19 +781,19 @@ html body #section3 .center .sectionWrap1 {
     height: 10vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     width: 8vw;
     height: 16.7vh;
     left: 4vh;
     display: none;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 25vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 25vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -820,13 +805,13 @@ html body #section3 .center .sectionWrap1 {
         justify-content: space-around;
     width: 25vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
     display: none;
   }
-  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders {
+  #section1 .left .map .mapNavBorders, #section2 .left .map .mapNavBorders, #section3 .left .map .mapNavBorders {
     display: none;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 90%;
@@ -837,38 +822,41 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 1.1px;
     margin: 0 0 0 0.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     display: none;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 25%;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 75%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     left: -16%;
     width: 116%;
     padding-top: 2vh;
     padding-left: 0;
     background-color: black;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     margin-top: 5%;
     margin-left: 13%;
     font-size: 10vh;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionHead div, #section2 .center .sectionHead div, #section3 .center .sectionHead div {
+    display: none;
+  }
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 100%;
     height: 23%;
     letter-spacing: .2px;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     padding: 3vh 0 1vh 0;
     font-size: 3.2vh;
     text-align: center;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2, #section3 .center .sectionWrap1 .list, #section3 .center .sectionWrap1 .list2, #section3 .center .sectionWrap2 .list, #section3 .center .sectionWrap2 .list2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -882,31 +870,31 @@ html body #section3 .center .sectionWrap1 {
     width: 75%;
     height: 35%;
   }
-  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div, #section3 .center .sectionWrap1 .list div, #section3 .center .sectionWrap1 .list2 div, #section3 .center .sectionWrap2 .list div, #section3 .center .sectionWrap2 .list2 div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: .5vh 3vw 0 0;
   }
-  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img, #section3 .center .sectionWrap1 .list div img, #section3 .center .sectionWrap1 .list2 div img, #section3 .center .sectionWrap2 .list div img, #section3 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
     padding-top: .2vh;
   }
-  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p, #section3 .center .sectionWrap1 .list div p, #section3 .center .sectionWrap1 .list2 div p, #section3 .center .sectionWrap2 .list div p, #section3 .center .sectionWrap2 .list2 div p {
     padding: 0vw 0 0vh 1vw;
     font-size: 2.2vh;
   }
-  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2, #section3 .center .sectionWrap2 {
     height: 37%;
     border-left: none;
   }
-  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap2 h1 {
     margin-top: 2vh;
     padding: 3vh 3vw 0vh 0;
     border-top: solid 1px #222222;
   }
-  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2, #section3 .center .sectionWrap2 .list2 {
     top: 175vh;
     height: 20%;
   }
@@ -924,6 +912,30 @@ html body #section3 .center .sectionWrap1 {
   }
   #section2 .center .container #hair5 {
     margin-right: 14%;
+  }
+  #section3 .center .sectionHead p {
+    font-size: 3.2em;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 25vh;
+  }
+  #section3 .center .sectionWrap1 .textWrap {
+    display: none;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile {
+    width: 70vw;
+  }
+  #section3 .center .arrows {
+    width: 75vw;
+  }
+  #section3 .center .offerWrap {
+    width: 75vw;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 75vw;
+  }
+  #section3 .center .section3Cover {
+    width: 75vw;
   }
   * {
     color: gray;
@@ -1097,17 +1109,17 @@ html body #section3 .center .sectionWrap1 {
   .headerP {
     display: none;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     display: none;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 30vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 30vw;
     padding-top: 0;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 90%;
@@ -1118,35 +1130,35 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 1.6px;
     margin: 0 0 0 1.3vw;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 30%;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 70%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     left: -16%;
     width: 116%;
     padding-top: 2vh;
     padding-left: 0;
     background-color: black;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     margin-top: 2%;
     margin-left: 15%;
     font-size: 8.5vh;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 100%;
     height: 23%;
     letter-spacing: .2px;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     padding: 3vh 0 0 0;
     font-size: 2.7vh;
     text-align: center;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2, #section3 .center .sectionWrap1 .list, #section3 .center .sectionWrap1 .list2, #section3 .center .sectionWrap2 .list, #section3 .center .sectionWrap2 .list2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1160,31 +1172,31 @@ html body #section3 .center .sectionWrap1 {
     width: 69%;
     height: 35%;
   }
-  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div, #section3 .center .sectionWrap1 .list div, #section3 .center .sectionWrap1 .list2 div, #section3 .center .sectionWrap2 .list div, #section3 .center .sectionWrap2 .list2 div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: .5vh 2vw 0 0;
   }
-  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img, #section3 .center .sectionWrap1 .list div img, #section3 .center .sectionWrap1 .list2 div img, #section3 .center .sectionWrap2 .list div img, #section3 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
     padding-top: 0vh;
   }
-  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p, #section3 .center .sectionWrap1 .list div p, #section3 .center .sectionWrap1 .list2 div p, #section3 .center .sectionWrap2 .list div p, #section3 .center .sectionWrap2 .list2 div p {
     padding: .5vw 0 0vh 1vw;
     font-size: 2.2vh;
   }
-  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2, #section3 .center .sectionWrap2 {
     height: 37%;
     border-left: none;
   }
-  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap2 h1 {
     margin-top: 2vh;
     padding: 3vh 3vw 0vh 0;
     border-top: solid 1px #222222;
   }
-  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2, #section3 .center .sectionWrap2 .list2 {
     top: 173vh;
     height: 20%;
   }
@@ -1197,6 +1209,19 @@ html body #section3 .center .sectionWrap1 {
   }
   #section2 .sectionWrap1 .container .ofContainer {
     font-size: 1.2em;
+  }
+  #section3 .center .sectionHead p {
+    font-size: 3.8em;
+  }
+  #section3 .center .offerWrap {
+    width: 70vw;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 70vw;
+  }
+  #section3 .center .section3Cover {
+    width: 70vw;
+    height: 13vh;
   }
   * {
     color: gray;
@@ -1224,6 +1249,9 @@ html body #section3 .center .sectionWrap1 {
   }
   #section2 .sectionWrap1 .container .ofContainer {
     font-size: 1.4em;
+  }
+  #section3 .center .sectionHead p {
+    font-size: 3.6em;
   }
   * {
     color: blue;
@@ -1350,31 +1378,31 @@ html body #section3 .center .sectionWrap1 {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     width: 17vh;
     top: 105vh;
     left: 4.5vh;
     display: block;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 15vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 15vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 15vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: absolute;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
     display: block;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 78%;
@@ -1385,32 +1413,59 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 0;
     margin: 0 0 0 2.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     display: block;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 15vw;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 85%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     padding: 0 0 0 15.4vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     font-size: 16vh;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 50%;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     font-size: 5vh;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     font-size: 4vh;
   }
   #section2 .symbol2 {
     top: 202.5vh;
+  }
+  #section3 .symbol3 {
+    top: 304.2vh;
+    left: 1.5vw;
+    width: 12vw;
+    height: 12vh;
+  }
+  #section3 .center .sectionHead p {
+    margin-top: .2em;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 35vh;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile {
+    padding-top: 22vh;
+  }
+  #section3 .center .arrows i {
+    display: none;
+  }
+  #section3 .center .offerWrap {
+    width: 85vw;
+  }
+  #section3 .center .offerWrap .offer {
+    margin-left: 2.3vw;
+  }
+  #section3 .center .section3Cover {
+    display: none;
   }
   * {
     color: orange;
@@ -1450,28 +1505,28 @@ html body #section3 .center .sectionWrap1 {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     top: 103vh;
     left: .5vw;
     width: 14vw;
     height: 14vh;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 15vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 15vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 15vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
     display: none;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
     display: none;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 90%;
@@ -1482,60 +1537,60 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 1.6px;
     margin: 0 0 0 0.7vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     display: none;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 15vw;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 85%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     left: 0;
     width: 100%;
     padding: 0 0 0 20.4vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     font-size: 60px;
     letter-spacing: 0.6vw;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 50%;
     height: 80vh;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     padding: 5vh 0 5vh 4vw;
     font-size: 3.3vh;
   }
-  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap2 .list div img {
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap2 .list div img, #section3 .center .sectionWrap1 .list div img, #section3 .center .sectionWrap2 .list div img {
     display: none;
   }
-  #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list2 div img {
+  #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list2 div img, #section3 .center .sectionWrap1 .list2 div img, #section3 .center .sectionWrap2 .list2 div img {
     display: none;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     padding: 0 3vw 3vh;
     font-size: 2.7vh;
   }
-  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2, #section3 .center .sectionWrap2 {
     border-left: solid 1px #222222;
   }
-  #section1 .right, #section2 .right {
+  #section1 .right, #section2 .right, #section3 .right {
     float: left;
     display: none;
   }
-  #section1 .right .sideImg, #section2 .right .sideImg {
+  #section1 .right .sideImg, #section2 .right .sideImg, #section3 .right .sideImg {
     display: none;
   }
-  #section1 .circle, #section2 .circle {
+  #section1 .circle, #section2 .circle, #section3 .circle {
     position: fixed;
     right: 0;
     bottom: 0;
     width: 51px;
     height: 51px;
   }
-  #section1 .circle #arrow, #section2 .circle #arrow {
+  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow {
     float: left;
     padding-top: 8px;
     width: 46px;
@@ -1545,6 +1600,27 @@ html body #section3 .center .sectionWrap1 {
   }
   #section2 .symbol2 {
     top: 203vh;
+  }
+  #section3 .symbol3 {
+    width: 12vw;
+    height: 12vh;
+    left: 2vw;
+    top: 304.3vh;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 25vh;
+  }
+  #section3 .center .arrows {
+    width: 85vw;
+  }
+  #section3 .center .offerWrap {
+    width: 85vw;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 85vw;
+  }
+  #section3 .center .section3Cover {
+    width: 85vw;
   }
   * {
     color: brown;
@@ -1594,14 +1670,14 @@ html body #section3 .center .sectionWrap1 {
     height: 10vh;
     padding-top: 0.5vh;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 30vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 30vw;
     padding-top: .6%;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 90%;
@@ -1612,31 +1688,31 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 1.3px;
     margin: 0 0 0 1.3vw;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 30%;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 70%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     left: 0;
     width: 100vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     margin: 0;
     font-size: 12vh;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 100%;
     height: 23%;
     letter-spacing: .2px;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     padding: 3vh 0 0 0;
     font-size: 3.7vh;
     text-align: center;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2, #section3 .center .sectionWrap1 .list, #section3 .center .sectionWrap1 .list2, #section3 .center .sectionWrap2 .list, #section3 .center .sectionWrap2 .list2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1650,30 +1726,30 @@ html body #section3 .center .sectionWrap1 {
     width: 75%;
     height: 35%;
   }
-  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div, #section3 .center .sectionWrap1 .list div, #section3 .center .sectionWrap1 .list2 div, #section3 .center .sectionWrap2 .list div, #section3 .center .sectionWrap2 .list2 div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: .5vh 3vw 0 0;
   }
-  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img, #section3 .center .sectionWrap1 .list div img, #section3 .center .sectionWrap1 .list2 div img, #section3 .center .sectionWrap2 .list div img, #section3 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
     padding-top: .2vh;
   }
-  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p, #section3 .center .sectionWrap1 .list div p, #section3 .center .sectionWrap1 .list2 div p, #section3 .center .sectionWrap2 .list div p, #section3 .center .sectionWrap2 .list2 div p {
     padding: .5vw 0 0 1.5vw;
     font-size: 2.5vh;
   }
-  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2, #section3 .center .sectionWrap2 {
     height: 37%;
     border-left: none;
   }
-  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap2 h1 {
     margin-top: 2vh;
     border-top: solid 1px #222222;
   }
-  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2, #section3 .center .sectionWrap2 .list2 {
     top: 174vh;
     height: 20%;
   }
@@ -1687,6 +1763,36 @@ html body #section3 .center .sectionWrap1 {
   #section2 .sectionWrap1 .container .ofContainer {
     width: 45%;
     font-size: 1.5em;
+  }
+  #section3 .center .sectionHead p {
+    font-size: 6em;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 25vh;
+  }
+  #section3 .center .sectionWrap1 .textWrap {
+    display: none;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile p {
+    font-size: 2.4em;
+  }
+  #section3 .center .arrows {
+    width: 70vw;
+  }
+  #section3 .center .arrows i {
+    font-size: 4em;
+  }
+  #section3 .center .offerWrap {
+    width: 70vw;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 70vw;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    font-size: 2.3em;
+  }
+  #section3 .center .section3Cover {
+    width: 70vw;
   }
   * {
     color: lightblue;
@@ -1726,30 +1832,30 @@ html body #section3 .center .sectionWrap1 {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     top: 103vh;
     left: 2vw;
     width: 13vw;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 17vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 17vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 17vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: absolute;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
     display: block;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 76%;
@@ -1760,20 +1866,68 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 1.1px;
     margin: 0 0 0 2.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     display: block;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 17vw;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 83%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     padding: 3vh 0 0 20.4vw;
   }
   #section2 .symbol2 {
     top: 203.5vh;
+  }
+  #section3 .symbol3 {
+    top: 302.5vh;
+    left: 2vw;
+    width: 13vw;
+    height: 15vh;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 45vh;
+  }
+  #section3 .center .sectionWrap1 .textWrap {
+    display: none;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile {
+    padding-top: 25vh;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile p {
+    font-size: 2.2em;
+  }
+  #section3 .center .arrows {
+    width: 73vw;
+  }
+  #section3 .center .offerWrap {
+    width: 73vw;
+    height: 25vh;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 73vw;
+    height: 25vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    font-size: 1.1em;
+    margin: 0 0 .4em .7em;
+  }
+  #section3 .center .offerWrap .offer2 {
+    margin-left: 90vw;
+    width: 73vw;
+  }
+  #section3 .center .section3Cover {
+    float: right;
+    width: 10vw;
+    height: 25vh;
+    margin: 0;
   }
   * {
     color: darkorchid;
@@ -1873,6 +2027,55 @@ html body #section3 .center .sectionWrap1 {
     width: 13vh;
     height: 13vh;
   }
+  #section3 .symbol3 {
+    top: 305.2vh;
+    left: 3.5vw;
+    width: 8vw;
+    height: 10vh;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 45vh;
+  }
+  #section3 .center .sectionWrap1 .textWrap {
+    display: none;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile {
+    padding-top: 25vh;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile p {
+    font-size: 2.2em;
+  }
+  #section3 .center .arrows {
+    width: 85vw;
+  }
+  #section3 .center .arrows i {
+    display: block;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 73vw;
+    height: 25vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    font-size: 1.5em;
+    margin-left: 1.6em;
+    padding-top: .4em;
+  }
+  #section3 .center .offerWrap .offer2 {
+    margin-left: 90vw;
+    width: 73vw;
+  }
+  #section3 .center .section3Cover {
+    display: block;
+    float: right;
+    width: 12vw;
+    height: 25vh;
+    margin: 0;
+  }
   * {
     color: seagreen;
   }
@@ -1955,6 +2158,22 @@ html body #section3 .center .sectionWrap1 {
   #section2 .sectionWrap1 .container .pointing {
     width: 10vh;
     height: 10vh;
+  }
+  #section3 .symbol3 {
+    top: 304.4vh;
+    left: 3vw;
+    width: 11vw;
+    height: 12vh;
+  }
+  #section3 .center .arrows {
+    width: 83vw;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 83vw;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    font-size: 1.25em;
+    margin-left: .7em;
   }
   * {
     color: white;
@@ -2127,6 +2346,16 @@ html body #section3 .center .sectionWrap1 {
     top: 174vh;
     height: 20%;
   }
+  #section1 .circle, #section2 .circle {
+    width: 100px;
+    height: 100px;
+  }
+  #section1 .circle #arrow, #section2 .circle #arrow {
+    width: 95px;
+    height: 95px;
+    padding-top: 20px;
+    font-size: 50px;
+  }
   #section2 .center .sectionHead p {
     font-size: 7em;
   }
@@ -2141,6 +2370,36 @@ html body #section3 .center .sectionWrap1 {
   }
   #section2 .center .container #hair5 {
     margin-right: 0;
+  }
+  #section3 .center .sectionHead p {
+    font-size: 7em;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 25vh;
+  }
+  #section3 .center .sectionWrap1 .textWrap {
+    display: none;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile p {
+    font-size: 3em;
+  }
+  #section3 .center .arrows {
+    width: 70vw;
+  }
+  #section3 .center .arrows i {
+    font-size: 4em;
+  }
+  #section3 .center .offerWrap {
+    width: 70vw;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 70vwz;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    font-size: 2.3em;
+  }
+  #section3 .center .section3Cover {
+    width: 70vw;
   }
   * {
     color: royalblue;
@@ -2192,30 +2451,30 @@ html body #section3 .center .sectionWrap1 {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     top: 103.3vh;
-    left: 1.5vw;
-    width: 14vw;
+    left: 2vw;
+    width: 12vw;
     display: block;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 16vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 16vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: absolute;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
     width: 78%;
@@ -2226,29 +2485,29 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 1px;
     margin: 0 0 0 2.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     display: block;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 16%;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 84%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     padding: 0 0 0 17.4vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     margin-top: 1.5%;
     font-size: 17vh;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     font-size: 25px;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     font-size: 15px;
   }
-  #section1 .circle #arrow, #section2 .circle #arrow {
+  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow {
     padding-top: 9px;
   }
   #section2 .symbol2 {
@@ -2270,6 +2529,34 @@ html body #section3 .center .sectionWrap1 {
   }
   #section2 .center .container #hair5 {
     margin-right: 0;
+  }
+  #section3 .symbol3 {
+    width: 10vw;
+    height: 13vh;
+    top: 304vh;
+    left: 3.2vw;
+  }
+  #section3 .center .sectionHead p {
+    font-size: 4em;
+  }
+  #section3 .center .textWrapMobile p {
+    font-size: 2.4em;
+  }
+  #section3 .center .arrows {
+    width: 84vw;
+  }
+  #section3 .center .arrows i {
+    font-size: 3em;
+  }
+  #section3 .center .offerWrap {
+    width: 84vw;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 84vw;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    margin-left: .6em;
+    font-size: 1.4em;
   }
   * {
     color: lightgreen;
@@ -2321,20 +2608,20 @@ html body #section3 .center .sectionWrap1 {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     left: 3.5vw;
     width: 10vw;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 17vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 17vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 17vw;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
     width: 80%;
@@ -2345,23 +2632,26 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 2px;
     margin: 0 0 0 2.9vw;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 17%;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 83%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     padding: 0 0 0 17.4vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     font-size: 18vh;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     font-size: 5.5vh;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     font-size: 3.5vh;
+  }
+  #section3 .symbol3 {
+    left: 3.5vw;
   }
   * {
     color: yellow;
@@ -2399,23 +2689,23 @@ html body #section3 .center .sectionWrap1 {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     top: 103.8vh;
     left: 3.5vw;
     width: 10vw;
     height: 13vh;
     z-index: 1;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 17vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 17vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 17vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2427,14 +2717,14 @@ html body #section3 .center .sectionWrap1 {
         justify-content: space-around;
     position: absolute;
   }
-  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div, #section3 .left .map .mapNav div {
     display: block;
     margin-left: .5vw;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
     display: block;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 75%;
@@ -2445,25 +2735,25 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 1.6px;
     margin: 0 0 0 2.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     display: block;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 17vw;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 83%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     padding: 2.5vh 0 0 15.5vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
-    font-size: 80px;
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
+    font-size: 5em;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     font-size: 4.2vh;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     font-size: 3.2vh;
   }
   #section2 .symbol2 {
@@ -2477,6 +2767,29 @@ html body #section3 .center .sectionWrap1 {
   }
   #section2 .center .container #hair5 {
     margin-right: 3%;
+  }
+  #section3 .symbol3 {
+    top: 303.7vh;
+    left: 3.4vw;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile p {
+    font-size: 2.7em;
+  }
+  #section3 .center .arrows {
+    width: 84vw;
+  }
+  #section3 .center .arrows i {
+    font-size: 3.5em;
+  }
+  #section3 .center .offerWrap {
+    width: 83vw;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 83vw;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    margin-left: .6em;
+    font-size: 1.4em;
   }
   * {
     color: cadetblue;
@@ -2572,7 +2885,7 @@ html body #section3 .center .sectionWrap1 {
     padding: 0 0 0 15.5vw;
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
-    font-size: 75px;
+    font-size: 4em;
   }
   #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     font-size: 4.5vh;
@@ -2597,9 +2910,42 @@ html body #section3 .center .sectionWrap1 {
     margin-right: 0;
   }
   #section3 .symbol3 {
-    top: 302.5vh;
-    left: 2.5vw;
-    width: 7vw;
+    top: 303.5vh;
+    left: 2.8vw;
+    width: 9vw;
+    height: 13vh;
+  }
+  #section3 .center .sectionHead p {
+    padding-top: 1vh;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 55vh;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile p {
+    font-size: 3em;
+  }
+  #section3 .center .offerWrap {
+    height: 14vh;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    height: 14vh;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    margin: 0;
+    padding: 0;
+  }
+  #section3 .center .arrows {
+    width: 70vw;
+  }
+  #section3 .section3Cover {
+    display: none;
+  }
+  #section3 .right .rightCover {
+    float: right;
+    margin-top: 85vh;
+    width: 15vw;
+    height: 15vh;
+    background-color: black;
   }
   * {
     color: green;
@@ -2642,27 +2988,27 @@ html body #section3 .center .sectionWrap1 {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     width: 17vh;
     left: 4vw;
     display: block;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 21vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 21vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 21vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
     display: none;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
     display: none;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
     width: 91%;
@@ -2673,34 +3019,34 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 2.7px;
     margin: 0 0 0 1vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     display: none;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 21%;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 79%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     left: 0;
     width: 100vw;
     padding: 0 0 0 21.4vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     margin-top: 1.5%;
     font-size: 17vh;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     font-size: 4.6vh;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     font-size: 3vh;
   }
-  #section1 .right, #section2 .right {
+  #section1 .right, #section2 .right, #section3 .right {
     display: none;
   }
-  #section1 .right img, #section2 .right img {
+  #section1 .right img, #section2 .right img, #section3 .right img {
     display: none;
   }
   #section2 .center .container {
@@ -2708,6 +3054,30 @@ html body #section3 .center .sectionWrap1 {
   }
   #section2 .center .container .ofContainer {
     font-size: 1.8em;
+  }
+  #section3 .symbol3 {
+    width: 12vw;
+    left: 4.3vw;
+    top: 304vh;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 45vh;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile {
+    font-size: 1.5em;
+  }
+  #section3 .center .offerWrap {
+    height: 24vh;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    height: 24vh;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    font-size: 1.7em;
+    margin-left: 1em;
+  }
+  #section3 .center .arrows {
+    width: 79vw;
   }
   * {
     color: gray;
@@ -2750,22 +3120,22 @@ html body #section3 .center .sectionWrap1 {
     height: 10vh;
     padding-top: 0.5vh;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 25vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
     width: 25vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 25vw;
   }
-  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div, #section3 .left .map .mapNav div {
     display: none;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
     display: none;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
     width: 93%;
@@ -2776,33 +3146,33 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 1.9px;
     margin: 0 0 0 0.8vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     display: none;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 25%;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 75%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     left: 0;
     width: 100vw;
     padding: 0 0 0 0;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     font-size: 130px;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 100%;
     height: 23%;
     letter-spacing: .2px;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     padding: 3vh 0 0 7vw;
     font-size: 4.2vh;
   }
-  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2 {
+  #section1 .center .sectionWrap1 .list, #section1 .center .sectionWrap1 .list2, #section1 .center .sectionWrap2 .list, #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap1 .list, #section2 .center .sectionWrap1 .list2, #section2 .center .sectionWrap2 .list, #section2 .center .sectionWrap2 .list2, #section3 .center .sectionWrap1 .list, #section3 .center .sectionWrap1 .list2, #section3 .center .sectionWrap2 .list, #section3 .center .sectionWrap2 .list2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2816,41 +3186,41 @@ html body #section3 .center .sectionWrap1 {
     width: 73%;
     height: 35%;
   }
-  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div {
+  #section1 .center .sectionWrap1 .list div, #section1 .center .sectionWrap1 .list2 div, #section1 .center .sectionWrap2 .list div, #section1 .center .sectionWrap2 .list2 div, #section2 .center .sectionWrap1 .list div, #section2 .center .sectionWrap1 .list2 div, #section2 .center .sectionWrap2 .list div, #section2 .center .sectionWrap2 .list2 div, #section3 .center .sectionWrap1 .list div, #section3 .center .sectionWrap1 .list2 div, #section3 .center .sectionWrap2 .list div, #section3 .center .sectionWrap2 .list2 div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: .5vh 3vw .7vw 0;
   }
-  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img {
+  #section1 .center .sectionWrap1 .list div img, #section1 .center .sectionWrap1 .list2 div img, #section1 .center .sectionWrap2 .list div img, #section1 .center .sectionWrap2 .list2 div img, #section2 .center .sectionWrap1 .list div img, #section2 .center .sectionWrap1 .list2 div img, #section2 .center .sectionWrap2 .list div img, #section2 .center .sectionWrap2 .list2 div img, #section3 .center .sectionWrap1 .list div img, #section3 .center .sectionWrap1 .list2 div img, #section3 .center .sectionWrap2 .list div img, #section3 .center .sectionWrap2 .list2 div img {
     display: block;
     height: 3vh;
     padding-top: .2vh;
   }
-  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p {
+  #section1 .center .sectionWrap1 .list div p, #section1 .center .sectionWrap1 .list2 div p, #section1 .center .sectionWrap2 .list div p, #section1 .center .sectionWrap2 .list2 div p, #section2 .center .sectionWrap1 .list div p, #section2 .center .sectionWrap1 .list2 div p, #section2 .center .sectionWrap2 .list div p, #section2 .center .sectionWrap2 .list2 div p, #section3 .center .sectionWrap1 .list div p, #section3 .center .sectionWrap1 .list2 div p, #section3 .center .sectionWrap2 .list div p, #section3 .center .sectionWrap2 .list2 div p {
     padding: 0 0 0 1.5vw;
     font-size: 2.8vh;
   }
-  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2, #section3 .center .sectionWrap2 {
     height: 37%;
     border-left: none;
   }
-  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap2 h1 {
     margin-top: 2vh;
     border-top: solid 1px #222222;
   }
-  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2 {
+  #section1 .center .sectionWrap2 .list2, #section2 .center .sectionWrap2 .list2, #section3 .center .sectionWrap2 .list2 {
     top: 174vh;
     height: 20%;
   }
-  #section1 .right, #section2 .right {
+  #section1 .right, #section2 .right, #section3 .right {
     display: none;
   }
-  #section1 .circle, #section2 .circle {
+  #section1 .circle, #section2 .circle, #section3 .circle {
     width: 100px;
     height: 100px;
   }
-  #section1 .circle #arrow, #section2 .circle #arrow {
+  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow {
     width: 95px;
     height: 95px;
     padding-top: 20px;
@@ -2861,6 +3231,45 @@ html body #section3 .center .sectionWrap1 {
   }
   #section2 .center .container .ofContainer {
     font-size: 2em;
+  }
+  #section3 .center .sectionHead p {
+    font-size: 7em;
+  }
+  #section3 .center .sectionWrap1 {
+    height: 30vh;
+  }
+  #section3 .center .sectionWrap1 .textWrap {
+    display: none;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile {
+    height: 31vh;
+    padding-top: 2.5em;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile p {
+    font-size: 4.5em;
+  }
+  #section3 .center .arrows {
+    width: 75vw;
+  }
+  #section3 .center .arrows i {
+    font-size: 5em;
+  }
+  #section3 .center .offerWrap {
+    width: 75vw;
+    height: 30vh;
+  }
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
+    width: 75vw;
+    height: 30vh;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    font-size: 3em;
+  }
+  #section3 .center .section3Cover {
+    display: block;
+    width: 75vw;
+    height: 10vh;
+    margin-top: 30vh;
   }
   * {
     color: cadetblue;
@@ -2987,6 +3396,99 @@ html body #section3 .center .sectionWrap1 {
     padding-top: 20px;
     font-size: 50px;
   }
+  #section3 .symbol3 {
+    width: 13vw;
+    top: 303.8vh;
+    left: 4.1vw;
+  }
+  #section3 .center .sectionWrap1 .textWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 37em;
+    height: 28em;
+    text-transform: uppercase;
+    margin-top: 2em;
+    background-color: darkslategray;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 3em;
+    height: 19em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical p {
+    font-weight: 400;
+    padding: 0;
+    font-size: 3.4em;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+    margin-top: 7.6em;
+    letter-spacing: 10px;
+    height: 30px;
+    -webkit-animation: textWrapVerticalFromDown 4s ease-in 1s;
+            animation: textWrapVerticalFromDown 4s ease-in 1s;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal {
+    width: 29.8em;
+    padding-left: .9em;
+    background-color: red;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p {
+    color: black;
+    font-weight: 400;
+    width: 260px;
+    height: calc(270px/3);
+    font-size: 10em;
+    padding: 0;
+    height: .87em;
+    -webkit-transform-origin: 10% 10%;
+            transform-origin: 10% 10%;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p:nth-of-type(2) {
+    margin-top: .03em;
+    letter-spacing: .14em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p:nth-of-type(4) {
+    letter-spacing: .1em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .horizontal p:first-of-type {
+    color: beige;
+    height: 30px;
+    width: 340px;
+    font-size: 3em;
+    letter-spacing: .33em;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical2 {
+    margin-top: 3.5em;
+    width: 50px;
+  }
+  #section3 .center .sectionWrap1 .textWrap .vertical2 p {
+    margin-left: 0;
+    height: 170px;
+    width: 50px;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 4.2em;
+    padding: 0;
+    color: #F018E6;
+  }
+  #section3 .center .sectionWrap1 .textWrapMobile {
+    display: none;
+  }
+  #section3 .center .arrows i {
+    font-size: 5em;
+  }
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    font-size: 2.3em;
+  }
   * {
     color: orchid;
   }
@@ -3106,9 +3608,9 @@ html body #section3 .center .sectionWrap1 {
     top: 202.3vh;
   }
   #section3 .symbol3 {
-    top: 302.5vh;
-    left: 2.5vw;
-    width: 7vw;
+    top: 304.2vh;
+    left: 1.4vw;
+    width: 9vw;
   }
   #section3 .center .sectionWrap1 {
     height: 55vh;
@@ -3189,6 +3691,9 @@ html body #section3 .center .sectionWrap1 {
     padding: 0;
     color: #F018E6;
   }
+  #section3 .center .sectionWrap1 .textWrapMobile {
+    display: none;
+  }
   #section3 .center .arrows {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3212,7 +3717,7 @@ html body #section3 .center .sectionWrap1 {
     z-index: -2;
     border-top: solid 1px #222222;
   }
-  #section3 .center .offerWrap .offer {
+  #section3 .center .offerWrap .offer, #section3 .center .offerWrap .offer2 {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3226,29 +3731,16 @@ html body #section3 .center .sectionWrap1 {
     height: 14vh;
     background-color: #29072A;
   }
-  #section3 .center .offerWrap .offer p {
+  #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
+    margin-botttom: 0;
     font-size: 2em;
     color: beige;
+    z-index: 0;
   }
-  #section3 .center .offerWrap .offer2 {
-    margin-left: 90vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    float: left;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 73vw;
-    height: 14vh;
+  #section3 .center .section3Cover {
+    display: none;
   }
-  #section3 .center .offerWrap .offer2 p {
-    font-size: 2em;
-    color: beige;
-  }
-  #section3 .right div {
+  #section3 .right .rightCover {
     float: right;
     margin-top: 86vh;
     width: 15vw;
@@ -3285,32 +3777,32 @@ html body #section3 .center .sectionWrap1 {
   header .burger {
     color: black;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
     width: 15vw;
     left: 1vw;
   }
-  #section1 .left, #section2 .left {
+  #section1 .left, #section2 .left, #section3 .left {
     width: 17vw;
   }
-  #section1 .left .map, #section2 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map {
     width: 17vw;
   }
-  #section1 .left .map .symbol, #section2 .left .map .symbol {
+  #section1 .left .map .symbol, #section2 .left .map .symbol, #section3 .left .map .symbol {
     width: 17vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     position: absolute;
   }
-  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div {
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div, #section3 .left .map .mapNav div {
     width: 1.0vw;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
     display: block;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
     width: 80%;
@@ -3321,46 +3813,46 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: undefined;
     margin: 0 0 0 2.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
     display: block;
   }
-  #section1 .left .logo, #section2 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
     width: 17%;
   }
-  #section1 .center, #section2 .center {
+  #section1 .center, #section2 .center, #section3 .center {
     width: 45vw;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
     width: 62vw;
     padding: 0 0 0 17.4vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
     font-size: 8.7em;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2 {
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
     width: 22.5vw;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
     font-size: 3.3vh;
     padding-left: 3vw;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
     font-size: 1.45em;
     padding-bottom: 2vh;
   }
-  #section1 .right, #section2 .right {
+  #section1 .right, #section2 .right, #section3 .right {
     display: block;
     width: 38vw;
   }
-  #section1 .right .sideImg, #section2 .right .sideImg {
+  #section1 .right .sideImg, #section2 .right .sideImg, #section3 .right .sideImg {
     display: block;
     width: 38vw;
   }
-  #section1 .circle, #section2 .circle {
+  #section1 .circle, #section2 .circle, #section3 .circle {
     width: 100px;
     height: 100px;
   }
-  #section1 .circle #arrow, #section2 .circle #arrow {
+  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow {
     width: 95px;
     height: 95px;
     padding-top: 20px;
