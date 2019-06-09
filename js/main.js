@@ -68,21 +68,45 @@ const moveToSection = (e) => {
                 const doAnimationsSymbol = this.newAnimations.animation(document.querySelector(".symbol"+2), "top", "80vh", "202.1vh", 1000)
             } */
             if (i == 3) {
-                if (innerWidth < 1419) {
+                if (window.innerWidth < 1419) {
                     const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "7.55em", 800)
+                    const doAnimationsTextWrap2 = this.newAnimations.animation(document.querySelector(".textWrapP2"), "marginLeft", "400vw", "0", 1400)
+                    const doAnimationsTextWrap4 = this.newAnimations.animation(document.querySelector(".textWrapP4"), "marginLeft", "700vh", "0", 2000, 200, "ease-in")
                 }
+                else if (window.innerWidth < 1439) {
+                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "8.45em", 800)
+                    const doAnimationsTextWrap2 = this.newAnimations.animation(document.querySelector(".textWrapP2"), "marginLeft", "400vw", "0", 1400)
+                    const doAnimationsTextWrap4 = this.newAnimations.animation(document.querySelector(".textWrapP4"), "marginLeft", "700vh", "0", 2000, 200, "ease-in")
+                } 
+                else if (window.innerHeight > 1059 && window.innerHeight < 1300) {
+                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "7.47em", 800)
+                    const doAnimationsTextWrap2 = this.newAnimations.animation(document.querySelector(".textWrapP2"), "marginLeft", "400vw", ".2em", 1400)
+                    const doAnimationsTextWrap4 = this.newAnimations.animation(document.querySelector(".textWrapP4"), "marginLeft", "700vh", ".2em", 2000, 200, "ease-in")
+                }
+                else if (window.innerHeight > 1299) {
+                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "7.5em", 800)
+                    const doAnimationsTextWrap2 = this.newAnimations.animation(document.querySelector(".textWrapP2"), "marginLeft", "400vw", ".2em", 1400)
+                    const doAnimationsTextWrap4 = this.newAnimations.animation(document.querySelector(".textWrapP4"), "marginLeft", "700vh", "0", 2000, 200, "ease-in")
+                }
+                else if (window.innerHeight < 900) {
+                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "8.45em", 800)
+                    const doAnimationsTextWrap2 = this.newAnimations.animation(document.querySelector(".textWrapP2"), "marginLeft", "400vw", ".2em", 1400)
+                    const doAnimationsTextWrap4 = this.newAnimations.animation(document.querySelector(".textWrapP4"), "marginLeft", "700vh", "0", 2000, 200, "ease-in")
+                } 
                 else {
-                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "270px", 800)
+                    const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "7.8em", 800)
+                    const doAnimationsTextWrap2 = this.newAnimations.animation(document.querySelector(".textWrapP2"), "marginLeft", "400vw", ".2em", 1400)
+                    const doAnimationsTextWrap4 = this.newAnimations.animation(document.querySelector(".textWrapP4"), "marginLeft", "700vh", ".2em", 2000, 200, "ease-in")
                 }
                 
-                const doAnimationsTextWrap2 = this.newAnimations.animation(document.querySelector(".textWrapP2"), "marginLeft", "400vw", "0", 1400)
+                
                 const doAnimationsTextWrap31a = this.newAnimations.animation(document.querySelector(".textWrapP3-1"), "color", "#F018E6", "black", 0, 0, "ease-in")
                 const doAnimationsTextWrap31b = this.newAnimations.animation(document.querySelector(".textWrapP3-1"), "color", "black", "#F018E6", 2000, 1200, "ease-in")
                 const doAnimationsTextWrap32a = this.newAnimations.animation(document.querySelector(".textWrapP3-2"), "color", "beige", "black", 0, 0, "ease-in")
                 const doAnimationsTextWrap32b = this.newAnimations.animation(document.querySelector(".textWrapP3-2"), "color", "black", "beige", 2000, 1200, "ease-in")
                 const doAnimationsTextWrap33a = this.newAnimations.animation(document.querySelector(".textWrapP3-3"), "color", "beige", "black", 0, 0, "ease-in")
                 const doAnimationsTextWrap33b = this.newAnimations.animation(document.querySelector(".textWrapP3-3"), "color", "black", "beige", 2000, 1200, "ease-in")
-                const doAnimationsTextWrap4 = this.newAnimations.animation(document.querySelector(".textWrapP4"), "marginLeft", "700vh", "0", 2000, 200, "ease-in")
+                
                 const doAnimationsArrows = this.newAnimations.animation(document.querySelector(".arrows"), "paddingTop", "0", "5vh", 700, 0, "linear", "Infinity", "alternate")
                 if (selected !== 3 && section3AnimationFlag == 0) {
                     textAnimations();

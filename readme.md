@@ -14,4 +14,4 @@ I had to make a website to train my front-end skills. Choosing a hairdresser the
 https://marekszczepanski.github.io/Hairdresser-website/index
 
 #### Recent changes
-1) Add some section3 media querries.
+1) Section3 media querry changes.
