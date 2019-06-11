@@ -110,20 +110,23 @@ html
       height: 100vh
       border-bottom: $borders2
       border-top: $borders2
-      .symbol1, .symbol2, .symbol3
+      .symbol1, .symbol2, .symbol3, .symbol4
         position: absolute
         opacity: 0.6
+        z-index: 2
       .left      
         height: 100%
         float: left
         background-color: black
         border-right: $borders2
+        z-index: 5
         .symbol
           position: fixed
           top: 0
           left: 0
           height: 20vh
           z-index: 2
+          border-right: $borders2
         .map
           position: fixed
           top: 20vh
@@ -193,6 +196,7 @@ html
           justify-content: space-around          
           height: 20%          
           border-bottom: $borders2
+          background-color: black
           p
             text-align: center  
         .sectionWrap1, .sectionWrap2
@@ -219,6 +223,7 @@ html
         .credits3
           top: 197vh
       .circle
+        z-index: 1
         #arrow
           color: beige
           border: solid 2px beige        
@@ -231,6 +236,17 @@ html
         .sectionWrap1
           width: 100%
           height: 100%
+          .x
+            display: none
+            position: absolute
+            width: 3vw
+            height: 3vw
+            left: 76vw
+            top: 203vh
+            z-index: 2
+            i
+              font-size: 3vw
+              color: black 
           .container
             padding-top: 0.5vh
             height: calc(80vh/5)
@@ -243,9 +259,23 @@ html
               padding: 5px
               border: $borders2
               margin-bottom: .5vh
+            .bigHairVertical1, .bigHairVertical2, .bigHairVertical3, .bigHairVertical4, .bigHairVertical5
+              position: absolute
+              width: 60vw
+              height: 98vh
+              top: 201vh
+              left: 20vw
+              z-index: 1
+            .bigHairHorizontal1, .bigHairHorizontal2, .bigHairHorizontal3, .bigHairHorizontal4, .bigHairHorizontal5
+              position: absolute
+              width: 93vw
+              height: 93vh
+              top: 203vh
+              left: 3vw
+              z-index: 1
             .pointing
               opacity: .6
-              margin: 0 .3em
+              margin: 0 .3em            
       .right
         height: 100%
         border-left: $borders3
@@ -298,7 +328,7 @@ html
         width: 50vw
         height: 10vh
         padding-top: 0.5vh
-  #section1, #section2, #section3
+  #section1, #section2, #section3, #section4
     .symbol1, .symbol2
       top: 101.9vh
       left: 2.6vw
@@ -461,10 +491,18 @@ html
             margin-bottom: 3vh
             z-index: -2
       .section3Cover
-        background-color: green
         width: 80vw
         height: 11vh
         margin-top: 33vh
+        background-color: black
+  #section4
+    .symbol4
+      top: 402.5vh
+      left: 2vw
+      width: 15vw
+      height: 15vh
+    .center
+    
   *
     color: blue
 @media (min-width: 285px) and (max-width: 580px) and (orientation: portrait) // Nokia Lumia
@@ -1972,6 +2010,7 @@ html
       .sideImg
         display: block
         width: 38vw
+    
   #section2
     .symbol2
       top: 202.4vh
@@ -2458,7 +2497,7 @@ html
               font-size: 2em
               letter-spacing: .33em
           .vertical2
-            margin-top: 2.6em
+            margin-top: 2.4em
             width: 50px   
             p
               margin-left: 0
@@ -2607,7 +2646,7 @@ html
               font-size: 3.1em
               margin-top: 7.8em
           .horizontal
-            padding-left: .5em
+            padding-left: .8em
             width: 25em
             p
               height: .98em
@@ -2617,7 +2656,7 @@ html
               font-size: 2.5em
           .vertical2 
             p
-              margin: .1em 0 0 .2em
+              margin: .15em 0 0 .2em
               font-size: 3.7em
               letter-spacing: .06em
       .arrows

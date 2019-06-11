@@ -2,7 +2,7 @@ let section3AnimationFlag = 0;
 let selected = sessionStorage.getItem('selectedSection');
 const textAnimations = () => {
     this.newAnimations = new Animations;
-        if (window.innerWidth < 639 && window.innerHeight > 400 || window.innerWidth == 768 && window.innerHeight == 1024 /* iPad */ || window.innerWidth == 1024 && window.innerHeight == 1366 /* iPad pro */) {
+        if (window.innerWidth < 639 && window.innerHeight > 400 || window.innerWidth == 768 && window.innerHeight == 1024 /* iPad */ || window.innerWidth == 1024 && window.innerHeight == 1366 /* iPad pro */ || window.innerWidth == 800 && window.innerHeight == 1280 /* Kindle Fire */ || window.innerWidth == 1024 && window.innerHeight == 1440 /* Surface Pro */) {
             const doAnimationsArrows = this.newAnimations.animation(document.querySelector(".arrows"), "paddingTop", "0", "5vh", 700, 0, "linear", "Infinity", "alternate")
             const doAnimationsOffer1 = this.newAnimations.animation(document.querySelector(".offer"), "marginTop", "40vh", "-50vh", 10500, 0, "linear", "Infinity")
             const doAnimationsOffer2 = this.newAnimations.animation(document.querySelector(".offer2"), "marginTop", "40vh", "-50vh", 10500, 5200, "linear", "Infinity")
@@ -61,12 +61,6 @@ const moveToSection = (e) => {
                 behavior: 'smooth'
             });
             sessionStorage.setItem('selectedSection', e.target.id);
-            /* if (i === 1) {
-                const doAnimationsSymbol2 = this.newAnimations.animation(document.querySelector(".symbol"+1), "top", "-20vh", "101.9vh", 1000)
-            }
-            else if (i === 2){
-                const doAnimationsSymbol = this.newAnimations.animation(document.querySelector(".symbol"+2), "top", "80vh", "202.1vh", 1000)
-            } */
             if (i == 3) {
                 if (window.innerWidth < 1419) {
                     const doAnimationsTextWrap1 = this.newAnimations.animation(document.querySelector(".textWrapP1"), "marginTop", "250vw", "7.55em", 800)
@@ -98,15 +92,12 @@ const moveToSection = (e) => {
                     const doAnimationsTextWrap2 = this.newAnimations.animation(document.querySelector(".textWrapP2"), "marginLeft", "400vw", ".2em", 1400)
                     const doAnimationsTextWrap4 = this.newAnimations.animation(document.querySelector(".textWrapP4"), "marginLeft", "700vh", ".2em", 2000, 200, "ease-in")
                 }
-                
-                
                 const doAnimationsTextWrap31a = this.newAnimations.animation(document.querySelector(".textWrapP3-1"), "color", "#F018E6", "black", 0, 0, "ease-in")
                 const doAnimationsTextWrap31b = this.newAnimations.animation(document.querySelector(".textWrapP3-1"), "color", "black", "#F018E6", 2000, 1200, "ease-in")
                 const doAnimationsTextWrap32a = this.newAnimations.animation(document.querySelector(".textWrapP3-2"), "color", "beige", "black", 0, 0, "ease-in")
                 const doAnimationsTextWrap32b = this.newAnimations.animation(document.querySelector(".textWrapP3-2"), "color", "black", "beige", 2000, 1200, "ease-in")
                 const doAnimationsTextWrap33a = this.newAnimations.animation(document.querySelector(".textWrapP3-3"), "color", "beige", "black", 0, 0, "ease-in")
                 const doAnimationsTextWrap33b = this.newAnimations.animation(document.querySelector(".textWrapP3-3"), "color", "black", "beige", 2000, 1200, "ease-in")
-                
                 const doAnimationsArrows = this.newAnimations.animation(document.querySelector(".arrows"), "paddingTop", "0", "5vh", 700, 0, "linear", "Infinity", "alternate")
                 if (selected !== 3 && section3AnimationFlag == 0) {
                     textAnimations();
@@ -139,22 +130,33 @@ document.getElementById("arrow").addEventListener("click", moveToTop);
 const showImage = (e) => {
     for (let i=1; i<6; i++) {
         if (e.target.id === "hair"+i) {
-            e.target.style.zIndex = "1"
-            e.target.style.position = "absolute"
+            document.querySelector(".x").style.display = "block"
             if (window.innerHeight < window.innerWidth) {
-                e.target.style.width = "60vw";
-                e.target.style.height = "98vh";
-                e.target.style.top = "201vh"
-                e.target.style.left = "20vw"
+                e.target.classList.remove("hair");
+                e.target.classList.add("bigHairVertical"+i);
             }
             else {
-                e.target.style.width = "95vw";
-                e.target.style.height = "95vh";
-                e.target.style.top = "202.5vh"
-                e.target.style.left = "2.5vw"
+                e.target.classList.remove("hair");
+                e.target.classList.add("bigHairHorizontal"+i);
+                document.querySelector(".x").style.top = "205vh"
+                document.querySelector(".x").style.left = "91vw"
             }
         }     
-    }      
+    }   
+    const closeImg = () => {
+        for (let i=1; i<6; i++) {
+            if (window.innerHeight < window.innerWidth && document.getElementById("hair"+i).classList.contains("bigHairVertical"+i)) {
+                document.querySelector(".bigHairVertical"+i).classList.remove("bigHairVertical"+i);
+                document.getElementById("hair"+i).classList.add("hair");
+            }
+            else if (document.getElementById("hair"+i).classList.contains("bigHairHorizontal"+i)) {
+                document.querySelector(".bigHairHorizontal"+i).classList.remove("bigHairHorizontal"+i);
+                document.getElementById("hair"+i).classList.add("hair");
+            }
+            document.querySelector(".x").style.display = "none";
+        } 
+    } 
+    document.querySelector(".x").addEventListener("click", closeImg);  
 }
 for (let i=1; i<6; i++) {
     document.getElementById("hair"+i).addEventListener("click", showImage);

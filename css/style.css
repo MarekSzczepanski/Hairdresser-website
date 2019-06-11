@@ -170,9 +170,10 @@ html body section {
   border-top: solid 1px #222222;
 }
 
-html body section .symbol1, html body section .symbol2, html body section .symbol3 {
+html body section .symbol1, html body section .symbol2, html body section .symbol3, html body section .symbol4 {
   position: absolute;
   opacity: 0.6;
+  z-index: 2;
 }
 
 html body section .left {
@@ -180,6 +181,7 @@ html body section .left {
   float: left;
   background-color: black;
   border-right: solid 1px #222222;
+  z-index: 5;
 }
 
 html body section .left .symbol {
@@ -188,6 +190,7 @@ html body section .left .symbol {
   left: 0;
   height: 20vh;
   z-index: 2;
+  border-right: solid 1px #222222;
 }
 
 html body section .left .map {
@@ -310,6 +313,7 @@ html body section .center .sectionHead {
       justify-content: space-around;
   height: 20%;
   border-bottom: solid 1px #222222;
+  background-color: black;
 }
 
 html body section .center .sectionHead p {
@@ -353,6 +357,10 @@ html body section .right .credits3 {
   top: 197vh;
 }
 
+html body section .circle {
+  z-index: 1;
+}
+
 html body section .circle #arrow {
   color: beige;
   border: solid 2px beige;
@@ -368,6 +376,21 @@ html body section #arrow:hover {
 html body #section2 .center .sectionWrap1 {
   width: 100%;
   height: 100%;
+}
+
+html body #section2 .center .sectionWrap1 .x {
+  display: none;
+  position: absolute;
+  width: 3vw;
+  height: 3vw;
+  left: 76vw;
+  top: 203vh;
+  z-index: 2;
+}
+
+html body #section2 .center .sectionWrap1 .x i {
+  font-size: 3vw;
+  color: black;
 }
 
 html body #section2 .center .sectionWrap1 .container {
@@ -389,6 +412,24 @@ html body #section2 .center .sectionWrap1 .container .hair {
   padding: 5px;
   border: solid 1px #222222;
   margin-bottom: .5vh;
+}
+
+html body #section2 .center .sectionWrap1 .container .bigHairVertical1, html body #section2 .center .sectionWrap1 .container .bigHairVertical2, html body #section2 .center .sectionWrap1 .container .bigHairVertical3, html body #section2 .center .sectionWrap1 .container .bigHairVertical4, html body #section2 .center .sectionWrap1 .container .bigHairVertical5 {
+  position: absolute;
+  width: 60vw;
+  height: 98vh;
+  top: 201vh;
+  left: 20vw;
+  z-index: 1;
+}
+
+html body #section2 .center .sectionWrap1 .container .bigHairHorizontal1, html body #section2 .center .sectionWrap1 .container .bigHairHorizontal2, html body #section2 .center .sectionWrap1 .container .bigHairHorizontal3, html body #section2 .center .sectionWrap1 .container .bigHairHorizontal4, html body #section2 .center .sectionWrap1 .container .bigHairHorizontal5 {
+  position: absolute;
+  width: 93vw;
+  height: 93vh;
+  top: 203vh;
+  left: 3vw;
+  z-index: 1;
 }
 
 html body #section2 .center .sectionWrap1 .container .pointing {
@@ -502,19 +543,19 @@ html body #section3 .center .sectionWrap1 {
     height: 10vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2 {
+  #section1 .symbol1, #section1 .symbol2, #section2 .symbol1, #section2 .symbol2, #section3 .symbol1, #section3 .symbol2, #section4 .symbol1, #section4 .symbol2 {
     top: 101.9vh;
     left: 2.6vw;
     width: 16vw;
     height: 16vh;
   }
-  #section1 .left, #section2 .left, #section3 .left {
+  #section1 .left, #section2 .left, #section3 .left, #section4 .left {
     width: 20vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol, #section4 .left .symbol {
     width: 20vw;
   }
-  #section1 .left .map, #section2 .left .map, #section3 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map, #section4 .left .map {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -526,17 +567,17 @@ html body #section3 .center .sectionWrap1 {
         justify-content: space-around;
     width: 20vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav, #section4 .left .map .mapNav {
     display: none;
     height: 100%;
   }
-  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div, #section3 .left .map .mapNav div {
+  #section1 .left .map .mapNav div, #section2 .left .map .mapNav div, #section3 .left .map .mapNav div, #section4 .left .map .mapNav div {
     width: 1.1vw;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div, #section4 .left .map .mapNavBorders div {
     display: none;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp, #section4 .left .map .mapP .mapPp {
     left: 50px;
     right: undefined;
     width: 90%;
@@ -547,68 +588,68 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: 1.6px;
     margin: 0vh 0 0 0.9vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2, #section4 .left .map .filler, #section4 .left .map .filler2 {
     left: 0.55vw;
     display: none;
   }
-  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo, #section4 .left .logo {
     width: 20%;
   }
-  #section1 .center, #section2 .center, #section3 .center {
+  #section1 .center, #section2 .center, #section3 .center, #section4 .center {
     width: 80%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead, #section4 .center .sectionHead {
     left: 0;
     width: 100%;
     padding: 0 0 0 20.4vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p, #section4 .center .sectionHead p {
     font-size: 60px;
     letter-spacing: 0.6vw;
   }
-  #section1 .center .sectionHead div, #section2 .center .sectionHead div, #section3 .center .sectionHead div {
+  #section1 .center .sectionHead div, #section2 .center .sectionHead div, #section3 .center .sectionHead div, #section4 .center .sectionHead div {
     position: absolute;
     width: 80vw;
     height: 20vh;
     background-color: black;
     z-index: -1;
   }
-  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2 {
+  #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2, #section4 .center .sectionWrap1, #section4 .center .sectionWrap2 {
     width: 50%;
     height: 80vh;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1, #section4 .center .sectionWrap1 h1, #section4 .center .sectionWrap2 h1 {
     padding: 5vh 0 5vh 4vw;
     font-size: 3.3vh;
   }
-  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img, #section3 .center .sectionWrap1 .list img, #section3 .center .sectionWrap2 .list img {
+  #section1 .center .sectionWrap1 .list img, #section1 .center .sectionWrap2 .list img, #section2 .center .sectionWrap1 .list img, #section2 .center .sectionWrap2 .list img, #section3 .center .sectionWrap1 .list img, #section3 .center .sectionWrap2 .list img, #section4 .center .sectionWrap1 .list img, #section4 .center .sectionWrap2 .list img {
     display: none;
   }
-  #section1 .center .sectionWrap1 .list2 img, #section1 .center .sectionWrap2 .list2 img, #section2 .center .sectionWrap1 .list2 img, #section2 .center .sectionWrap2 .list2 img, #section3 .center .sectionWrap1 .list2 img, #section3 .center .sectionWrap2 .list2 img {
+  #section1 .center .sectionWrap1 .list2 img, #section1 .center .sectionWrap2 .list2 img, #section2 .center .sectionWrap1 .list2 img, #section2 .center .sectionWrap2 .list2 img, #section3 .center .sectionWrap1 .list2 img, #section3 .center .sectionWrap2 .list2 img, #section4 .center .sectionWrap1 .list2 img, #section4 .center .sectionWrap2 .list2 img {
     display: none;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p, #section4 .center .sectionWrap1 p, #section4 .center .sectionWrap2 p {
     padding: 0 3vw 3vh;
     font-size: 2.7vh;
   }
-  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2, #section3 .center .sectionWrap2 {
+  #section1 .center .sectionWrap2, #section2 .center .sectionWrap2, #section3 .center .sectionWrap2, #section4 .center .sectionWrap2 {
     border-left: solid 1px #222222;
   }
-  #section1 .right, #section2 .right, #section3 .right {
+  #section1 .right, #section2 .right, #section3 .right, #section4 .right {
     float: left;
     display: none;
   }
-  #section1 .right .sideImg, #section2 .right .sideImg, #section3 .right .sideImg {
+  #section1 .right .sideImg, #section2 .right .sideImg, #section3 .right .sideImg, #section4 .right .sideImg {
     display: none;
   }
-  #section1 .circle, #section2 .circle, #section3 .circle {
+  #section1 .circle, #section2 .circle, #section3 .circle, #section4 .circle {
     position: fixed;
     right: 0;
     bottom: 0;
     width: 51px;
     height: 51px;
   }
-  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow {
+  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow {
     float: left;
     padding-top: 8px;
     width: 46px;
@@ -736,10 +777,16 @@ html body #section3 .center .sectionWrap1 {
     z-index: -2;
   }
   #section3 .center .section3Cover {
-    background-color: green;
     width: 80vw;
     height: 11vh;
     margin-top: 33vh;
+    background-color: black;
+  }
+  #section4 .symbol4 {
+    top: 402.5vh;
+    left: 2vw;
+    width: 15vw;
+    height: 15vh;
   }
   * {
     color: blue;
@@ -3597,7 +3644,7 @@ html body #section3 .center .sectionWrap1 {
     letter-spacing: .33em;
   }
   #section3 .center .sectionWrap1 .textWrap .vertical2 {
-    margin-top: 2.6em;
+    margin-top: 2.4em;
     width: 50px;
   }
   #section3 .center .sectionWrap1 .textWrap .vertical2 p {
@@ -3810,7 +3857,7 @@ html body #section3 .center .sectionWrap1 {
     margin-top: 7.8em;
   }
   #section3 .center .sectionWrap1 .textWrap .horizontal {
-    padding-left: .5em;
+    padding-left: .8em;
     width: 25em;
   }
   #section3 .center .sectionWrap1 .textWrap .horizontal p {
@@ -3822,7 +3869,7 @@ html body #section3 .center .sectionWrap1 {
     font-size: 2.5em;
   }
   #section3 .center .sectionWrap1 .textWrap .vertical2 p {
-    margin: .1em 0 0 .2em;
+    margin: .15em 0 0 .2em;
     font-size: 3.7em;
     letter-spacing: .06em;
   }
