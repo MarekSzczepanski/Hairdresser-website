@@ -14,6 +14,5 @@ I had to make a website to train my front-end skills. Choosing a hairdresser the
 https://marekszczepanski.github.io/Hairdresser-website/index
 
 #### Recent changes
-1) Add close button for image zoom in section2.  
-2) Minor media querry fixes.  
-3) Start section4.
+1) Add section4 with media querries.  
+2) Minor changes in other sections' media querries.

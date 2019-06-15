@@ -1,6 +1,6 @@
 let section3AnimationFlag = 0;
 let selected = sessionStorage.getItem('selectedSection');
-const textAnimations = () => {
+const textAnimationsSection3 = () => {
     this.newAnimations = new Animations;
         if (window.innerWidth < 639 && window.innerHeight > 400 || window.innerWidth == 768 && window.innerHeight == 1024 /* iPad */ || window.innerWidth == 1024 && window.innerHeight == 1366 /* iPad pro */ || window.innerWidth == 800 && window.innerHeight == 1280 /* Kindle Fire */ || window.innerWidth == 1024 && window.innerHeight == 1440 /* Surface Pro */) {
             const doAnimationsArrows = this.newAnimations.animation(document.querySelector(".arrows"), "paddingTop", "0", "5vh", 700, 0, "linear", "Infinity", "alternate")
@@ -41,7 +41,7 @@ if (selected !== null) {
             document.querySelector(".textWrapP3-"+i).style.color = "beige";
         }
         document.querySelector(".textWrapP3-1").style.color = "#F018E6";
-        textAnimations();
+        textAnimationsSection3();
     }
 } 
 const moveToSection = (e) => {
@@ -100,9 +100,32 @@ const moveToSection = (e) => {
                 const doAnimationsTextWrap33b = this.newAnimations.animation(document.querySelector(".textWrapP3-3"), "color", "black", "beige", 2000, 1200, "ease-in")
                 const doAnimationsArrows = this.newAnimations.animation(document.querySelector(".arrows"), "paddingTop", "0", "5vh", 700, 0, "linear", "Infinity", "alternate")
                 if (selected !== 3 && section3AnimationFlag == 0) {
-                    textAnimations();
+                    textAnimationsSection3();
                     section3AnimationFlag = 1;
                 }
+            }
+            else if (i == 4) {
+                let time = 50;
+                for (let i=1; i<45; i++) {
+                    const doAnimationsSection4 = this.newAnimations.animation(document.querySelector(".n"+i), "marginLeft", "110vw", "0", 300, time, "ease-in");
+                    const doAnimationsSection4a = this.newAnimations.animation(document.querySelector(".n"+i+"a"), "marginLeft", "110vw", "0", 300, time, "ease-in");
+                    time += 50;
+                    if (i<38) {
+                        const doAnimationsSection4b = this.newAnimations.animation(document.querySelector(".n"+i+"d"), "marginLeft", "110vw", "0", 300, time, "ease-in");
+                        if (i<34) {
+                            const doAnimationsSection4b = this.newAnimations.animation(document.querySelector(".n"+i+"c"), "marginLeft", "110vw", "0", 300, time, "ease-in");
+                            if (i<28) {
+                                const doAnimationsSection4b = this.newAnimations.animation(document.querySelector(".n"+i+"b"), "marginLeft", "110vw", "0", 300, time, "ease-in");
+                                if (i<17) {
+                                    const doAnimationsSection4b = this.newAnimations.animation(document.querySelector(".n"+i+"f"), "marginLeft", "110vw", "0", 300, time, "ease-in");
+                                    if (i<13) {
+                                        const doAnimationsSection4b = this.newAnimations.animation(document.querySelector(".n"+i+"e"), "marginLeft", "110vw", "0", 300, time, "ease-in");
+                                    }
+                                }
+                            }
+                        }
+                    }
+                } 
             }
             document.querySelector(".filler").style.top = fillerScroll-4+"vh";
             document.querySelector(".mapP"+i).style.border = "solid #B51FAD 1px";
@@ -161,3 +184,4 @@ const showImage = (e) => {
 for (let i=1; i<6; i++) {
     document.getElementById("hair"+i).addEventListener("click", showImage);
 }
+
