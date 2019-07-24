@@ -110,7 +110,7 @@ html
       height: 100vh
       border-bottom: $borders2
       border-top: $borders2
-      .symbol1, .symbol2, .symbol3, .symbol4
+      .symbol1, .symbol2, .symbol3, .symbol4, .symbol5, .symbol6
         position: absolute
         opacity: 0.6
         z-index: 2
@@ -445,7 +445,7 @@ html
       width: 80%
       .sectionHead
         left: 0
-        padding-left: 20.4vw
+        padding-left: 20vw
         width: 100%
         p
           font-size: 60px
@@ -605,6 +605,75 @@ html
             margin-right: .5em
         .verticalP
           display: none
+  #section5
+    .symbol5
+      top: 502vh
+      left: 2vw
+    .center
+      .sectionHead
+        p
+          font-size: 2.5em
+      .section5Wrap
+        width: 100%
+        height: 80%
+        margin-top: 20vh
+        div
+          text-align: center
+          font-size: 1.3em
+        .upperDiv
+          height: 20%
+          display: flex
+          flex-direction: column
+          justify-content: center
+          border-bottom: $borders2
+          p
+            font-size: .9em
+            color: beige
+        .mediumDiv
+          display: flex
+          flex-direction: column
+          justify-content: space-around
+          height: 45%
+          border-bottom: $borders2
+          h1, p
+            color: beige
+            animation: pColor 3s ease-in infinite alternate
+        .lowerDiv
+          height: 35%
+          border-bottom: $borders2
+          .upperOfLowerDiv
+            display: flex
+            height: 50%
+            flex-direction: row
+            border-bottom: $borders2
+            .leftDiv, .rightDiv
+              display: flex
+              flex-direction: row
+              justify-content: center
+              align-items: center
+              height: 100%
+              i, p
+                font-size: .6em
+                padding-left: .5em
+                color: #FD1EFE
+              p
+                padding-top: .2em
+                color: beige
+            .rightDiv
+              border-left: $borders2
+              width: 56%
+            .leftDiv
+              width: 44%
+          .lowerOfLowerDiv
+            display: flex
+            height: 50%
+            /* width: 85% */
+            align-items: center
+            justify-content: center
+            padding: 0 21% 0 5%
+            p
+              font-size: .6em
+              color: beige
   *
     color: blue
 @media (min-width: 285px) and (max-width: 580px) and (orientation: portrait) // Nokia Lumia
@@ -736,7 +805,6 @@ html
   #section4
     .center
       .section4Wrap
-        background-color: darkslategray
         div
           display: none
         .verticalP
@@ -746,6 +814,15 @@ html
           text-align: center
           font-size: 1.1em
           animation: pColor 3s ease-in infinite alternate
+  #section5
+    .center
+      .section5Wrap
+        .lowerDiv
+          .upperOfLowerDiv
+            .rightDiv, .leftDiv
+              font-size: 1em
+              p
+                padding-left: 0
   *
     color: gray
 @media (min-width: 319px) and (min-height: 567px) and (orientation: portrait) // iPhone 5/SE
@@ -829,6 +906,9 @@ html
       .section4Wrap
         .verticalP
           font-size: 1.2em
+  #section5     
+    .mediumDiv
+      padding: 0 3%  
   *
     color: orange
 @media (min-width: 374px) and (min-height: 811px) and (orientation: portrait) // iPhone X
@@ -943,6 +1023,17 @@ html
       .section4Wrap
         .verticalP
           font-size: 1.4em
+  #section5
+    .center
+      .section5Wrap
+        .upperDiv
+          font-size: 1.5em
+        .lowerDiv
+          .upperOfLowerDiv
+            .rightDiv, .leftDiv
+              font-size: 1.05em
+          .lowerOfLowerDiv
+              font-size: 1.5em
   *
     color: gray
 @media (min-width: 410px) and (min-height: 730px) and (orientation: portrait) // Pixel 2
@@ -971,6 +1062,25 @@ html
       .section4Wrap
         .verticalP
           font-size: 1.3em
+  #section5
+    .center
+      .section5Wrap
+        .upperDiv
+          padding: 0 3%
+          font-size: 1.7em
+        .lowerDiv
+          .upperOfLowerDiv
+            .rightDiv, .leftDiv
+              i
+                padding: 0 4% 0 0
+              p
+                font-size: .65em
+            .leftDiv
+              i
+                margin-left: 1%
+          .lowerOfLowerDiv
+              padding-right: 10%
+              font-size: 1.7em
   *
     color: blue
 @media (min-width: 410px) and (min-height: 822px) and (orientation: portrait) // Pixel 2 XL
@@ -1025,6 +1135,22 @@ html
       .section4Wrap
         .verticalP
           font-size: 1.4em
+  #section5
+    .center
+      .section5Wrap
+        .lowerDiv
+          .upperOfLowerDiv
+            .rightDiv, .leftDiv
+              i
+                padding: 0 2% 0 3%
+              p
+                font-size: .7em
+            .leftDiv
+              i
+                margin-left: 1%
+          .lowerOfLowerDiv
+              padding-right: 15%
+              font-size: 1.7em
   *
     color: pink
 @media (min-width: 532px) and (min-height: 319px) and (max-height: 350px) and (orientation: landscape) // Nokia Lumia
@@ -1096,6 +1222,13 @@ html
           font-size: 5vh
         p
           font-size: 4vh
+    .circle
+      right: -1.5%
+      bottom: -2.8%
+      #arrow
+        width: 1.6em
+        height: 1.6em
+        line-height: 0.8
   #section2
     .symbol2
       top: 202.5vh
@@ -1123,6 +1256,24 @@ html
     .symbol4
       top: 402.5vh
       left: 2.5vw
+  #section5
+    .symbol5
+      top: 502vh
+      left: 2.5vw
+    .center
+      .section5Wrap
+        .mediumDiv
+          h1
+            font-size: 1em
+          p
+            font-size: .7em
+        .lowerDiv
+          .upperOfLowerDiv
+            .rightDiv, .leftDiv
+              p
+                 font-size: .5em 
+          .lowerOfLowerDiv
+              padding-right: 12% 
   *
     color: orange
 @media (min-width: 580px) and (max-height: 636px)
@@ -1244,7 +1395,14 @@ html
     .center
       .section4Wrap
         font-size: 1.1em
-          
+  #section5
+    .symbol5
+      left: 0
+    .center
+      .section5Wrap
+        .lowerDiv
+          .lowerOfLowerDiv
+              padding-right: 8%         
   *
     color: brown
 @media (min-width: 599px) and (min-height: 959px) and (orientation: portrait) // Asus Nexus 7"
@@ -1373,7 +1531,6 @@ html
   #section4
     .center
       .section4Wrap
-        background-color: darkslategray
         .verticalP
           display: block
           font-size: 2em
@@ -1383,6 +1540,24 @@ html
           display: none
           p
             display: none
+  #section5
+    .center
+      .section5Wrap
+        .mediumDiv
+          h1
+            font-size: 2em
+          p
+            font-size: 1.4em
+        .lowerDiv
+          .upperOfLowerDiv
+            .rightDiv, .leftDiv
+              p
+                font-size: .8em
+            .leftDiv
+              p
+                padding-left: 2%
+          .lowerOfLowerDiv
+              padding-right: 4%   
   *
     color: lightblue
 @media (min-width: 639px) and (min-height: 359px) and (orientation: landscape) // Galaxy S5
@@ -1443,6 +1618,13 @@ html
           font-size: 1.3em
         p
           font-size: .9em
+    .circle
+      right: -1.5%
+      bottom: -2.8%
+      #arrow
+        width: 1.6em
+        height: 1.6em
+        line-height: 0.8
   #section2
     .symbol2
       top: 203.5vh 
@@ -1492,6 +1674,24 @@ html
         div
           p
             font-size: 1.1em
+  #section5
+    .symbol5
+      top: 502vh
+      left: 2.5vw
+    .center
+      .section5Wrap
+        .mediumDiv
+          h1
+            font-size: 1.2em
+          p
+            font-size: .8em
+        .lowerDiv
+          .upperOfLowerDiv
+            .rightDiv, .leftDiv
+              p
+                 font-size: .7em 
+          .lowerOfLowerDiv
+              padding-right: 12% 
   *
     color: darkorchid
 @media (min-width: 700px) and (max-height: 460px)
@@ -1602,12 +1802,13 @@ html
       top: 403.2vh
     .center
       .section4Wrap
-        background-color: darkslategray
         align-items: center
         font-size: 1.5em
   *
     color: seagreen
 @media (min-width: 730px) and (min-height: 410px) and (orientation: landscape) // Pixel 2
+  .burger
+    font-size: 2em
   #section1, #section2, #section3, #section4, #section5, #section6
     .symbol1, .symbol2, .symbol3, .symbol4, .symbol5, .symbol6
       top: 103vh
@@ -1644,8 +1845,13 @@ html
         p
           font-size: 15px
     .circle
+      right: 0
+      bottom: 0
       #arrow
-        padding-top: 9px
+        width: 2em
+        height: 2em
+        line-height: 1.2
+        font-size: 1.5em
   #section2
     .symbol2
       top: 203.5vh
@@ -1681,6 +1887,20 @@ html
       .section4Wrap
         font-size: 1.25em
         align-items: flex-start
+  #section5
+    .symbol5
+      top: 502vh
+    .center
+      .section5Wrap
+        .mediumDiv
+          h1
+            font-size: 1.5em
+          p
+            font-size: 1em
+        .lowerDiv
+          .lowerOfLowerDiv
+              padding-right: 6%
+              font-size: 1.4em
   *
     color: white
 @media (min-width: 735px) and (min-height: 413px) and (max-height: 450px) and (orientation: landscape) // iPhone 6/7/8 Plus
@@ -1696,8 +1916,7 @@ html
     left: 29vw
   .burger
     top: 1vh
-    left: 96.3vw
-    font-size: 6vh
+    left: 95.3vw
   .headerP
     display: none
   .headerP1
@@ -1741,7 +1960,6 @@ html
       width: 83%
       .sectionHead
         p
-          margin-top: 1.5%
           font-size: 17vh
       .sectionWrap1, .sectionWrap2
         h1
@@ -1754,6 +1972,8 @@ html
   *
     color: crimson 
 @media (min-width: 767px) and (min-height: 1023px) and (orientation: portrait) // iPad
+  .burger
+    left: 94.5vw
   #section1, #section2
     .left
       .map
@@ -1801,13 +2021,14 @@ html
           top: 174vh
           height: 20% 
     .circle
-      width: 100px
-      height: 100px
+      right: 2%
+      bottom: 1.5%
       #arrow
-        width: 95px
-        height: 95px
+        width: 2em
+        height: 2em
         padding-top: 20px
-        font-size: 50px
+        font-size: 2em
+        line-height: 0.7
   #section2
     .center
       .sectionHead
@@ -1846,6 +2067,24 @@ html
             font-size: 2.3em
       .section3Cover
         width: 70vw
+  #section5
+    .center
+      .section5Wrap
+        .mediumDiv
+          h1
+            font-size: 2em
+          p
+            font-size: 1.4em
+        .lowerDiv
+          .upperOfLowerDiv
+            .rightDiv, .leftDiv
+              p
+                font-size: 1em
+                padding-left: 1%
+              i
+                font-size: 1em
+          .lowerOfLowerDiv
+              padding-right: 4%    
   *
     color: royalblue
 @media (min-width: 811px) and (min-height: 374px) and (max-width: 880px) and (orientation: landscape) // iPhone X
@@ -1908,7 +2147,6 @@ html
       width: 84%
       .sectionHead
         p
-          margin-top: 1.5%
           font-size: 17vh
       .sectionWrap1, .sectionWrap2
         h1
@@ -1916,8 +2154,12 @@ html
         p
           font-size: 15px
     .circle
+      bottom: -1%
+      right: -0.6%
       #arrow
-        padding-top: 9px
+        width: 1.8em
+        height: 1.8em
+        line-height: 1
   #section2
     .symbol2
       width: 10vw
@@ -1967,6 +2209,19 @@ html
       .section4Wrap
         font-size: 1.35em
         align-items: flex-start
+  #section5
+    .symbol5
+      top: 502.5vh
+    .center
+      .section5Wrap
+        .mediumDiv
+          h1
+            font-size: 1.5em
+          p
+            font-size: .9em
+        .lowerDiv
+          .lowerOfLowerDiv
+            padding: 0
   *
     color: lightgreen
 @media (min-width: 822px) and (min-height: 410px) and (max-height: 475px) and (orientation: landscape) // Pixel 2 XL
@@ -2126,7 +2381,7 @@ html
           width: 83vw
           p
             margin-left: .6em
-            font-size: 1.4em
+            font-size: 1.4em    
   #section4
     .symbol4
       left: 2.5vw
@@ -2252,7 +2507,9 @@ html
         width: 47vw
         padding: 0 .4em
         font-size: 1.25em
-        background-color: darkslategray
+  #section5
+    .symbol5
+      top: 502vh
   *
     color: green
 @media (min-width: 1023px) and (min-height: 768px) and (orientation: landscape) //iPad
@@ -2280,7 +2537,7 @@ html
         width: calc(100vw/6)
         height: 20vh
         padding-top: 0.5vh
-  #section1, #section2, #section3, #section4
+  #section1, #section2, #section3, #section4, #section5
     .symbol1, .symbol2, .symbol4
       width: 17vh
       left: 4vw
@@ -2354,7 +2611,22 @@ html
         width: 72vw
         padding: 0 .4em
         font-size: 1.7em
-        background-color: darkslategray       
+  #section5
+    .symbol5
+      top: 502.5vh
+      left: 5.5vw
+    .center
+      .section5Wrap
+        .upperDiv
+          font-size: 1.6em
+        .mediumDiv
+          h1
+            font-size: 2em
+          p
+            font-size: 1.4em
+        .lowerDiv
+          .lowerOfLowerDiv
+            font-size: 1.6em    
   *
     color: gray
 @media (min-width: 1023px) and (min-height: 1335px) and (orientation: portrait) // iPad Pro
@@ -2369,9 +2641,8 @@ html
     left: 21vw
     width: 58vw
   .burger
-    top: 10px
-    right: 10px
-    font-size: 5vh
+    right: .8%
+    font-size: 3em
   .headerP
     display: none
   nav
@@ -2449,13 +2720,8 @@ html
     .right
       display: none    
     .circle
-      width: 100px
-      height: 100px
       #arrow
-        width: 95px
-        height: 95px
-        padding-top: 20px
-        font-size: 50px
+        line-height: 0.6
   #section2
     .center
       .container
@@ -2498,7 +2764,24 @@ html
       .section4Wrap
         width: 70vw
         font-size: 1.4em
-        background-color: darkslategray
+  #section5
+    .symbol5
+      top: 502.5vh
+      left: 3vw
+      width: 20%
+    .center
+      .section5Wrap
+        .upperDiv
+          font-size: 2em
+        .mediumDiv
+          h1
+            font-size: 2.4em
+          p
+            font-size: 1.9em
+        .lowerDiv
+          .lowerOfLowerDiv
+            font-size: 2em
+            padding-right: 12%
   *
     color: cadetblue
 @media (min-width: 1365px) and (min-height: 767px) and (orientation: landscape) // iPad Pro
@@ -2570,13 +2853,11 @@ html
     .right
       display: none
     .circle
-      width: 100px
-      height: 100px
+      right: 1.5em
+      bottom: 1.5em
       #arrow
-        width: 95px
-        height: 95px
-        padding-top: 20px
-        font-size: 50px
+        font-size: 2em
+        line-height: 1.4
   #section3
     .symbol3
       width: 13vw
@@ -2597,6 +2878,20 @@ html
     .center
       .section4Wrap
         font-size: 2.3em
+  #section5
+    .center
+      .section5Wrap
+        .upperDiv
+          font-size: 2.2em
+        .lowerDiv
+          .upperOfLowerDiv
+            .rightDiv, .leftDiv
+              i
+                font-size: .9em
+              p
+                font-size: .9em
+          .lowerOfLowerDiv
+            font-size: 2.2em
   *
     color: orchid
 @media (min-width: 1420px) and (min-height: 430px) and (max-height: 1300px)
@@ -2720,7 +3015,7 @@ html
               font-size: 2em
               letter-spacing: .33em
           .vertical2
-            margin-top: 2.4em
+            margin-top: 2.6em
             width: 50px   
             p
               margin-left: 0
@@ -2728,10 +3023,10 @@ html
               width: 50px
               writing-mode: vertical-rl
               text-orientation: upright
-              font-size: 2.5em
+              font-size: 2.45em
               padding: .02em 0 0 0
               color: #F018E6
-              letter-spacing: .11em
+              letter-spacing: .14em
         .textWrapMobile
           display: none
       .arrows
@@ -2779,7 +3074,9 @@ html
         width: 48vw
         padding: 0
         font-size: 1.6em
-        background-color: darkslategray
+  #section5
+    .symbol5
+      left: 1.3vw
   *
     color: deeppink
 @media (min-width: 1439px) and (min-height: 899px)
@@ -2843,13 +3140,8 @@ html
         display: block
         width: 38vw
     .circle
-      width: 100px
-      height: 100px
       #arrow
-        width: 95px
-        height: 95px
-        padding-top: 20px
-        font-size: 50px
+        line-height: 1.5
   #section2
     .symbol2
       width: 10vw
@@ -2932,6 +3224,9 @@ html
       .section4Wrap
         width: 48vw
         font-size: 1.65em
+  #section5
+    .symbol5
+      left: 1.8vw
   *
     color: blue
 @media (min-width: 1640px) //section4 text
@@ -3230,13 +3525,7 @@ html
       .sideImg
         width: 38vw
     .circle
-      width: 100px
-      height: 100px
       #arrow
-        width: 95px
-        height: 95px
-        padding-top: 20px
-        font-size: 50px
   #section2
     .center
       .container
@@ -3274,3 +3563,8 @@ html
     .center
       .section4Wrap
         font-size: 3em
+@media (min-height: 400px)
+  #section3
+    .center
+      .section3Cover
+        display: none
