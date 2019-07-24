@@ -837,10 +837,8 @@ html body #section4 .bubble3 {
   }
   #section1 .circle, #section2 .circle, #section3 .circle, #section4 .circle, #section5 .circle, #section6 .circle {
     position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 51px;
-    height: 51px;
+    right: .4em;
+    bottom: .4em;
   }
   #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
     float: left;
@@ -848,7 +846,8 @@ html body #section4 .bubble3 {
     width: 46px;
     height: 46px;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5em;
+    line-height: 1.1;
   }
   #section2 .symbol2 {
     top: 202.5vh;
