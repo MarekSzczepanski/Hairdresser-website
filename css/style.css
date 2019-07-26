@@ -1349,7 +1349,7 @@ html body #section4 .bubble3 {
     text-align: center;
   }
   #section2 .center .container #hair5 {
-    margin-right: 14%;
+    margin-right: 17%;
   }
   #section3 .center .sectionHead p {
     font-size: 3.2em;
@@ -1404,6 +1404,10 @@ html body #section4 .bubble3 {
   }
   #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
     margin-top: 17%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:last-of-type {
+    max-width: 50%;
+    margin-left: 25%;
   }
   * {
     color: gray;
