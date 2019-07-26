@@ -127,6 +127,30 @@ const moveToSection = (e) => {
                     }
                 } 
             }
+            else if (i == 6) {
+                const showText = () => {
+                    document.querySelector(".section6Text").style.display = "block";
+                }
+                const borderFix = () => {
+                    document.querySelector(".window").style.borderTop = "1px solid black";
+                }
+                if (window.innerWidth < 410) {
+                    const doAnimationsSection6a = this.newAnimations.animation(document.querySelector(".window"), "marginLeft", "120vw", "0", 1000, 0, "ease-in");
+                    const doAnimationsSection6i = this.newAnimations.animation(document.querySelector(".window"), "height", "0", "180vh", 3700, 1000, "ease-in");
+                    const doAnimationsSection6b = this.newAnimations.animation(document.querySelector(".window"), "marginTop", "25vh", "-20vh", 3700, 1000, "ease-in");
+                    const doAnimationsSection6t = this.newAnimations.animation(document.querySelector(".window"), "paddingTop", "0", "45vh", 3700, 1000, "ease-in");
+                    setTimeout(showText, 1200);
+                    setTimeout(borderFix, 3500);
+                }
+                else if (window.innerWidth > 410) {
+                    const doAnimationsSection6a = this.newAnimations.animation(document.querySelector(".window"), "marginLeft", "120vw", "0", 1000, 0, "ease-in");
+                    const doAnimationsSection6i = this.newAnimations.animation(document.querySelector(".window"), "height", "0", "190vh", 3700, 1000, "ease-in");
+                    const doAnimationsSection6b = this.newAnimations.animation(document.querySelector(".window"), "marginTop", "27vh", "0", 3700, 1000, "ease-in");
+                    const doAnimationsSection6t = this.newAnimations.animation(document.querySelector(".window"), "paddingTop", "0", "27vh", 3700, 1000, "ease-in");
+                    setTimeout(showText, 1200);
+                    setTimeout(borderFix, 3500);
+                }
+        }
             document.querySelector(".filler").style.top = fillerScroll-4+"vh";
             document.querySelector(".mapP"+i).style.border = "solid #B51FAD 1px";
             document.querySelector(".mapP"+i).style.color = "orchid";

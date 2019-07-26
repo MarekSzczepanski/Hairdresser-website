@@ -974,6 +974,12 @@ html body #section4 .bubble3 {
     margin-top: 33vh;
     background-color: black;
   }
+  #section3 .center .section3Cover, #section3 .center .section3CoverMobile {
+    width: 80vw;
+    height: 11vh;
+    margin-top: 33vh;
+    background-color: black;
+  }
   #section4 .symbol4 {
     top: 402.5vh;
     left: 2.6vw;
@@ -1125,7 +1131,6 @@ html body #section4 .bubble3 {
     display: -ms-flexbox;
     display: flex;
     height: 50%;
-    /* width: 85% */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1137,6 +1142,49 @@ html body #section4 .bubble3 {
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv p {
     font-size: .6em;
     color: beige;
+  }
+  #section6 .symbol6 {
+    top: 602vh;
+  }
+  #section6 .center .section6Wrap .window {
+    width: 100vw;
+    height: 0;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    margin: 25vh 0 0 120vw;
+    z-index: -5;
+    padding: 0 20% 0 10%;
+  }
+  #section6 .center .section6Wrap .window div {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    display: none;
+    font-size: 1.1em;
+    max-width: 90%;
+    text-align: center;
+    -webkit-animation: pColor 3s ease-in infinite alternate;
+            animation: pColor 3s ease-in infinite alternate;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    display: block;
+    max-width: 100%;
+    font-size: .8em;
+    color: white;
+    margin-bottom: 3%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 16%;
+  }
+  #section6 .right .section6Cover {
+    width: 100%;
+    height: 100%;
+    background-color: black;
   }
   * {
     color: blue;
@@ -1345,6 +1393,18 @@ html body #section4 .bubble3 {
   #section5 .center .section5Wrap .lowerDiv .upperOfLowerDiv .rightDiv p, #section5 .center .section5Wrap .lowerDiv .upperOfLowerDiv .leftDiv p {
     padding-left: 0;
   }
+  #section6 .center .section6Wrap .window {
+    padding-right: 35%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.2em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 4.5%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 17%;
+  }
   * {
     color: gray;
   }
@@ -1370,6 +1430,9 @@ html body #section4 .bubble3 {
   }
   #section1 .center .sectionHead p, #section2 .center .sectionHead p {
     font-size: 10vh;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.3em;
   }
   * {
     color: green;
@@ -1462,7 +1525,7 @@ html body #section4 .bubble3 {
     top: 175vh;
     height: 20%;
   }
-  #section3 .center .section3Cover {
+  #section3 .center .section3CoverMobile {
     height: 13vh;
   }
   #section4 .center .section4Wrap .verticalP {
@@ -1470,6 +1533,9 @@ html body #section4 .bubble3 {
   }
   #section5 .mediumDiv {
     padding: 0 3%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.5em;
   }
   * {
     color: orange;
@@ -1641,6 +1707,18 @@ html body #section4 .bubble3 {
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     font-size: 1.5em;
   }
+  #section6 .center .section6Wrap .window {
+    padding-right: 45%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.6em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 8%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 30%;
+  }
   * {
     color: gray;
   }
@@ -1690,6 +1768,19 @@ html body #section4 .bubble3 {
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     padding-right: 10%;
     font-size: 1.7em;
+  }
+  #section6 .center .section6Wrap .window {
+    margin-top: 27vh;
+    padding-right: 35%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.7em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 5%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 20%;
   }
   * {
     color: blue;
@@ -1781,6 +1872,9 @@ html body #section4 .bubble3 {
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     padding-right: 15%;
     font-size: 1.7em;
+  }
+  #section6 .center .section6Wrap .window {
+    padding-right: 45%;
   }
   * {
     color: pink;
@@ -1892,14 +1986,10 @@ html body #section4 .bubble3 {
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p, #section4 .center .sectionWrap1 p, #section4 .center .sectionWrap2 p, #section5 .center .sectionWrap1 p, #section5 .center .sectionWrap2 p, #section6 .center .sectionWrap1 p, #section6 .center .sectionWrap2 p {
     font-size: 4vh;
   }
-  #section1 .circle, #section2 .circle, #section3 .circle, #section4 .circle, #section5 .circle, #section6 .circle {
-    right: -1.5%;
-    bottom: -2.8%;
-  }
   #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
     width: 1.6em;
     height: 1.6em;
-    line-height: 0.8;
+    line-height: .75;
   }
   #section2 .symbol2 {
     top: 202.5vh;
@@ -1947,6 +2037,21 @@ html body #section4 .bubble3 {
   }
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     padding-right: 12%;
+  }
+  #section6 .symbol6 {
+    top: 602vh;
+  }
+  #section6 .center .section6Wrap .window {
+    margin-top: 27vh;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.2em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 2%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 7%;
   }
   * {
     color: orange;
@@ -2064,21 +2169,6 @@ html body #section4 .bubble3 {
   #section1 .right .sideImg, #section2 .right .sideImg, #section3 .right .sideImg, #section4 .right .sideImg, #section5 .right .sideImg, #section6 .right .sideImg {
     display: none;
   }
-  #section1 .circle, #section2 .circle, #section3 .circle, #section4 .circle, #section5 .circle, #section6 .circle {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: 51px;
-    height: 51px;
-  }
-  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
-    float: left;
-    padding-top: 8px;
-    width: 46px;
-    height: 46px;
-    text-align: center;
-    font-size: 24px;
-  }
   #section2 .symbol2 {
     top: 203vh;
   }
@@ -2114,6 +2204,22 @@ html body #section4 .bubble3 {
   }
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     padding-right: 8%;
+  }
+  #section6 .symbol6 {
+    left: 2.5vw;
+    width: 10%;
+  }
+  #section6 .center .section6Wrap .window {
+    margin-top: 27vh;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.2em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 2%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 7%;
   }
   * {
     color: brown;
@@ -2254,6 +2360,12 @@ html body #section4 .bubble3 {
     top: 174vh;
     height: 20%;
   }
+  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
+    width: 2em;
+    height: 2em;
+    font-size: 2.5em;
+    line-height: 1.4;
+  }
   #section2 .sectionWrap1 .container {
     line-height: 1.5em;
   }
@@ -2322,6 +2434,15 @@ html body #section4 .bubble3 {
   }
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     padding-right: 4%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 2.2em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 5%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 17%;
   }
   * {
     color: lightblue;
@@ -2415,14 +2536,10 @@ html body #section4 .bubble3 {
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p, #section4 .center .sectionWrap1 p, #section4 .center .sectionWrap2 p, #section5 .center .sectionWrap1 p, #section5 .center .sectionWrap2 p, #section6 .center .sectionWrap1 p, #section6 .center .sectionWrap2 p {
     font-size: .9em;
   }
-  #section1 .circle, #section2 .circle, #section3 .circle, #section4 .circle, #section5 .circle, #section6 .circle {
-    right: -1.5%;
-    bottom: -2.8%;
-  }
   #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
     width: 1.6em;
     height: 1.6em;
-    line-height: 0.8;
+    line-height: .75;
   }
   #section2 .symbol2 {
     top: 203.5vh;
@@ -2496,6 +2613,12 @@ html body #section4 .bubble3 {
   }
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     padding-right: 12%;
+  }
+  #section6 .symbol6 {
+    top: 602vh;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.4em;
   }
   * {
     color: darkorchid;
@@ -2653,6 +2776,12 @@ html body #section4 .bubble3 {
             align-items: center;
     font-size: 1.5em;
   }
+  #section5 .symbol5 {
+    left: 1vw;
+  }
+  #section6 .symbol6 {
+    left: 1vw;
+  }
   * {
     color: seagreen;
   }
@@ -2718,15 +2847,9 @@ html body #section4 .bubble3 {
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p, #section4 .center .sectionWrap1 p, #section4 .center .sectionWrap2 p, #section5 .center .sectionWrap1 p, #section5 .center .sectionWrap2 p, #section6 .center .sectionWrap1 p, #section6 .center .sectionWrap2 p {
     font-size: 15px;
   }
-  #section1 .circle, #section2 .circle, #section3 .circle, #section4 .circle, #section5 .circle, #section6 .circle {
-    right: 0;
-    bottom: 0;
-  }
   #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
-    width: 2em;
-    height: 2em;
-    line-height: 1.2;
-    font-size: 1.5em;
+    font-size: 1.7em;
+    line-height: .9;
   }
   #section2 .symbol2 {
     top: 203.5vh;
@@ -2759,6 +2882,14 @@ html body #section4 .bubble3 {
     font-size: 1.25em;
     margin-left: .7em;
   }
+  #section3 .center .section3CoverMobile {
+    background-color: black;
+    display: block;
+    width: 20vw;
+    height: 25vh;
+    float: right;
+    margin: 0 -5vw 0 0;
+  }
   #section4 .symbol4 {
     top: 403.5vh;
   }
@@ -2780,6 +2911,9 @@ html body #section4 .bubble3 {
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     padding-right: 6%;
     font-size: 1.4em;
+  }
+  #section6 .symbol6 {
+    top: 602vh;
   }
   * {
     color: white;
@@ -2883,6 +3017,9 @@ html body #section4 .bubble3 {
   #section2 .symbol2 {
     top: 203.5vh;
   }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.6em;
+  }
   * {
     color: crimson;
   }
@@ -2951,15 +3088,14 @@ html body #section4 .bubble3 {
     height: 20%;
   }
   #section1 .circle, #section2 .circle {
-    right: 2%;
-    bottom: 1.5%;
+    right: .6%;
+    bottom: .5%;
   }
   #section1 .circle #arrow, #section2 .circle #arrow {
     width: 2em;
     height: 2em;
-    padding-top: 20px;
     font-size: 2em;
-    line-height: 0.7;
+    line-height: 1.4;
   }
   #section2 .center .sectionHead p {
     font-size: 7em;
@@ -3021,6 +3157,9 @@ html body #section4 .bubble3 {
   }
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     padding-right: 4%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 2.6em;
   }
   * {
     color: royalblue;
@@ -3127,15 +3266,6 @@ html body #section4 .bubble3 {
   #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p, #section4 .center .sectionWrap1 p, #section4 .center .sectionWrap2 p, #section5 .center .sectionWrap1 p, #section5 .center .sectionWrap2 p, #section6 .center .sectionWrap1 p, #section6 .center .sectionWrap2 p {
     font-size: 15px;
   }
-  #section1 .circle, #section2 .circle, #section3 .circle, #section4 .circle, #section5 .circle, #section6 .circle {
-    bottom: -1%;
-    right: -0.6%;
-  }
-  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
-    width: 1.8em;
-    height: 1.8em;
-    line-height: 1;
-  }
   #section2 .symbol2 {
     width: 10vw;
     top: 204vh;
@@ -3204,6 +3334,9 @@ html body #section4 .bubble3 {
   }
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     padding: 0;
+  }
+  #section6 .symbol6 {
+    top: 602.5vh;
   }
   * {
     color: lightgreen;
@@ -3299,6 +3432,12 @@ html body #section4 .bubble3 {
     left: 3.5vw;
   }
   #section4 .symbol4 {
+    left: 2.5vw;
+  }
+  #section5 .symbol5 {
+    left: 2.5vw;
+  }
+  #section6 .symbol6 {
     left: 2.5vw;
   }
   * {
@@ -3444,6 +3583,9 @@ html body #section4 .bubble3 {
   }
   #section4 .center .section4Wrap {
     font-size: 1.5em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 1.8em;
   }
   * {
     color: cadetblue;
@@ -3592,8 +3734,14 @@ html body #section4 .bubble3 {
   #section3 .center .arrows {
     width: 70vw;
   }
+  #section3 .center .section3CoverMobile {
+    display: none;
+  }
   #section3 .section3Cover {
     display: none;
+  }
+  #section3 .right .sideImg {
+    width: 39vw;
   }
   #section3 .right .rightCover {
     float: right;
@@ -3601,6 +3749,7 @@ html body #section4 .bubble3 {
     width: 15vw;
     height: 15vh;
     background-color: black;
+    margin-right: -1vw;
   }
   #section4 .symbol4 {
     top: 402vh;
@@ -3615,6 +3764,16 @@ html body #section4 .bubble3 {
   }
   #section5 .symbol5 {
     top: 502vh;
+  }
+  #section6 .symbol6 {
+    top: 602vh;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    max-width: 43%;
+    font-size: 1.8em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 6%;
   }
   * {
     color: green;
@@ -3657,27 +3816,27 @@ html body #section4 .bubble3 {
     height: 20vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section1 .symbol4, #section2 .symbol1, #section2 .symbol2, #section2 .symbol4, #section3 .symbol1, #section3 .symbol2, #section3 .symbol4, #section4 .symbol1, #section4 .symbol2, #section4 .symbol4, #section5 .symbol1, #section5 .symbol2, #section5 .symbol4 {
+  #section1 .symbol1, #section1 .symbol2, #section1 .symbol4, #section2 .symbol1, #section2 .symbol2, #section2 .symbol4, #section3 .symbol1, #section3 .symbol2, #section3 .symbol4, #section4 .symbol1, #section4 .symbol2, #section4 .symbol4, #section5 .symbol1, #section5 .symbol2, #section5 .symbol4, #section6 .symbol1, #section6 .symbol2, #section6 .symbol4 {
     width: 17vh;
     left: 4vw;
     display: block;
   }
-  #section1 .left, #section2 .left, #section3 .left, #section4 .left, #section5 .left {
+  #section1 .left, #section2 .left, #section3 .left, #section4 .left, #section5 .left, #section6 .left {
     width: 21vw;
   }
-  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol, #section4 .left .symbol, #section5 .left .symbol {
+  #section1 .left .symbol, #section2 .left .symbol, #section3 .left .symbol, #section4 .left .symbol, #section5 .left .symbol, #section6 .left .symbol {
     width: 21vw;
   }
-  #section1 .left .map, #section2 .left .map, #section3 .left .map, #section4 .left .map, #section5 .left .map {
+  #section1 .left .map, #section2 .left .map, #section3 .left .map, #section4 .left .map, #section5 .left .map, #section6 .left .map {
     width: 21vw;
   }
-  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav, #section4 .left .map .mapNav, #section5 .left .map .mapNav {
+  #section1 .left .map .mapNav, #section2 .left .map .mapNav, #section3 .left .map .mapNav, #section4 .left .map .mapNav, #section5 .left .map .mapNav, #section6 .left .map .mapNav {
     display: none;
   }
-  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div, #section4 .left .map .mapNavBorders div, #section5 .left .map .mapNavBorders div {
+  #section1 .left .map .mapNavBorders div, #section2 .left .map .mapNavBorders div, #section3 .left .map .mapNavBorders div, #section4 .left .map .mapNavBorders div, #section5 .left .map .mapNavBorders div, #section6 .left .map .mapNavBorders div {
     display: none;
   }
-  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp, #section4 .left .map .mapP .mapPp, #section5 .left .map .mapP .mapPp {
+  #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp, #section3 .left .map .mapP .mapPp, #section4 .left .map .mapP .mapPp, #section5 .left .map .mapP .mapPp, #section6 .left .map .mapP .mapPp {
     left: undefined;
     right: undefined;
     width: 91%;
@@ -3688,41 +3847,48 @@ html body #section4 .bubble3 {
     letter-spacing: 2.7px;
     margin: 0 0 0 1vw;
   }
-  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2, #section4 .left .map .filler, #section4 .left .map .filler2, #section5 .left .map .filler, #section5 .left .map .filler2 {
+  #section1 .left .map .filler, #section1 .left .map .filler2, #section2 .left .map .filler, #section2 .left .map .filler2, #section3 .left .map .filler, #section3 .left .map .filler2, #section4 .left .map .filler, #section4 .left .map .filler2, #section5 .left .map .filler, #section5 .left .map .filler2, #section6 .left .map .filler, #section6 .left .map .filler2 {
     display: none;
   }
-  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo, #section4 .left .logo, #section5 .left .logo {
+  #section1 .left .logo, #section2 .left .logo, #section3 .left .logo, #section4 .left .logo, #section5 .left .logo, #section6 .left .logo {
     width: 21%;
   }
-  #section1 .center, #section2 .center, #section3 .center, #section4 .center, #section5 .center {
+  #section1 .center, #section2 .center, #section3 .center, #section4 .center, #section5 .center, #section6 .center {
     width: 79%;
   }
-  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead, #section4 .center .sectionHead, #section5 .center .sectionHead {
+  #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead, #section4 .center .sectionHead, #section5 .center .sectionHead, #section6 .center .sectionHead {
     left: 0;
     width: 100vw;
     padding: 0 0 0 21.4vw;
   }
-  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p, #section4 .center .sectionHead p, #section5 .center .sectionHead p {
+  #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p, #section4 .center .sectionHead p, #section5 .center .sectionHead p, #section6 .center .sectionHead p {
     margin-top: 1.5%;
     font-size: 8em;
   }
-  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1, #section4 .center .sectionWrap1 h1, #section4 .center .sectionWrap2 h1, #section5 .center .sectionWrap1 h1, #section5 .center .sectionWrap2 h1 {
+  #section1 .center .sectionWrap1 h1, #section1 .center .sectionWrap2 h1, #section2 .center .sectionWrap1 h1, #section2 .center .sectionWrap2 h1, #section3 .center .sectionWrap1 h1, #section3 .center .sectionWrap2 h1, #section4 .center .sectionWrap1 h1, #section4 .center .sectionWrap2 h1, #section5 .center .sectionWrap1 h1, #section5 .center .sectionWrap2 h1, #section6 .center .sectionWrap1 h1, #section6 .center .sectionWrap2 h1 {
     font-size: 4.6vh;
   }
-  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p, #section4 .center .sectionWrap1 p, #section4 .center .sectionWrap2 p, #section5 .center .sectionWrap1 p, #section5 .center .sectionWrap2 p {
+  #section1 .center .sectionWrap1 p, #section1 .center .sectionWrap2 p, #section2 .center .sectionWrap1 p, #section2 .center .sectionWrap2 p, #section3 .center .sectionWrap1 p, #section3 .center .sectionWrap2 p, #section4 .center .sectionWrap1 p, #section4 .center .sectionWrap2 p, #section5 .center .sectionWrap1 p, #section5 .center .sectionWrap2 p, #section6 .center .sectionWrap1 p, #section6 .center .sectionWrap2 p {
     font-size: 3vh;
   }
-  #section1 .right, #section2 .right, #section3 .right, #section4 .right, #section5 .right {
+  #section1 .right, #section2 .right, #section3 .right, #section4 .right, #section5 .right, #section6 .right {
     display: none;
   }
-  #section1 .right img, #section2 .right img, #section3 .right img, #section4 .right img, #section5 .right img {
+  #section1 .right img, #section2 .right img, #section3 .right img, #section4 .right img, #section5 .right img, #section6 .right img {
     display: none;
+  }
+  #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
+    font-size: 2.2em;
+    line-height: 1;
   }
   #section2 .center .container {
     line-height: 1.8em;
   }
   #section2 .center .container .ofContainer {
     font-size: 1.8em;
+  }
+  #section2 .center .container #hair5 {
+    margin-right: 5%;
   }
   #section3 .symbol3 {
     width: 12vw;
@@ -3772,6 +3938,23 @@ html body #section4 .bubble3 {
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     font-size: 1.6em;
   }
+  #section6 .symbol6 {
+    left: 5.5vw;
+  }
+  #section6 .center .section6Wrap .window {
+    margin-top: 27vh;
+    padding-top: 0;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    max-width: 90%;
+    font-size: 2.5em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 3%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 10%;
+  }
   * {
     color: gray;
   }
@@ -3812,7 +3995,7 @@ html body #section4 .bubble3 {
     height: 10vh;
     padding-top: 0.5vh;
   }
-  #section1 .symbol1, #section1 .symbol2, #section1 .symbol3, #section1 .symbol4, #section2 .symbol1, #section2 .symbol2, #section2 .symbol3, #section2 .symbol4, #section3 .symbol1, #section3 .symbol2, #section3 .symbol3, #section3 .symbol4, #section4 .symbol1, #section4 .symbol2, #section4 .symbol3, #section4 .symbol4, #section5 .symbol1, #section5 .symbol2, #section5 .symbol3, #section5 .symbol4, #section6 .symbol1, #section6 .symbol2, #section6 .symbol3, #section6 .symbol4 {
+  #section1 .symbol1, #section1 .symbol2, #section1 .symbol3, #section1 .symbol4, #section1 .symbol5, #section1 .symbol6, #section2 .symbol1, #section2 .symbol2, #section2 .symbol3, #section2 .symbol4, #section2 .symbol5, #section2 .symbol6, #section3 .symbol1, #section3 .symbol2, #section3 .symbol3, #section3 .symbol4, #section3 .symbol5, #section3 .symbol6, #section4 .symbol1, #section4 .symbol2, #section4 .symbol3, #section4 .symbol4, #section4 .symbol5, #section4 .symbol6, #section5 .symbol1, #section5 .symbol2, #section5 .symbol3, #section5 .symbol4, #section5 .symbol5, #section5 .symbol6, #section6 .symbol1, #section6 .symbol2, #section6 .symbol3, #section6 .symbol4, #section6 .symbol5, #section6 .symbol6 {
     width: 20vw;
   }
   #section1 .left, #section2 .left, #section3 .left, #section4 .left, #section5 .left, #section6 .left {
@@ -3849,6 +4032,7 @@ html body #section4 .bubble3 {
   }
   #section1 .center, #section2 .center, #section3 .center, #section4 .center, #section5 .center, #section6 .center {
     width: 75%;
+    border-left: solid 1px #222222;
   }
   #section1 .center .sectionHead, #section2 .center .sectionHead, #section3 .center .sectionHead, #section4 .center .sectionHead, #section5 .center .sectionHead, #section6 .center .sectionHead {
     left: 0;
@@ -3912,7 +4096,8 @@ html body #section4 .bubble3 {
     display: none;
   }
   #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
-    line-height: 0.6;
+    font-size: 3em;
+    line-height: 1.55;
   }
   #section2 .center .container {
     line-height: 2em;
@@ -3953,7 +4138,7 @@ html body #section4 .bubble3 {
   #section3 .center .offerWrap .offer p, #section3 .center .offerWrap .offer2 p {
     font-size: 3em;
   }
-  #section3 .center .section3Cover {
+  #section3 .center .section3CoverMobile {
     display: block;
     width: 75vw;
     height: 10vh;
@@ -3980,6 +4165,25 @@ html body #section4 .bubble3 {
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     font-size: 2em;
     padding-right: 12%;
+  }
+  #section6 .symbol6 {
+    width: 13vw;
+    height: 13vh;
+    top: 603vh;
+    left: 5.5vw;
+  }
+  #section6 .center .section6Wrap .window {
+    padding-right: 35%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    max-width: 90%;
+    font-size: 3.6em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 4%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 13%;
   }
   * {
     color: cadetblue;
@@ -4100,12 +4304,15 @@ html body #section4 .bubble3 {
     display: none;
   }
   #section1 .circle, #section2 .circle, #section3 .circle, #section4 .circle {
-    right: 1.5em;
-    bottom: 1.5em;
+    right: .5em;
+    bottom: .5em;
   }
   #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow {
-    font-size: 2em;
-    line-height: 1.4;
+    font-size: 3.5em;
+    line-height: 1.2;
+  }
+  #section2 .center .container #hair5 {
+    margin-right: 10%;
   }
   #section3 .symbol3 {
     width: 13vw;
@@ -4135,6 +4342,15 @@ html body #section4 .bubble3 {
   }
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
     font-size: 2.2em;
+  }
+  #section6 .center .section6Wrap .window {
+    padding-right: 30%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 3.3em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 9%;
   }
   * {
     color: orchid;
@@ -4385,6 +4601,9 @@ html body #section4 .bubble3 {
   #section3 .center .section3Cover {
     display: none;
   }
+  #section3 .center .section3CoverMobile {
+    display: none;
+  }
   #section3 .right .rightCover {
     float: right;
     margin-top: 86vh;
@@ -4402,6 +4621,25 @@ html body #section4 .bubble3 {
   }
   #section5 .symbol5 {
     left: 1.3vw;
+  }
+  #section6 .symbol6 {
+    top: 602vh;
+    left: 1vw;
+  }
+  #section6 .center .section6Wrap .window {
+    margin-top: 27vh;
+    padding: 0;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    max-width: 43%;
+    font-size: 2.2em;
+    padding-left: 7%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 4%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 15%;
   }
   * {
     color: deeppink;
@@ -4504,7 +4742,7 @@ html body #section4 .bubble3 {
     width: 38vw;
   }
   #section1 .circle #arrow, #section2 .circle #arrow, #section3 .circle #arrow, #section4 .circle #arrow, #section5 .circle #arrow, #section6 .circle #arrow {
-    line-height: 1.5;
+    line-height: 1.2;
   }
   #section2 .symbol2 {
     width: 10vw;
@@ -4603,6 +4841,12 @@ html body #section4 .bubble3 {
   }
   #section5 .symbol5 {
     left: 1.8vw;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 2.4em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 19%;
   }
   * {
     color: blue;
@@ -5031,6 +5275,15 @@ html body #section4 .bubble3 {
   }
   #section4 .center .section4Wrap {
     font-size: 2.2em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text {
+    font-size: 2.4em;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span {
+    margin-bottom: 6%;
+  }
+  #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
+    margin-top: 16%;
   }
   * {
     color: goldenrod;
