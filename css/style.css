@@ -2311,7 +2311,7 @@ html body #section4 .bubble3 {
   #section1 .center .sectionHead p, #section2 .center .sectionHead p, #section3 .center .sectionHead p, #section4 .center .sectionHead p, #section5 .center .sectionHead p, #section6 .center .sectionHead p {
     margin: 0;
     padding: 0;
-    font-size: 12vh;
+    font-size: 6em;
   }
   #section1 .center .sectionWrap1, #section1 .center .sectionWrap2, #section2 .center .sectionWrap1, #section2 .center .sectionWrap2, #section3 .center .sectionWrap1, #section3 .center .sectionWrap2, #section4 .center .sectionWrap1, #section4 .center .sectionWrap2, #section5 .center .sectionWrap1, #section5 .center .sectionWrap2, #section6 .center .sectionWrap1, #section6 .center .sectionWrap2 {
     width: 100%;
@@ -2381,6 +2381,12 @@ html body #section4 .bubble3 {
     width: 45%;
     font-size: 1.5em;
   }
+  #section2 .sectionWrap1 .container .ofContainer:last-of-type {
+    width: 30%;
+  }
+  #section2 .sectionWrap1 .container #hair5 {
+    margin-right: 20%;
+  }
   #section3 .center .sectionHead p {
     font-size: 6em;
   }
@@ -2437,7 +2443,7 @@ html body #section4 .bubble3 {
     padding-left: 2%;
   }
   #section5 .center .section5Wrap .lowerDiv .lowerOfLowerDiv {
-    padding-right: 4%;
+    padding-right: 20%;
   }
   #section6 .center .section6Wrap .window div .section6Text {
     font-size: 2.2em;
@@ -3031,7 +3037,7 @@ html body #section4 .bubble3 {
 
 @media (min-width: 767px) and (min-height: 1023px) and (orientation: portrait) {
   .burger {
-    left: 94.5vw;
+    left: 93.5vw;
   }
   #section1 .left .map .mapP .mapPp, #section2 .left .map .mapP .mapPp {
     font-size: 30px;
@@ -3777,7 +3783,7 @@ html body #section4 .bubble3 {
     font-size: 1.8em;
   }
   #section6 .center .section6Wrap .window div .section6Text .section6Span {
-    margin-bottom: 6%;
+    margin-bottom: 5%;
   }
   * {
     color: green;
@@ -4351,10 +4357,10 @@ html body #section4 .bubble3 {
     padding-right: 30%;
   }
   #section6 .center .section6Wrap .window div .section6Text {
-    font-size: 3.3em;
+    font-size: 2.8em;
   }
   #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
-    margin-top: 9%;
+    margin-top: 8%;
   }
   * {
     color: orchid;
