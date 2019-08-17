@@ -22,6 +22,8 @@ html
       text-align: center
       background-color: black
       border-bottom: $borders2
+      a
+        text-decoration: none
       .headerWrap
         padding-top: 26vh
         display: flex
@@ -58,7 +60,7 @@ html
       .burger 
         position: fixed     
         text-align: center       
-        z-index: 3
+        z-index: 6
       .headerP
         transition: 1s       
         position: fixed       
@@ -66,7 +68,7 @@ html
         font-weight: bold
         border: $borders9
         text-align: center
-        z-index: 3
+        z-index: 6
       .headerP:hover
         +hover(orchid)
         border: solid 1px #B51FAD     
@@ -3344,12 +3346,12 @@ html
           div
             .section6Text
               max-width: 43%
-              font-size: 2.2em
+              font-size: 2.1em
               padding-left: 7%
               .section6Span
-                margin-bottom: 4%
+                margin-bottom: 3.8%
               .section6Span:first-of-type
-                margin-top: 15%
+                margin-top: 10%
   *
     color: deeppink
 @media (min-width: 1439px) and (min-height: 899px)
@@ -3861,3 +3863,198 @@ html
     .center
       .section3Cover
         display: none
+
+/* About */
+.aboutHeader
+  height: 0
+main
+  max-width: 80vw
+  margin: 10vh auto
+  text-align: justify
+  text-align-last: center
+  h1
+    text-align: center
+    margin-bottom: 5vh
+  @media (min-width: 0)
+    font-size: 5vh
+  p
+    font-size: .8em
+    margin-bottom: 3em
+
+/* Gallery */
+body, html 
+  height: 100%
+
+.headingH1, .contactH1
+  @media (max-width: 839px)
+    padding: 7% 0 0
+  @media (min-width: 374px) and (min-height: 811px)
+    margin: 7% 0 -10% 0
+  @media (min-width: 532px) and (min-height: 319px) and (max-height: 350px) and (orientation: landscape)
+    padding: 4% 0 2%
+  @media (min-width: 599px) and (min-height: 959px) and (orientation: portrait)
+    padding: 0 0 10%
+    font-size: 4em
+    letter-spacing: .15em
+  @media (min-width: 639px) and (min-height: 359px) and (orientation: landscape)
+    padding: 2% 0 0
+  @media (min-width: 767px) and (min-height: 1023px) and (orientation: portrait)
+    font-size: 5em
+    padding-bottom: 27%
+  @media (min-width: 1000px) and (min-height: 400px) and (max-width: 1420px)
+    font-size: 4em
+    padding-bottom: 2%
+  @media (min-width: 1023px) and (min-height: 768px) and (orientation: landscape)
+    font-size: 5em
+  @media (min-width: 1023px) and (min-height: 1335px) and (orientation: portrait)
+    font-size: 6em
+    padding-bottom: 27%
+  @media (min-width: 1365px) and (min-height: 767px) and (orientation: landscape)
+    margin: 0
+    font-size: 7em
+  @media (min-width: 1420px) and (min-height: 430px) and (max-height: 1300px)
+    font-size: 5em
+  text-align: center
+  padding: 2.5% 0
+  font-size: 3em
+  letter-spacing: .1em
+
+.slider
+  @media (min-width: 0)
+    text-align: center
+    padding: 2% 0
+    font-size: 3em
+    letter-spacing: .1em
+
+.galleryHeadImg
+  @media (orientation: portrait)
+    display: none
+ 
+  background: url("../images/salon.jpg") center no-repeat fixed
+  background-size: cover
+  height: 100%
+
+.gallery
+  width: 100vw
+  height: 100vh
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+img.slider
+  height: 100%
+  width: 100%
+
+h1.slider
+  @media (min-width: 0)
+    font-size: 2em
+  @media (min-width: 700px) and (orientation: portrait)
+    font-size: 3.3em
+  @media (min-width: 1300px)
+    font-size: 4.3em
+  letter-spacing: .1em
+  color: beige
+  /* text-shadow: 0 0 6px white */
+
+.galleryWrap
+  @media (orientation: portrait)
+    width: 95%
+  @media (orientation: landscape)
+    width: 25%
+
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 3% 0 0 0
+  
+.fa-chevron-left, .fa-chevron-right
+  color: beige
+  font-size: 3em
+  opacity: .7
+  text-shadow: 0 0 5px white
+  
+.fa-chevron-right
+  @media (min-width: 0) and (orientation: portrait)
+    margin-left: -10%
+  margin-left: 7%
+
+.fa-chevron-left
+  @media (min-width: 0) and (orientation: portrait)
+    margin-right: -10%
+  margin-right: 7%
+
+.squares span
+  display: inline-block
+  background-color: black
+  margin: 0 20px 6%
+  width: 20px
+  height: 20px
+  border: solid 1px beige
+    
+.squares span.active
+  border: solid 1px #F018E6
+
+/* Contact */
+
+.contactMain
+  background: black
+  border: $borders5
+  width: 50rem 
+  .contactWrap
+    height: 100%
+    width: 100%
+    display: flex
+    .leftWrap
+      height: 100%
+      border-right: $borders5
+      .leftWrapDiv
+        width: 100%
+        height: 50%
+        display: flex
+        justify-content: center
+        align-content: center
+        p, i
+          margin: 8% 0 0 5%
+          font-weight: 700
+          color: beige
+        p
+          margin-right: 5%
+    .adress
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      p
+        @media (min-width: 790px)
+            font-size: .7em
+        margin: 0
+        color: beige
+        text-align: center
+@media (max-width: 585px)
+  .contactMain
+    height: 16rem
+    .contactWrap
+      flex-direction: column
+      .leftWrap
+        width: 100%
+        .leftWrapDiv
+          p, i
+            font-size: .5em
+      .adress
+        border-top: $borders5
+        p
+          font-size: .5em
+@media (min-width: 586px)
+  .contactMain
+    height: 8rem
+    .contactWrap
+      .leftWrap
+        width: 50%
+        .leftWrapDiv
+          p, i
+            font-size: .4em
+      .adress
+        width: 50%
+        p
+          font-size: .5em

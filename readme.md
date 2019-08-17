@@ -14,4 +14,5 @@ I had to make a website to train my front-end skills. Choosing a hairdresser the
 https://marekszczepanski.github.io/Hairdresser-website/index
 
 #### Recent changes
-1) Minor responsive bugfixes.
+1) Add about, gallery and contact pages.  
+2) Resize images.

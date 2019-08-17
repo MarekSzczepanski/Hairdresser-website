@@ -31,6 +31,10 @@ html body header {
   border-bottom: solid 1px #222222;
 }
 
+html body header a {
+  text-decoration: none;
+}
+
 html body header .headerWrap {
   padding-top: 26vh;
   display: -webkit-box;
@@ -92,7 +96,7 @@ html body header .headerWrap .underlineCover {
 html body header .burger {
   position: fixed;
   text-align: center;
-  z-index: 3;
+  z-index: 6;
 }
 
 html body header .headerP {
@@ -103,7 +107,7 @@ html body header .headerP {
   font-weight: bold;
   border: solid 1px #999999;
   text-align: center;
-  z-index: 3;
+  z-index: 6;
 }
 
 html body header .headerP:hover {
@@ -4642,14 +4646,14 @@ html body #section4 .bubble3 {
   }
   #section6 .center .section6Wrap .window div .section6Text {
     max-width: 43%;
-    font-size: 2.2em;
+    font-size: 2.1em;
     padding-left: 7%;
   }
   #section6 .center .section6Wrap .window div .section6Text .section6Span {
-    margin-bottom: 4%;
+    margin-bottom: 3.8%;
   }
   #section6 .center .section6Wrap .window div .section6Text .section6Span:first-of-type {
-    margin-top: 15%;
+    margin-top: 10%;
   }
   * {
     color: deeppink;
@@ -5332,6 +5336,361 @@ html body #section4 .bubble3 {
 @media (min-height: 400px) {
   #section3 .center .section3Cover {
     display: none;
+  }
+}
+
+/* About */
+.aboutHeader {
+  height: 0;
+}
+
+main {
+  max-width: 80vw;
+  margin: 10vh auto;
+  text-align: justify;
+  text-align-last: center;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+@media (min-width: 0) {
+  main {
+    font-size: 5vh;
+  }
+}
+
+main p {
+  font-size: .8em;
+  margin-bottom: 3em;
+}
+
+/* Gallery */
+body, html {
+  height: 100%;
+}
+
+.headingH1, .contactH1 {
+  text-align: center;
+  padding: 2.5% 0;
+  font-size: 3em;
+  letter-spacing: .1em;
+}
+
+@media (max-width: 839px) {
+  .headingH1, .contactH1 {
+    padding: 7% 0 0;
+  }
+}
+
+@media (min-width: 374px) and (min-height: 811px) {
+  .headingH1, .contactH1 {
+    margin: 7% 0 -10% 0;
+  }
+}
+
+@media (min-width: 532px) and (min-height: 319px) and (max-height: 350px) and (orientation: landscape) {
+  .headingH1, .contactH1 {
+    padding: 4% 0 2%;
+  }
+}
+
+@media (min-width: 599px) and (min-height: 959px) and (orientation: portrait) {
+  .headingH1, .contactH1 {
+    padding: 0 0 10%;
+    font-size: 4em;
+    letter-spacing: .15em;
+  }
+}
+
+@media (min-width: 639px) and (min-height: 359px) and (orientation: landscape) {
+  .headingH1, .contactH1 {
+    padding: 2% 0 0;
+  }
+}
+
+@media (min-width: 767px) and (min-height: 1023px) and (orientation: portrait) {
+  .headingH1, .contactH1 {
+    font-size: 5em;
+    padding-bottom: 27%;
+  }
+}
+
+@media (min-width: 1000px) and (min-height: 400px) and (max-width: 1420px) {
+  .headingH1, .contactH1 {
+    font-size: 4em;
+    padding-bottom: 2%;
+  }
+}
+
+@media (min-width: 1023px) and (min-height: 768px) and (orientation: landscape) {
+  .headingH1, .contactH1 {
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 1023px) and (min-height: 1335px) and (orientation: portrait) {
+  .headingH1, .contactH1 {
+    font-size: 6em;
+    padding-bottom: 27%;
+  }
+}
+
+@media (min-width: 1365px) and (min-height: 767px) and (orientation: landscape) {
+  .headingH1, .contactH1 {
+    margin: 0;
+    font-size: 7em;
+  }
+}
+
+@media (min-width: 1420px) and (min-height: 430px) and (max-height: 1300px) {
+  .headingH1, .contactH1 {
+    font-size: 5em;
+  }
+}
+
+@media (min-width: 0) {
+  .slider {
+    text-align: center;
+    padding: 2% 0;
+    font-size: 3em;
+    letter-spacing: .1em;
+  }
+}
+
+.galleryHeadImg {
+  background: url("../images/salon.jpg") center no-repeat fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+@media (orientation: portrait) {
+  .galleryHeadImg {
+    display: none;
+  }
+}
+
+.gallery {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+img.slider {
+  height: 100%;
+  width: 100%;
+}
+
+h1.slider {
+  letter-spacing: .1em;
+  color: beige;
+  /* text-shadow: 0 0 6px white */
+}
+
+@media (min-width: 0) {
+  h1.slider {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 700px) and (orientation: portrait) {
+  h1.slider {
+    font-size: 3.3em;
+  }
+}
+
+@media (min-width: 1300px) {
+  h1.slider {
+    font-size: 4.3em;
+  }
+}
+
+.galleryWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3% 0 0 0;
+}
+
+@media (orientation: portrait) {
+  .galleryWrap {
+    width: 95%;
+  }
+}
+
+@media (orientation: landscape) {
+  .galleryWrap {
+    width: 25%;
+  }
+}
+
+.fa-chevron-left, .fa-chevron-right {
+  color: beige;
+  font-size: 3em;
+  opacity: .7;
+  text-shadow: 0 0 5px white;
+}
+
+.fa-chevron-right {
+  margin-left: 7%;
+}
+
+@media (min-width: 0) and (orientation: portrait) {
+  .fa-chevron-right {
+    margin-left: -10%;
+  }
+}
+
+.fa-chevron-left {
+  margin-right: 7%;
+}
+
+@media (min-width: 0) and (orientation: portrait) {
+  .fa-chevron-left {
+    margin-right: -10%;
+  }
+}
+
+.squares span {
+  display: inline-block;
+  background-color: black;
+  margin: 0 20px 6%;
+  width: 20px;
+  height: 20px;
+  border: solid 1px beige;
+}
+
+.squares span.active {
+  border: solid 1px #F018E6;
+}
+
+/* Contact */
+.contactMain {
+  background: black;
+  border: solid 1px #555555;
+  width: 50rem;
+}
+
+.contactMain .contactWrap {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactMain .contactWrap .leftWrap {
+  height: 100%;
+  border-right: solid 1px #555555;
+}
+
+.contactMain .contactWrap .leftWrap .leftWrapDiv {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contactMain .contactWrap .leftWrap .leftWrapDiv p, .contactMain .contactWrap .leftWrap .leftWrapDiv i {
+  margin: 8% 0 0 5%;
+  font-weight: 700;
+  color: beige;
+}
+
+.contactMain .contactWrap .leftWrap .leftWrapDiv p {
+  margin-right: 5%;
+}
+
+.contactMain .contactWrap .adress {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contactMain .contactWrap .adress p {
+  margin: 0;
+  color: beige;
+  text-align: center;
+}
+
+@media (min-width: 790px) {
+  .contactMain .contactWrap .adress p {
+    font-size: .7em;
+  }
+}
+
+@media (max-width: 585px) {
+  .contactMain {
+    height: 16rem;
+  }
+  .contactMain .contactWrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactMain .contactWrap .leftWrap {
+    width: 100%;
+  }
+  .contactMain .contactWrap .leftWrap .leftWrapDiv p, .contactMain .contactWrap .leftWrap .leftWrapDiv i {
+    font-size: .5em;
+  }
+  .contactMain .contactWrap .adress {
+    border-top: solid 1px #555555;
+  }
+  .contactMain .contactWrap .adress p {
+    font-size: .5em;
+  }
+}
+
+@media (min-width: 586px) {
+  .contactMain {
+    height: 8rem;
+  }
+  .contactMain .contactWrap .leftWrap {
+    width: 50%;
+  }
+  .contactMain .contactWrap .leftWrap .leftWrapDiv p, .contactMain .contactWrap .leftWrap .leftWrapDiv i {
+    font-size: .4em;
+  }
+  .contactMain .contactWrap .adress {
+    width: 50%;
+  }
+  .contactMain .contactWrap .adress p {
+    font-size: .5em;
   }
 }
 /*# sourceMappingURL=style.css.map */
