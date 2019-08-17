@@ -5373,6 +5373,7 @@ body, html {
 }
 
 .headingH1, .contactH1 {
+  margin: 0 2vw;
   text-align: center;
   padding: 2.5% 0;
   font-size: 3em;
