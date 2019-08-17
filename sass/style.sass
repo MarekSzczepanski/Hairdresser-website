@@ -7,6 +7,9 @@
   list-style-type: none 
 ::-webkit-scrollbar  
   display: none
+a
+  text-decoration: none
+  color: beige
 html
   overflow: hidden
   font-size: 16px
@@ -22,8 +25,6 @@ html
       text-align: center
       background-color: black
       border-bottom: $borders2
-      a
-        text-decoration: none
       .headerWrap
         padding-top: 26vh
         display: flex
@@ -33,18 +34,19 @@ html
         position: absolute
         width: 100%
         z-index: 5
+        color: black
         p:first-of-type
           letter-spacing: 0.3vw
           margin-left: 0.7vh
           z-index: 3
-          animation: fontColor 4s ease-in 1s 1
+          animation: fontColor 4s ease-in 1s 1 forwards
         p:nth-of-type(2)
           letter-spacing: 0.32vw
-          animation: fontColor 4s ease-in 1s 1
+          animation: fontColor 4s ease-in 1s 1 forwards
         p:nth-of-type(3)
           letter-spacing: 0.25vw
           margin-top: 2vh
-          animation: fontColor 4s ease-in 1s 1          
+          animation: fontColor 4s ease-in 1s 1 forwards       
         .underline, .underlineCover
           position: absolute
           margin-right: 0.25vw
@@ -213,17 +215,6 @@ html
           position: absolute
           height: 100vh
           opacity: .3  
-        .credits1, .credits2, .credits3
-          position: absolute
-          width: 65vw
-          height: 2vh   
-          top: 193vh
-          left: 63vw   
-          background-color: black
-        .credits2
-          top: 195vh
-        .credits3
-          top: 197vh
       .circle
         z-index: 1
         #arrow
@@ -4000,3 +3991,5 @@ h1.slider
         width: 50%
         p
           font-size: .5em
+.credits1, .credits2, .credits3
+  text-align: center    

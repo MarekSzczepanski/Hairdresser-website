@@ -10,6 +10,11 @@
   display: none;
 }
 
+a {
+  text-decoration: none;
+  color: beige;
+}
+
 html {
   overflow: hidden;
   font-size: 16px;
@@ -31,10 +36,6 @@ html body header {
   border-bottom: solid 1px #222222;
 }
 
-html body header a {
-  text-decoration: none;
-}
-
 html body header .headerWrap {
   padding-top: 26vh;
   display: -webkit-box;
@@ -52,27 +53,28 @@ html body header .headerWrap {
   position: absolute;
   width: 100%;
   z-index: 5;
+  color: black;
 }
 
 html body header .headerWrap p:first-of-type {
   letter-spacing: 0.3vw;
   margin-left: 0.7vh;
   z-index: 3;
-  -webkit-animation: fontColor 4s ease-in 1s 1;
-          animation: fontColor 4s ease-in 1s 1;
+  -webkit-animation: fontColor 4s ease-in 1s 1 forwards;
+          animation: fontColor 4s ease-in 1s 1 forwards;
 }
 
 html body header .headerWrap p:nth-of-type(2) {
   letter-spacing: 0.32vw;
-  -webkit-animation: fontColor 4s ease-in 1s 1;
-          animation: fontColor 4s ease-in 1s 1;
+  -webkit-animation: fontColor 4s ease-in 1s 1 forwards;
+          animation: fontColor 4s ease-in 1s 1 forwards;
 }
 
 html body header .headerWrap p:nth-of-type(3) {
   letter-spacing: 0.25vw;
   margin-top: 2vh;
-  -webkit-animation: fontColor 4s ease-in 1s 1;
-          animation: fontColor 4s ease-in 1s 1;
+  -webkit-animation: fontColor 4s ease-in 1s 1 forwards;
+          animation: fontColor 4s ease-in 1s 1 forwards;
 }
 
 html body header .headerWrap .underline, html body header .headerWrap .underlineCover {
@@ -342,23 +344,6 @@ html body section .right .sideImg {
   position: absolute;
   height: 100vh;
   opacity: .3;
-}
-
-html body section .right .credits1, html body section .right .credits2, html body section .right .credits3 {
-  position: absolute;
-  width: 65vw;
-  height: 2vh;
-  top: 193vh;
-  left: 63vw;
-  background-color: black;
-}
-
-html body section .right .credits2 {
-  top: 195vh;
-}
-
-html body section .right .credits3 {
-  top: 197vh;
 }
 
 html body section .circle {
@@ -5605,5 +5590,9 @@ h1.slider {
   .contactMain .contactWrap .adress p {
     font-size: .5em;
   }
+}
+
+.credits1, .credits2, .credits3 {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
